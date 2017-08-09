@@ -13,4 +13,4 @@ The following file loads the schema associated with the input file and displays 
 
 Related Feasibility exercises for improving the communication of HQM concepts:
 
-[https://julesbuh.github.io/threeD.js-HQM-Daylighting/](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
+[`https://julesbuh.github.io/threeD.js-HQM-Daylighting/`](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
