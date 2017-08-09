@@ -28,6 +28,7 @@
     <Uniclass_Co>Co_45_10</Uniclass_Co>
     <Uniclass_En>En_45_10</Uniclass_En>
     <xslversion>1.0</xslversion>
+	<xsdversion>HQM0.2.xsd</xsdversion>
   </DocProps>
 	<Assessment>
 		<Section id="2">

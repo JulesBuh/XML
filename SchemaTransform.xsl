@@ -12,7 +12,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	</xsl:template> 
 	
 	<xsl:variable name="header">
-		<tr bgcolor="#9acd32">
+		<tr bgcolor="#096492">
+		Using schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." />
 			<th>path</th>
 			<th>element name</th>
 			<th>attribute name:value</th>
@@ -41,65 +42,19 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:template match="/">
 		
 		
-		
-		<xsl:variable name="xsd" select="document('HQM0.2.xsd')"/>
+
+		<xsl:variable name="xsd" select="document(bre:BREEAM/DocProps/xsdversion/.)"/>
 		<xsl:variable name="xsdelementtype"  select="$xsd//xs:element/@type|$xsd//xs:attrribute/@type"/>
 		<xsl:variable name="xsdusedtypes" select="$xsd//xs:simpleType[@name=$xsdelementtype]|$xsd//xs:complexType[@name=$xsdelementtype]|$xsd//xs:union[contains(@memberTypes,'NRM')]" />
 		<xsl:variable name="xsdtypes" select="$xsdusedtypes/@name" />
 		
 		<head/>
 		<body>		
+				
 			<table>
+			
 				<xsl:copy-of select="$header" />				
-				<xsl:value-of select="namespace-uri($xsd)"/>
-<tr><td><h2>Defined Accepted Values</h2></td></tr>
-				<xsl:for-each select="$xsdusedtypes">
-				<xsl:sort select="@name"/>
-					<tr>
-						<td>
-							<xsl:apply-templates select ="./ancestor::*" mode = "print"  />
-							<xsl:value-of select ="local-name(.)"/> 
-						</td>
-						<td>
-							<xsl:value-of select ="@name"/>  <xsl:value-of select ="@memberTypes"/> 
-						</td>
-						<td>	
-						<xsl:choose>
-						<xsl:when test="local-name(.)='simpleType'">
-							<xsl:if test="count(xs:restriction/xs:enumeration/@value) &gt; 0">					
-															<select>							
-																<xsl:apply-templates select ="xs:restriction/xs:enumeration/@value" mode = "Picklist"  />
-															</select>
-															(<xsl:value-of select ="count(xs:restriction/xs:enumeration/@value)"/> possible values defined)
-							</xsl:if>
-							<xsl:if test="count(xs:restriction/xs:enumeration/@value)= 0">					
-															<p>							
-							 <xsl:value-of select ="translate(xs:restriction/@base,'','')"  /> 
-							 <xsl:value-of select ="translate(*/@type,'','')"  />
-							 <xsl:value-of select ="translate(*/@memberTypes,'','')" />
-							 : <xsl:value-of select ="translate(*/@value,'','')"  />
-															</p>
-							</xsl:if>
-							</xsl:when>
-							<xsl:otherwise>::</xsl:otherwise>
-						</xsl:choose>
-						</td>
-					</tr>
-				</xsl:for-each>
-<tr><td><h2>Defined Elements and Atrributes</h2></td></tr>
-				<xsl:for-each select="$xsdelementtype/parent::*">
-					<tr>
-						<td>
-							<xsl:apply-templates select ="./ancestor::*" mode = "print"  />
-						</td>
-						<td>
-							<xsl:value-of select ="@name"  />
-						</td>
-						<td>
-							<xsl:value-of select ="@type" />
-						</td>
-					</tr>
-				</xsl:for-each>
+<tr><td><h2>Contents of XML Data exchange File</h2></td></tr>
 				<xsl:for-each select="//.">
 					<xsl:sort select="local-name(../ancestor/*)"/>
 					<tr>
@@ -136,6 +91,56 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 								</span>
 								<xsl:value-of select="processing-instruction()"/>
 							</p>
+						</td>
+					</tr>
+				</xsl:for-each>
+				<xsl:value-of select="namespace-uri($xsd)"/>
+			
+<tr><td><h2>Defined Accepted Values in associated XSD Schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." /></h2></td></tr>
+				<xsl:for-each select="$xsdusedtypes">
+				<xsl:sort select="@name"/>
+					<tr>
+						<td>
+							<xsl:apply-templates select ="./ancestor::*" mode = "print"  />
+							<xsl:value-of select ="local-name(.)"/> 
+						</td>
+						<td>
+							<xsl:value-of select ="@name"/>  <xsl:value-of select ="@memberTypes"/> 
+						</td>
+						<td>	
+						<xsl:choose>
+						<xsl:when test="local-name(.)='simpleType'">
+							<xsl:if test="count(xs:restriction/xs:enumeration/@value) &gt; 0">					
+															<select>							
+																<xsl:apply-templates select ="xs:restriction/xs:enumeration/@value" mode = "Picklist"  />
+															</select>
+															(<xsl:value-of select ="count(xs:restriction/xs:enumeration/@value)"/> possible values defined)
+							</xsl:if>
+							<xsl:if test="count(xs:restriction/xs:enumeration/@value)= 0">					
+															<p>							
+							 <xsl:value-of select ="translate(xs:restriction/@base,'','')"  /> 
+							 <xsl:value-of select ="translate(*/@type,'','')"  />
+							 <xsl:value-of select ="translate(*/@memberTypes,'','')" />
+							 : <xsl:value-of select ="translate(*/@value,'','')"  />
+															</p>
+							</xsl:if>
+							</xsl:when>
+							<xsl:otherwise>::</xsl:otherwise>
+						</xsl:choose>
+						</td>
+					</tr>
+				</xsl:for-each>
+<tr><td><h2>Defined Elements and Atrributes in associated XSD Schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." /></h2></td></tr>
+				<xsl:for-each select="$xsdelementtype/parent::*">
+					<tr>
+						<td>
+							<xsl:apply-templates select ="./ancestor::*" mode = "print"  />
+						</td>
+						<td>
+							<xsl:value-of select ="@name"  />
+						</td>
+						<td>
+							<xsl:value-of select ="@type" />
 						</td>
 					</tr>
 				</xsl:for-each>
