@@ -7,5 +7,5 @@ The following xml file is a hypothetical merged file containing 4 out of 36 issu
 
 [`https://julesbuh.github.io/XML/ExampleMergedHQMOutputFile.xml`](https://julesbuh.github.io/XML/ExampleMergedHQMOutputFile.xml)
 
-The following file loads the schema associated with the input file and displays dropdown liss for possible input values. The intention of this exercise this is to scrape the data from the exchange file (similar to above) and marry it to the schema on which its validated against. The xsl only goes as far as loading the xsd schema and then writing the contents of the xml below.
+The following file loads the schema associated with the input file and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file (similar to above) and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema below with drop downs for defined accepted values for simple lists.
 [`https://julesbuh.github.io/XML/InputWithSchema.xml`](https://julesbuh.github.io/XML/InputWithSchema.xml)
