@@ -21,19 +21,13 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 		</tr>
 	</xsl:variable>	
 
-	<xsl:template name="show_title" match="/">
-	   <xsl:param name="title" /> <!-- input -->
-	   <xsl:for-each select="catalog/cd">
-		 <p>Title: <xsl:value-of select="$title" /></p> <!-- input -->
-	   </xsl:for-each>
-	</xsl:template>	
 
 	
 	<xsl:template name="Picklist" match="xs:restriction/xs:enumeration/@value" mode="Picklist">
 		<for-each select=".">
 			<xsl:element name="option">
 				<xsl:attribute name="value"><xsl:value-of select ="."/></xsl:attribute>
-				<xsl:value-of select ="."/>
+				<xsl:value-of select ="."/><xsl:text> - (</xsl:text><xsl:value-of select ="../xs:annotation/xs:documentation/."/>)
 			</xsl:element >									
 		</for-each>
 	</xsl:template>
@@ -130,7 +124,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 						</td>
 					</tr>
 				</xsl:for-each>
-<tr><td><h2>Defined Elements and Atrributes in associated XSD Schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." /></h2></td></tr>
+<tr><td><h2>Defined Elements and Attributes in associated XSD Schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." /></h2></td></tr>
 				<xsl:for-each select="$xsdelementtype/parent::*">
 					<tr>
 						<td>

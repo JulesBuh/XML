@@ -331,17 +331,21 @@
   </xs:simpleType>
   <xs:simpleType name="BREEAMAssessmentStageType">
     <!-- assessment -->
-    <!-- This is a broken down classification for an active assessment, i.e. when an assessment is being caried out, the RIBA PoW job stages can be mapped to the BREEAM terminology of Pre-Assessment, Design Stage and Post construction Stage as the are broad terms that span across very specific work stages of a project. NOTE This is differentiated from task based perspectives which may more granular and not fit within any particular stage. At criterion level care should be taken for whether it is a task based requirement or a time based requirement -->
+    <!-- This is a broken down classification for an active assessment, i.e. when an assessment is being caried out, the RIBA PoW job stages can be mapped to the BREEAM terminology of Pre-Assessment, Design Stage and Post construction Stage as they are broad terms that span across very specific work stages of a project. NOTE This is differentiated from task based perspectives which may be more granular and not fit within any particular stage. At criterion level care should be taken for whether it is a task based requirement or a time based requirement -->
     <xs:annotation>
       <xs:documentation>BREEAM Stages of Assessment</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="Pre-Assessment" />
-      <!-- possible at stages 0-4 -->
-      <xs:enumeration value="Design" />
-      <!-- possible stages 1-4 -->
-      <xs:enumeration value="Post-Construction" />
-      <!-- possible RIBA work stages 4+ (i.e preparation for some criteria could begin at stage 4 and LOD and LOI is at level 6 for the items being assessed) -->
+      <xs:enumeration value="Pre-Assessment" ><xs:annotation>
+          <xs:documentation> possible at RIBA work stages 0-4</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      
+      <xs:enumeration value="Design" ><xs:annotation>
+          <xs:documentation> possible at RIBA work stages 1-4</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Post-Construction" ><xs:annotation>
+          <xs:documentation> possible RIBA work stages 4+ (i.e preparation for some criteria could begin at stage 4 and LOD and LOI is at level 6 for the items being assessed)</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="BREEAMEvidenceType">
@@ -482,26 +486,60 @@
     </xs:annotation>
     <xs:restriction base="xs:string">
       <!-- Shared Titles -->
-      <xs:enumeration value="Energy" />
-      <xs:enumeration value="Materials" />
-      <xs:enumeration value="Management" />
-      <xs:enumeration value="Health and Wellbeing" />
-      <xs:enumeration value="Ecology" />
-      <xs:enumeration value="Transport" />
-      <xs:enumeration value="Water" />
-      <xs:enumeration value="Polution" />
+      <xs:enumeration value="Energy" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Materials" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Management" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Health and Wellbeing" ><xs:annotation>
+          <xs:documentation> HQM Wellbeing Indicator</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Ecology" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Transport" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Water" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.04</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Polution" ><xs:annotation>
+          <xs:documentation> HQM Footprint Indicator </xs:documentation>
+        </xs:annotation></xs:enumeration>
       <!-- assessment -->
       <!-- HQM Titles -->
-      <xs:enumeration value="Transport and Movement" />
-      <xs:enumeration value="Outdoors" />
-      <xs:enumeration value="Safety and Resilience" />
-      <xs:enumeration value="Energy and Cost" />
-      <xs:enumeration value="Comfort" />
-      <xs:enumeration value="Space" />
+      <xs:enumeration value="Transport and Movement" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Outdoors" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Safety and Resilience" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.04</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Energy and Cost" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Comfort" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Space" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.05</xs:documentation>
+        </xs:annotation></xs:enumeration>
       <xs:enumeration value="Water Use" />
-      <xs:enumeration value="Home Delivery" />
-      <xs:enumeration value="User Experience" />
-      <xs:enumeration value="Future Learning" />
+      <xs:enumeration value="Home Delivery" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="User Experience" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Future Learning" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="BREEAMIssues">
@@ -557,9 +595,15 @@
       <xs:documentation>List of Sections in HQM</xs:documentation>
     </xs:annotation>
     <xs:restriction base="BREEAMSections">
-      <xs:enumeration value="Our Surroundings" />
-      <xs:enumeration value="My Home" />
-      <xs:enumeration value="Knowledge Sharing" />
+      <xs:enumeration value="Our Surroundings" ><xs:annotation>
+          <xs:documentation> HQM Section 1</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="My Home" ><xs:annotation>
+          <xs:documentation> HQM Section 2</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Knowledge Sharing" ><xs:annotation>
+          <xs:documentation> HQM Section 3</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="HQMCategories">
@@ -568,17 +612,39 @@
       <xs:documentation>List of Categories in HQM</xs:documentation>
     </xs:annotation>
     <xs:restriction base="BREEAMCategories">
-      <xs:enumeration value="Transport and Movement" />
-      <xs:enumeration value="Outdoors" />
-      <xs:enumeration value="Safety and Resilience" />
-      <xs:enumeration value="Energy and Cost" />
-      <xs:enumeration value="Comfort" />
-      <xs:enumeration value="Materials" />
-      <xs:enumeration value="Space" />
-      <xs:enumeration value="Water Use" />
-      <xs:enumeration value="Home Delivery" />
-      <xs:enumeration value="User Experience" />
-      <xs:enumeration value="Future Learning" />
+      <xs:enumeration value="Transport and Movement" ><xs:annotation>
+          <xs:documentation> HQM Category 1.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Outdoors" ><xs:annotation>
+          <xs:documentation> HQM Category 1.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Safety and Resilience" ><xs:annotation>
+          <xs:documentation> HQM Category 1.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Energy and Cost" ><xs:annotation>
+          <xs:documentation> HQM Category 2.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Comfort" ><xs:annotation>
+          <xs:documentation> HQM Category 2.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Materials" ><xs:annotation>
+          <xs:documentation> HQM Category 2.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Space" ><xs:annotation>
+          <xs:documentation> HQM Category 2.04</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Water Use" ><xs:annotation>
+          <xs:documentation> HQM Category 2.05</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Home Delivery" ><xs:annotation>
+          <xs:documentation> HQM Category 3.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="User Experience" ><xs:annotation>
+          <xs:documentation> HQM Category 3.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Future Learning" ><xs:annotation>
+          <xs:documentation> HQM Category 3.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="HQMIssues">
@@ -587,41 +653,111 @@
       <xs:documentation>List of Issues in HQM</xs:documentation>
     </xs:annotation>
     <xs:restriction base="BREEAMIssues">
-      <xs:enumeration value="Accessible Public Transport" />
-      <xs:enumeration value="Alternative Sustainable Transport Options" />
-      <xs:enumeration value="Local Amenities" />
-      <xs:enumeration value="Ecology" />
-      <xs:enumeration value="Recreational Space" />
-      <xs:enumeration value="Flood Risk" />
-      <xs:enumeration value="Managing the Impact of Rainfall" />
-      <xs:enumeration value="Security" />
-      <xs:enumeration value="Indoor Pollutants" />
-      <xs:enumeration value="Daylight" />
-      <xs:enumeration value="Internal and External Noise" />
-      <xs:enumeration value="Sound Insulation" />
-      <xs:enumeration value="Temperature" />
-      <xs:enumeration value="Ventilation" />
-      <xs:enumeration value="Energy Forecast and Cost" />
-      <xs:enumeration value="Decentralised Energy" />
-      <xs:enumeration value="Impact on Local Air Quality" />
-      <xs:enumeration value="Responsible Sourcing of Construction Products" />
-      <xs:enumeration value="Environmental Impact of Construction Products" />
-      <xs:enumeration value="Life Cycle Costing of Construction Products" />
-      <xs:enumeration value="Durability of Construction Products" />
-      <xs:enumeration value="Drying Space" />
-      <xs:enumeration value="Access and Space" />
-      <xs:enumeration value="Recyclable Waste" />
-      <xs:enumeration value="Water Efficiency" />
-      <xs:enumeration value="Commissioning and Performance" />
-      <xs:enumeration value="Quality Improvement" />
-      <xs:enumeration value="Considerate Construction" />
-      <xs:enumeration value="Construction Energy Use" />
-      <xs:enumeration value="Construction Water Use" />
-      <xs:enumeration value="Site Waste" />
-      <xs:enumeration value="Aftercare" />
-      <xs:enumeration value="Home Information" />
-      <xs:enumeration value="Smart Homes" />
-      <xs:enumeration value="Post Occupancy Evaluation" />
+      <xs:enumeration value="Accessible Public Transport" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.01.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Alternative Sustainable Transport Options" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.01.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Local Amenities" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.02.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Ecology" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.02.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Recreational Space" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.02.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Flood Risk" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.03.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Managing the Impact of Rainfall" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.03.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Security" ><xs:annotation>
+          <xs:documentation> HQM Issue 1.03.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Indoor Pollutants" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Daylight" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Internal and External Noise" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Sound Insulation" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01.04</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Temperature" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01.05</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Ventilation" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.01.06</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Energy Forecast and Cost" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.02.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Decentralised Energy" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.02.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Impact on Local Air Quality" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.02.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Responsible Sourcing of Construction Products" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.03.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Environmental Impact of Construction Products" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.03.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Life Cycle Costing of Construction Products" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.03.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Durability of Construction Products" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.03.04</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Drying Space" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.04.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Access and Space" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.04.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Recyclable Waste" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.04.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Water Efficiency" ><xs:annotation>
+          <xs:documentation> HQM Issue 2.05.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Commissioning and Performance" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Quality Improvement" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Considerate Construction" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Construction Energy Use" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01.04</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Construction Water Use" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01.05</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Site Waste" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.01.06</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Aftercare" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.02.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Home Information" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.02.02</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Smart Homes" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.02.03</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Post Occupancy Evaluation" ><xs:annotation>
+          <xs:documentation> HQM Issue 3.03.01</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="HQMIndicators">
@@ -631,9 +767,15 @@
       <xs:documentation>List of indicators in HQM</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="My Cost" />
-      <xs:enumeration value="My Wellbeing" />
-      <xs:enumeration value="My Footprint" />
+      <xs:enumeration value="My Cost" ><xs:annotation>
+          <xs:documentation> HQM Indicator End User Cost</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="My Wellbeing" ><xs:annotation>
+          <xs:documentation> HQM Indicator End User Wellbeing</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="My Footprint" ><xs:annotation>
+          <xs:documentation> HQM Indicator End User Impact</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="HQMRoutesOfRigour">
@@ -643,9 +785,15 @@
       <xs:documentation>List of indicators in HQM</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="Foundation" />
-      <xs:enumeration value="Intermediate" />
-      <xs:enumeration value="Comprehensive" />
+      <xs:enumeration value="Foundation" ><xs:annotation>
+          <xs:documentation> HQM Assessment Route 1</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Intermediate" ><xs:annotation>
+          <xs:documentation> HQM Assessment Route 2</xs:documentation>
+        </xs:annotation></xs:enumeration>
+      <xs:enumeration value="Comprehensive" ><xs:annotation>
+          <xs:documentation> HQM Assessment Route 3</xs:documentation>
+        </xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <!-- Assessment Structure Domains -->
@@ -1649,7 +1797,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Comprehensive">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation>permisasble value when comprehensive route is undertaken</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Ee_30_12_01">
@@ -1812,7 +1960,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation>blank entry</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Wall (excl. external finish): Masonry standard cavity">
@@ -1994,7 +2142,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >blank entry</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Ceiling (incl ceiling finishes)">
@@ -2305,67 +2453,67 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="fridge-freezer">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_31_32</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="refrigerator">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_31_72</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="upright freezer">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_31_29</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="chest freezer">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_31_30</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="washing machine">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_25_47</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="tumble dryer">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_25_45</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="dishwasher">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_21</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="combined washing machine tumble dryer">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_25_46</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="oven">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_24</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="cooker">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_24</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="hob">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_24</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="oven-cooker">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_70_24</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >blank entry</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -2379,17 +2527,17 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >blank entry</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="bath">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_20_06_08</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="shower">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >Pr_40_20_06_79</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -30878,12 +31026,12 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="house">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >A dwelling that is the sole property occupying a footprint of land</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="flat">
         <xs:annotation>
-          <xs:documentation />
+          <xs:documentation >A dwelling that occupies the same footprint of land as other properties</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
