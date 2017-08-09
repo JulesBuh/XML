@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="HQMstylesheet.xsl"?>
+<ns1:BREEAM xmlns:ns1="http://www.breeam.com/projects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Assessment>
+		<Section id="2">
+			<name>My Home</name>
+			<Category id="2.01">
+				<name>Energy</name>
+				<Issue id="2.01.05">
+					<name>Temperature bolt on</name>
+					<Criterion>
+						<inputs>
+							<ProjectDetails>
+								<AssessorComment>true</AssessorComment>
+								<ProjectName>Site Phase 1</ProjectName>
+								<Roles>
+									<HQMAssessor>
+										<person>
+											<Name>JB</Name>
+										</person>
+									</HQMAssessor>
+								</Roles>
+								<BREARN>BREEAM-0045-0021</BREARN>
+								<AssessmentStage>Design</AssessmentStage>
+							</ProjectDetails>
+							<siteDetails surroundingsHighAlbedo="false" highAlbedoLocal="true">
+								<AssessorComment>0</AssessorComment>
+								<Address>
+									<Address>
+										<PostTown>Watford</PostTown>
+										<Postcode>WD25 9XX</Postcode>
+									</Address>
+								</Address>
+								<terrainType code="2">low rise urban or suburban</terrainType>
+							</siteDetails>
+							<PropertyDetails>
+								<AssessorComment>0</AssessorComment>
+								<PropertyLocation>
+									<Address>
+										<AddressLine1>Plot9</AddressLine1>
+									</Address>
+								</PropertyLocation>
+								<BuiltForm>detached</BuiltForm>
+								<BlockScale>town house</BlockScale>
+							</PropertyDetails>
+							<dwellingTypeDetails pollution="true" securityRisk="true" overheatingOccupantInput="true" mvhrSummerBypass="true" crossVentilationPossible="false" mechVentInputDuctShaded="false" heatDistributionContributesToOverheating="false" nightCooling="false" noiseNuisance="false">
+								<!-- suggest these attributes get moved to their appropriate performance classes (ventiltion, security, accousitcs) in future versions, consult with H&E  -->
+								<AssessorComment>0</AssessorComment>
+								<PropertyType>house</PropertyType>
+								<planDepth unit="m">1.5</planDepth>
+								<Ventilation pollution="true" crossVentilationPossible="false" mvhrSummerBypass="true" mechVentInputDuctShaded="false" heatDistributionContributesToOverheating="false" nightCooling="false">
+									<PurgeVentRate unit="ach">4</PurgeVentRate>
+									<WindowOpening code="4">Windows open all the time</WindowOpening>
+								</Ventilation>
+								<Shading>
+									<WindowCoverings code="5">Light-coloured curtain or roller blind</WindowCoverings>
+								</Shading>
+								<Acoustics noiseNuisance="false" />
+								<Security securityRisk="true" />
+							</dwellingTypeDetails>
+							<constructionSystems>
+								<system>
+									<opening>
+										<Name>W01</Name>
+										<Location>Kitchen</Location>
+										<Orientation code="5">South</Orientation>
+										<Width>2</Width>
+										<Ventilation>
+											<PurgeVentRate unit="l/sec">1</PurgeVentRate>
+											<!-- aggreagate option-->
+											<WindowOpening code="4">Windows open all the time</WindowOpening>
+											<!-- aggreagate option-->
+										</Ventilation>
+										<Shading>
+											<Width OverhangTwiceWide="true">4</Width>
+											<OverhangRatio>0.4</OverhangRatio>
+											<WindowCoverings code="5">Light-coloured curtain or roller blind</WindowCoverings>
+											<!-- aggreagate option-->
+										</Shading>
+									</opening>
+								</system>
+								<system>
+									<opening>
+										<Name>W02</Name>
+										<Location>Lounge</Location>
+										<Orientation code="7">West</Orientation>
+										<Width>1.410</Width>
+										<Ventilation crossVentilationPossible="true" nightCooling="false">
+											<PurgeVentRate unit="l/sec">1</PurgeVentRate>
+											<!--granular option-->
+											<WindowOpening code="1">Trickle vents only</WindowOpening>
+											<!--granular option-->
+										</Ventilation>
+										<Shading>
+											<WindowCoverings code="9">White external shutter, window closed</WindowCoverings>
+											<Width OverhangTwiceWide="true">2</Width>
+											<OverhangRatio>0.1</OverhangRatio>
+										</Shading>
+										<Acoustics noiseNuisance="false"/>
+									</opening>
+								</system>
+								<system>
+									<!--granular option-->
+									<extract>
+										<Name>MVCentralExtract</Name>
+										<Location>Kitchen</Location>
+										<Ventilation mechVentInputDuctShaded="true" mvhrSummerBypass="true" heatDistributionContributesToOverheating="false">
+											<PurgeVentRate unit="l/sec">15</PurgeVentRate>
+										</Ventilation>
+									</extract>
+								</system>
+							</constructionSystems>
+						</inputs>
+					</Criterion>
+				</Issue>
+			</Category>
+			<Category id="2.03">
+				<name>Materials</name>
+				<Issue id="2.03.01">
+					<name>Responsible Sourcing of Construction Products</name>
+					<Criterion>
+						<inputs>
+							<ProjectDetails>
+								<AssessorComment>true</AssessorComment>
+								<ProjectName>BREEAM-0045-0021</ProjectName>
+								<Roles>
+									<HQMAssessor>
+										<person>
+											<Name>NB</Name>
+										</person>
+									</HQMAssessor>
+								</Roles>
+								<BREARN>BREEAM-0045-0021</BREARN>
+								<AssessmentStage>Design</AssessmentStage>
+							</ProjectDetails>
+							<siteDetails surroundingsHighAlbedo="false" highAlbedoLocal="true">
+								<AssessorComment>0</AssessorComment>
+								<terrainType code="2">low rise urban or suburban</terrainType>
+							</siteDetails>
+							<PropertyDetails>
+								<AssessorComment>0</AssessorComment>
+								<PropertyLocation>
+									<Address>
+										<AddressLine1>Plot9</AddressLine1>
+									</Address>
+								</PropertyLocation>
+								<BuiltForm>detached</BuiltForm>
+								<BlockScale>town house</BlockScale>
+							</PropertyDetails>
+							<dwellingTypeDetails pollution="true" securityRisk="true" overheatingOccupantInput="true" mvhrSummerBypass="true" crossVentilationPossible="false" mechVentInputDuctShaded="false" heatDistributionContributesToOverheating="false" nightCooling="false" noiseNuisance="false">
+								<!-- suggest these attributes get moved to their appropriate performance classes (ventiltion, security, accousitcs) in future versions, consult with H&E  -->
+								<AssessorComment>0</AssessorComment>
+								<PropertyType>house</PropertyType>
+								<PropertyPosition>detached</PropertyPosition>
+								<planDepth unit="m">1.5</planDepth>
+								<Ventilation pollution="true" crossVentilationPossible="false" mvhrSummerBypass="true" mechVentInputDuctShaded="false" heatDistributionContributesToOverheating="false" nightCooling="false">
+									<PurgeVentRate unit="ach">4</PurgeVentRate>
+									<WindowOpening code="4">Windows open all the time</WindowOpening>
+								</Ventilation>
+								<Shading>
+									<WindowCoverings code="5">Light-coloured curtain or roller blind</WindowCoverings>
+								</Shading>
+								<Acoustics noiseNuisance="false" />
+								<Security securityRisk="true" />
+							</dwellingTypeDetails>
+							<constructionSystems>
+								<system>
+									<opening>
+										<Name>W01</Name>
+										<Location>Kitchen</Location>
+										<Orientation code="5">South</Orientation>
+										<Width>2</Width>
+										<Ventilation>
+											<PurgeVentRate unit="l/sec">1</PurgeVentRate>
+											<!-- aggreagate option-->
+											<WindowOpening code="4">Windows open all the time</WindowOpening>
+											<!-- aggreagate option-->
+										</Ventilation>
+										<Shading>
+											<Width OverhangTwiceWide="true">4</Width>
+											<OverhangRatio>0.4</OverhangRatio>
+											<WindowCoverings code="5">Light-coloured curtain or roller blind</WindowCoverings>
+											<!-- aggreagate option-->
+										</Shading>
+									</opening>
+								</system>
+								<system>
+									<opening>
+										<Name>W02</Name>
+										<Location>Lounge</Location>
+										<Orientation code="7">West</Orientation>
+										<Width>1.410</Width>
+										<Ventilation crossVentilationPossible="true" nightCooling="false">
+											<PurgeVentRate unit="l/sec">1</PurgeVentRate>
+											<!--granular option-->
+											<WindowOpening code="1">Trickle vents only</WindowOpening>
+											<!--granular option-->
+										</Ventilation>
+										<Shading>
+											<WindowCoverings code="9">White external shutter, window closed</WindowCoverings>
+											<Width OverhangTwiceWide="true">2</Width>
+											<OverhangRatio>0.1</OverhangRatio>
+										</Shading>
+										<Acoustics noiseNuisance="false"/>
+									</opening>
+								</system>
+								<system>
+									<!--granular option-->
+									<extract>
+										<Name>MVCentralExtract</Name>
+										<Location>Kitchen</Location>
+										<Ventilation mechVentInputDuctShaded="true" mvhrSummerBypass="true" heatDistributionContributesToOverheating="false">
+											<PurgeVentRate unit="l/sec">15</PurgeVentRate>
+										</Ventilation>
+									</extract>
+								</system>
+							</constructionSystems>
+						</inputs>
+					</Criterion>
+				</Issue>
+				<Issue fileType="multiple_Dwellings" toolType="data_input" toolStatus="Export" exportDate="2016-02-09" id="2.03.02">
+					<name>Environmental Impact of Construction Products</name>
+					<Criterion routeofrigour="Foundation" id="02A.crit05">
+						<inputs>
+							<ProjectDetails>
+								<ProjectName/>
+								<Roles>
+									<HQMAssessor>
+										<person>
+											<Name>NB</Name>
+										</person>
+									</HQMAssessor>
+								</Roles>
+								<BREARN>BREEAM-0000-0000</BREARN>
+							</ProjectDetails>
+							<blockDetails>
+								<BuiltForm>detached</BuiltForm>
+								<BuildScale>low rise</BuildScale>
+								<dwellings>
+									<GIFA unit="m2" xsi:nil="true"/>
+								</dwellings>
+							</blockDetails>
+							<PropertyDetails>
+								<PropertyLocation>
+									<Address/>
+								</PropertyLocation>
+							</PropertyDetails>
+							<dwellingTypeDetails>
+								<PropertyType>house</PropertyType>
+								<BedroomCount unit="Bed">3</BedroomCount>
+								<PropertyPosition>detached</PropertyPosition>
+								<GIFA unit="m2">84</GIFA>
+							</dwellingTypeDetails>
+							<constructionSystems>
+								<system>
+									<qty>4</qty>
+									<systemList systemListID="SL_45_10_18">Conservatory wall and roof: Framed glass</systemList>
+								</system>
+								<system>
+									<qty>4</qty>
+									<systemList systemListID="Pr_30_59_23_02">Door: Metal</systemList>
+								</system>
+							</constructionSystems>
+						</inputs>
+					</Criterion>
+					<Criterion id="01.crit04">
+						<inputs>
+							<ProjectDetails>
+								<Roles>
+									<HQMAssessor>
+										<person>
+											<Name>CF</Name>
+										</person>
+									</HQMAssessor>
+								</Roles>
+								<BREARN>BREEAM-0000-0000</BREARN>
+							</ProjectDetails>
+							<constructionProducts>
+								<product>
+									<class>
+										<BREEAMmaterialType>Timber or timber based</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Concrete or cementitious</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Metal</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Timber or timber based</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Metal</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Stone or aggregate</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Metal</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Clay based</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Stone or aggregate</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Plastic, polymer, resin, paint, chemicals and bituminous</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+								<product>
+									<name>1</name>
+									<class>
+										<BREEAMmaterialType>Gypsum</BREEAMmaterialType>
+									</class>
+									<supportingdocuments>
+										<EPDcertificate>
+											<manufacturer>
+												<company/>
+											</manufacturer>
+										</EPDcertificate>
+									</supportingdocuments>
+								</product>
+							</constructionProducts>
+						</inputs>
+						<validations validity="true"/>
+					</Criterion>
+				</Issue>
+			</Category>
+		</Section>
+	</Assessment>
+</ns1:BREEAM>
