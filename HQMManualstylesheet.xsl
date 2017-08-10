@@ -22,7 +22,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				h2.Section{color:#FFFFFF;
 					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
 					div.Section {
-					width: 1230px;
+					width: 1030px;
 					padding: 10px;
 					border: 5px;
 					margin: 0;
@@ -31,7 +31,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				h3.Category{color:#FFFFFF;
 					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
 				div.Category {
-					width: 1200px;
+					width: 1000px;
 					padding: 10px;
 					border: 5px;
 					margin: 0;
@@ -42,7 +42,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				h1.Issue{color:#50C8F5;
 					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
 				div.Issue {
-					width: 1000px;
+					width: 900px;
 					padding: 100px;
 					border: 5px;
 					margin: 0;
@@ -81,7 +81,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<h1 class="Issue">
 				<xsl:apply-templates select="@seq_id" mode="IssueTitle"/>
 			</h1>
-			<!--<xsl:apply-templates select="Aim"/>-->
+			<xsl:apply-templates select="Aim" mode="manualView"/>
 			<!--<xsl:apply-templates select="Benefits"/>-->
 			<!--<xsl:apply-templates select="Context"/>-->
 			<!--<xsl:apply-templates select="Credits" mode="Credits"/>-->
@@ -93,7 +93,15 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<!--<xsl:apply-templates select="." mode="Criteria" />-->
 		</div>
 	</xsl:template>
+	<!--Aim Object -->
+	<xsl:template match="Aim" mode="manualView">
+		<div class="Aim">
+			<h2>Aim</h2>
+			<xsl:value-of select="text()"/>
+		</div>
+	</xsl:template>
 
+	
 	<!--Title Objects -->
 	<xsl:template match="@id" mode="SectionTitle">
 		<span>
