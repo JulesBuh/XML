@@ -90,7 +90,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	
 	<!-- Section Object -->
 	<xsl:template match="Section" mode="manualView">
-		<div class="Section">
+		<div id="{@id}" class="Section">
 			<h2 class="Section">
 				<xsl:apply-templates select="@id" mode="SectionTitle"/>
 			</h2>
@@ -99,7 +99,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	</xsl:template>
 	<!-- Category Object -->
 	<xsl:template match="Category" mode="manualView">
-		<div class="Category">
+		<div id="{@id}" class="Category">
 			<h3 class="Category">
 				<xsl:apply-templates select="@id" mode="CategoryTitle"/>
 			</h3>
@@ -108,7 +108,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	</xsl:template>
 	<!-- Issue Object -->
 	<xsl:template match="Issue" mode="manualView">
-		<div class="Issue" background="{img/@src}" >
+		<div id="{@id}" class="Issue" background="{img/@src}" >
 			<h1 class="Issue">
 				<xsl:apply-templates select="@seq_id" mode="IssueTitle"/>
 			</h1>
