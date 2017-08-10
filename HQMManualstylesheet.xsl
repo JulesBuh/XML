@@ -153,6 +153,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<xsl:for-each select="text()">
 				<p><xsl:value-of select="."/></p>
 			</xsl:for-each>
+			<xsl:for-each select="iframe">
+				<p><xsl:copy-of select="."/></p>
+			</xsl:for-each>
 		</div>
 	</xsl:template>
 
