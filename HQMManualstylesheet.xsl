@@ -4,7 +4,7 @@
 	xmlns:bre="http://www.breeam.com/projects" version="1.0"
     exclude-result-prefixes="xs">
 	<xsl:output method="html" indent="yes"/>
-	<xsl:template match="/">
+	<xsl:template match="bre:BREEAM">
 		<html>
 			<head>
 			</head>
