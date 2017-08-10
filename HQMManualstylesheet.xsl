@@ -42,7 +42,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				h1.Issue{color:#50C8F5;
 					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
 				div.Issue {
-					width: 900px;
+					width: 800px;
 					padding: 100px;
 					border: 5px;
 					margin: 0;
@@ -97,7 +97,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:template match="Aim" mode="manualView">
 		<div class="Aim">
 			<h2>Aim</h2>
-			<xsl:value-of select="text()"/>
+			<xsl:for-each select="text()">
+			<p><xsl:value-of select="."/></p>
+			</xsl:for-each>
 		</div>
 	</xsl:template>
 
