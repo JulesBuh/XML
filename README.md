@@ -20,4 +20,10 @@ Related Feasibility exercises for improving the communication of HQM concepts: T
 
 ## Technical Manual as xml
 Concept model for packaging content as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.
+
 [`https://julesbuh.github.io/XML/HQMManual.xml`](https://julesbuh.github.io/XML/HQMManual.xml)
+
+## Google Earth and kmz files
+Concept of using icons created to facilitate data input for a large number of dwellings and getting their co-ordinates for assessing against our surroundigs issues such as transport. The xsl file transforms the .kml file found within a kmz and where particular HQM icons have been used for the placemarker, information can be extracted.
+
+[`https://julesbuh.github.io/XML/ProjectWithHouseTypes.unzipped.kmz/doc.xml`](https://julesbuh.github.io/XML/ProjectWithHouseTypes.unzipped.kmz/doc.xml)
