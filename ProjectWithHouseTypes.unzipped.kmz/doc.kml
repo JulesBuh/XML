@@ -1,0 +1,2413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="files/HQMKML.xsl"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ProjectWithHouseTypes.kmz</name>
+	<Style id="h_HQM">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>files/DwellingFootprint.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="Dwelling23">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling33</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_cycling">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling19">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type05.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="Dwelling13">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type05.jpg</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_footprintBoundary">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_HQM</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_HQM</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_subway">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_gas_stations">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling18">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type03.jpg</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="Dwelling10">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type02.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="h_hqm_logo">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>files/SiteBoundary.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_Security_Overlooking">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Security_Overlooking</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Security_Overlooking</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_rail">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling8">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type02.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="n_Site">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Site.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_Node_Bus0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_Bus</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_Bus0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling31">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="h_Site">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>files/Site.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling14">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_Dwelling_Type01">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>files/Dwelling_Type01.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="Dwelling29">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type03.jpg</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="Dwelling28">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_Node_Bike">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>files/Node_Bike.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Node_Bus">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Node_Bus.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_cabs">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_Site">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Site</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Site</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_Security_TrafficCalming">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Security_TrafficCalming</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Security_TrafficCalming</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="n_Security_TrafficCalming">
+		<IconStyle>
+			<Icon>
+				<href>files/Security_TrafficCalming.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling4">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type05.jpg</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="n_Node_CarCharge">
+		<IconStyle>
+			<Icon>
+				<href>files/Node_CarCharge.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="n_Security_Overlooking">
+		<IconStyle>
+			<Icon>
+				<href>files/Security_Overlooking.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling16">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="Dwelling22">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling26</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_Dwelling_Type01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Dwelling_Type01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Dwelling_Type01</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling32">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling25">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="h_Node_Bus0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Node_Bus.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling3">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_gas_stations">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_hqm_logo0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/SiteBoundary.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_cabs">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Node_Train">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Node_Train.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling26">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_gas_stations">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_gas_stations</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_gas_stations</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_caution">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_caution</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_caution</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_caution">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Node_CarPool">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Node_CarPool.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_subway">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_subway</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_subway</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling27</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_police">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_police</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_police</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="n_Node_Bus0">
+		<IconStyle>
+			<Icon>
+				<href>files/Node_Bus.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_Node_Bike">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Node_Bike</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Node_Bike</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="h_Security_TrafficCalming">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Security_TrafficCalming.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling15">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_Node_Train">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_Train</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_Train</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_cycling">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_bus">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Security_Overlooking">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Security_Overlooking.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="n_HQM">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/DwellingFootprint.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_Node_CarCharge">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_CarCharge</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_CarCharge</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling0">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type03.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_subway">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_cycling">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cycling</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cycling</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling31</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling2">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="n_Node_CarPool">
+		<IconStyle>
+			<Icon>
+				<href>files/Node_CarPool.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling17">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type05.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="Dwelling27">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_police">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_rail">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_rail</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_rail</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_Node_Bus">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_Bus0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_Bus</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling33">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type02.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="Dwelling5">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_Node_CarPool">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_CarPool</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_CarPool</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling29</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_police">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling1">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Flat_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_caution">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling7">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type03.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_bus">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling11">
+		<IconStyle>
+			<Icon>
+				<href>files/Dwelling_Type02.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="Dwelling34">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_siteBoundary">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_hqm_logo0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_hqm_logo</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_bus">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_bus</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_bus</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_Node_Bike">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Node_Bike.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_Dwelling_Type01">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Dwelling_Type01.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="n_Node_Bus">
+		<IconStyle>
+			<Icon>
+				<href>files/Node_Bus.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Node_CarCharge">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>files/Node_CarCharge.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="n_Node_Train">
+		<IconStyle>
+			<Icon>
+				<href>files/Node_Train.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_cabs">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cabs</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cabs</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_rail">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Project</name>
+		<open>1</open>
+		<LookAt>
+			<longitude>-0.3739642037544144</longitude>
+			<latitude>51.70110648166973</latitude>
+			<altitude>7.913011921239336</altitude>
+			<heading>-29.05199171652555</heading>
+			<tilt>29.62422947105041</tilt>
+			<range>212.9355045561543</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<Folder>
+			<name>Our Surroundings</name>
+			<open>1</open>
+			<Folder>
+				<name>Security</name>
+				<open>1</open>
+				<Placemark>
+					<name>Overlooking</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.373612255911755</longitude>
+						<latitude>51.70114248752078</latitude>
+						<altitude>5.917390781025027</altitude>
+						<heading>-10.91688157935542</heading>
+						<tilt>5.358770910102095</tilt>
+						<range>159.4099289076043</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_police</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.374225971901343,51.70105011968027,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>speed limit</name>
+					<LookAt>
+						<longitude>-0.3736809188218526</longitude>
+						<latitude>51.70108921844781</latitude>
+						<altitude>8.656004666583643</altitude>
+						<heading>-2.730893971554688</heading>
+						<tilt>18.60253013335855</tilt>
+						<range>155.3871862262883</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_caution</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3746467105257434,51.70065029762684,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Overlooking</name>
+					<LookAt>
+						<longitude>-0.373612255911755</longitude>
+						<latitude>51.70114248752078</latitude>
+						<altitude>5.917390781025027</altitude>
+						<heading>-10.91688157935542</heading>
+						<tilt>5.358770910102095</tilt>
+						<range>159.4099289076043</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Security_Overlooking</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.374225971901343,51.70105011968027,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Overlooking</name>
+					<LookAt>
+						<longitude>-0.373612255911755</longitude>
+						<latitude>51.70114248752078</latitude>
+						<altitude>5.917390781025027</altitude>
+						<heading>-10.91688157935542</heading>
+						<tilt>5.358770910102095</tilt>
+						<range>159.4099289076043</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Security_Overlooking</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3738840543199851,51.70107567088626,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Overlooking</name>
+					<LookAt>
+						<longitude>-0.373612255911755</longitude>
+						<latitude>51.70114248752078</latitude>
+						<altitude>5.917390781025027</altitude>
+						<heading>-10.91688157935542</heading>
+						<tilt>5.358770910102095</tilt>
+						<range>159.4099289076043</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Security_Overlooking</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3740390501883451,51.7013988535763,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Traffic Table</name>
+					<LookAt>
+						<longitude>-0.3736225115396519</longitude>
+						<latitude>51.70112250916976</latitude>
+						<altitude>6.048871989636429</altitude>
+						<heading>-2.730848134280556</heading>
+						<tilt>18.60179251326263</tilt>
+						<range>158.0050543959349</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Security_TrafficCalming</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3740332028223836,51.70130801515012,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Home Zone</name>
+					<LookAt>
+						<longitude>-0.3736809188218526</longitude>
+						<latitude>51.70108921844781</latitude>
+						<altitude>8.656004666583643</altitude>
+						<heading>-2.730893971554688</heading>
+						<tilt>18.60253013335855</tilt>
+						<range>155.3871862262883</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Security_TrafficCalming</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3742532735423809,51.70102224494633,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>speed limit</name>
+					<LookAt>
+						<longitude>-0.3736809188218526</longitude>
+						<latitude>51.70108921844781</latitude>
+						<altitude>8.656004666583643</altitude>
+						<heading>-2.730893971554688</heading>
+						<tilt>18.60253013335855</tilt>
+						<range>155.3871862262883</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Security_TrafficCalming</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3736200368903964,51.70135491218802,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Transport</name>
+				<open>1</open>
+				<Placemark>
+					<name>Bricket Wood</name>
+					<open>1</open>
+					<styleUrl>#msn_subway</styleUrl>
+					<Point>
+						<coordinates>-0.3590918,51.7054312,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Car Pool Scheme</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.3732628809256433</longitude>
+						<latitude>51.70106044517155</latitude>
+						<altitude>0</altitude>
+						<heading>-6.903842306815816</heading>
+						<tilt>14.15157898235313</tilt>
+						<range>143.2540824631327</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_cabs</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3732628809256433,51.70106044517155,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Car Charging point</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.3733922302407822</longitude>
+						<latitude>51.70090191496931</latitude>
+						<altitude>0</altitude>
+						<heading>-12.20074105466338</heading>
+						<tilt>0</tilt>
+						<range>63.63965101011813</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_gas_stations</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3734656767113576,51.70087526599734,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bricket Wood</name>
+					<open>1</open>
+					<styleUrl>#msn_rail</styleUrl>
+					<Point>
+						<coordinates>-0.3590918,51.7054312,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bricket Wood, opp West Riding</name>
+					<styleUrl>#msn_bus</styleUrl>
+					<Point>
+						<coordinates>-0.369771,51.705849,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bike Storage</name>
+					<LookAt>
+						<longitude>-0.3738000234715355</longitude>
+						<latitude>51.70100260588231</latitude>
+						<altitude>0</altitude>
+						<heading>-12.20106108518209</heading>
+						<tilt>0</tilt>
+						<range>64.34704636432375</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_cycling</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3740055282833232,51.70101246213341,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Car Charging point</name>
+					<LookAt>
+						<longitude>-0.3733922302407822</longitude>
+						<latitude>51.70090191496931</latitude>
+						<altitude>0</altitude>
+						<heading>-12.20074105466338</heading>
+						<tilt>0</tilt>
+						<range>63.63965101011813</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Node_CarCharge</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3734656767113576,51.70087526599734,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Garston (Watford), adj Bldg Research Establihment</name>
+					<styleUrl>#m_Node_Bus</styleUrl>
+					<Point>
+						<coordinates>-0.374645,51.699894,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bricket Wood</name>
+					<styleUrl>#m_Node_Train</styleUrl>
+					<Point>
+						<coordinates>-0.3590918,51.7054312,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bricket Wood, nr West Riding</name>
+					<styleUrl>#m_Node_Bus0</styleUrl>
+					<Point>
+						<coordinates>-0.369466,51.70589800000001,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bike Storage</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.3739641838202501</longitude>
+						<latitude>51.7011064594811</latitude>
+						<altitude>7.912147334756708</altitude>
+						<heading>-29.05199170083721</heading>
+						<tilt>29.62326064270716</tilt>
+						<range>212.9356107097549</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_Node_Bike</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.373773074670235,51.70113626252235,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Car Pool Scheme</name>
+					<LookAt>
+						<longitude>-0.3732628809256433</longitude>
+						<latitude>51.70106044517155</latitude>
+						<altitude>0</altitude>
+						<heading>-6.903842306815816</heading>
+						<tilt>14.15157898235313</tilt>
+						<range>143.2540824631327</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_Node_CarPool</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3732628809256433,51.70106044517155,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>site boundary</name>
+				<LookAt>
+					<longitude>-0.373860387847843</longitude>
+					<latitude>51.70122362250351</latitude>
+					<altitude>0</altitude>
+					<heading>4.245801958152684e-011</heading>
+					<tilt>1.06186814015897</tilt>
+					<range>184.7237526727529</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_siteBoundary</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-0.3742246260972948,51.7015886972869,0 -0.3741668898079353,51.70144541753064,0 -0.3741940163533453,51.70133975523022,0 -0.3742164335249043,51.70128936323349,0 -0.374230721132931,51.70126257346165,0 -0.374237970080783,51.70123767709152,0 -0.374262483313107,51.70123665844345,0 -0.3744327138389725,51.70123329530196,0 -0.3744733836541281,51.70106200338356,0 -0.3742812895997449,51.70103523808999,0 -0.3743521511055181,51.70079847814489,0 -0.374267794472769,51.70078773130469,0 -0.3742342590664671,51.70078434999759,0 -0.3741877327704912,51.70077284781042,0 -0.3741737509906373,51.70077368623189,0 -0.3741632859544997,51.70077521408837,0 -0.374148189787753,51.70077821976389,0 -0.3741307022330986,51.70077836784057,0 -0.3741144155361076,51.70077994427982,0 -0.3741027618673876,51.70078004292629,0 -0.3740887955863559,51.70078088017756,0 -0.3740736357927055,51.70078028933435,0 -0.3740619884698293,51.7007803879509,0 -0.3740515385409271,51.70078191418302,0 -0.3740375816027819,51.70078275092214,0 -0.3740282525061167,51.70078211098259,0 -0.3740166122111988,51.70078220931594,0 -0.3740026617139813,51.70078304598965,0 -0.3739910253270873,51.70078314424792,0 -0.3739747682908401,51.70078471862771,0 -0.3739654470843934,51.70078407879653,0 -0.3739573208165847,51.70078486582836,0 -0.3739468082681829,51.70078279925266,0 -0.3739408407711664,51.70077566586598,0 -0.3739418040342457,51.70076631898536,0 -0.3739462708884322,51.70075766047631,0 -0.3739379170579349,51.70074767652468,0 -0.3739319508419237,51.70074054605666,0 -0.3739190570366602,51.7007356314951,0 -0.3739097437994388,51.70073499499074,0 -0.3739004318044137,51.70073435867867,0 -0.3738888124729867,51.70073446062207,0 -0.3738771949374631,51.70073456242653,0 -0.3738678870114431,51.70073392617471,0 -0.3738516579123985,51.70073550439265,0 -0.3738458517988386,51.70073555529982,0 -0.3738342409175122,51.70073565716203,0 -0.373820325312394,51.70073649688796,0 -0.3738076030811255,51.70073876127292,0 -0.3737959980515881,51.70073886286724,0 -0.3737774788734571,51.70074117730164,0 -0.3737682585504021,51.70074412757889,0 -0.373746251815108,51.70074575413743,0 -0.3737335415687126,51.70074801665392,0 -0.3737161515243881,51.70074816781281,0 -0.3736999542928221,51.7007497428406,0 -0.373689554221518,51.70075126736379,0 -0.3736802695152541,51.70075063073282,0 -0.3736663818325503,51.70075146834353,0 -0.373650195087466,51.7007530425301,0 -0.3736305231380366,51.70075392978356,0 -0.3736178317608974,51.70075618991722,0 -0.3736109301696688,51.70075839976951,0 -0.3736029159523591,51.70076276911534,0 -0.3735926024760461,51.70076787445777,0 -0.3735834032080587,51.70077081991812,0 -0.3735788775404381,51.70077587491601,0 -0.3735696797242494,51.70077881955695,0 -0.3735628554643522,51.70078461008383,0 -0.3735560316731301,51.70079040029339,0 -0.3735526933032995,51.70079687740714,0 -0.3735505410778217,51.70080477773762,0 -0.3735506877679418,51.70081194239359,0 -0.3735485355215207,51.70081984285065,0 -0.3735486821844425,51.70082700806203,0 -0.3735488288480937,51.70083417335836,0 -0.3735524608070873,51.70084202747641,0 -0.3735526075506346,51.70084919345917,0 -0.3735527542856088,51.70085635967237,0 -0.3735552003150877,51.70086279115469,0 -0.373560019374799,51.70087207151503,0 -0.3735624658245318,51.70087850402339,0 -0.3735672121496747,51.70088420194635,0 -0.3735696589861282,51.70089063525858,0 -0.373572105994594,51.70089706894061,0 -0.3735768532175088,51.70090276828059,0 -0.3735793006238464,51.70090920284329,0 -0.3735829351550823,51.70091706286418,0 -0.3735853830107805,51.70092349819034,0 -0.3735867174636887,51.70093209356812,0 -0.3735891654551482,51.70093852989585,0 -0.3735905000641615,51.70094712621514,0 -0.3735930220594341,51.70095714895214,0 -0.3735919822205092,51.70096289461808,0 -0.3735945822262698,51.70097650776178,0 -0.3735925967610476,51.7009916064343,0 -0.3735962447692531,51.70099948461386,0 -0.3735977504746335,51.70101528765186,0 -0.3735990987751447,51.70102390703431,0 -0.3736004474305721,51.70103252855648,0 -0.3736018756381743,51.70104474966224,0 -0.3736033836919261,51.70106057399746,0 -0.3736060044744471,51.70107423772657,0 -0.3736074346108265,51.70108647407719,0 -0.3736112493769195,51.70110158270949,0 -0.3736138734848404,51.70111526378501,0 -0.373616498704602,51.70112895062479,0 -0.3736180121280086,51.70114481498046,0 -0.3736182526650789,51.70115564067151,0 -0.3736219132331875,51.70116356085782,0 -0.3736210410804874,51.70117656607468,0 -0.3736247837592543,51.70118810397192,0 -0.3736250254962847,51.70119894335561,0 -0.3736263811286011,51.70120761071761,0 -0.373628850974429,51.70121410447575,0 -0.3736290935080222,51.7012249521832,0 -0.3736304502081345,51.70123362632606,0 -0.3736306120620747,51.70124086185864,0 -0.3736330836186641,51.70124736250398,0 -0.3736321312998003,51.70125677894343,0 -0.3736310977927404,51.70126257722979,0 -0.3736358805915974,51.70126834580056,0 -0.3736384351118427,51.70127847416207,0 -0.3736442687636443,51.70128647738686,0 -0.3737128044988713,51.70130513773713,0 -0.3737542490129919,51.70130815034044,0 -0.3737958143422004,51.70130599504775,0 -0.3738419750697108,51.70130151826131,0 -0.3738789891148497,51.70137619745534,0 -0.3739455646457579,51.70161581419962,0 -0.3742246260972948,51.7015886972869,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Site</name>
+				<LookAt>
+					<longitude>-0.3734916252624654</longitude>
+					<latitude>51.70096473517146</latitude>
+					<altitude>0</altitude>
+					<heading>-7.632077210364698</heading>
+					<tilt>4.166361914449421</tilt>
+					<range>115.490549403163</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_Site</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3739632566961026,51.70096684754255,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>My Home</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-0.3736593207917582</longitude>
+				<latitude>51.70140449474556</latitude>
+				<altitude>2.35041210960117</altitude>
+				<heading>6.313059581937362</heading>
+				<tilt>60.00129482685374</tilt>
+				<range>207.1233927800274</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<Folder>
+				<name>Block 1</name>
+				<open>1</open>
+				<Folder>
+					<name>ùserhaus</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.3736855643317</longitude>
+						<latitude>51.70098600492</latitude>
+						<altitude>18.47703150909</altitude>
+						<heading>313.7704863005</heading>
+						<tilt>67.38478364576</tilt>
+						<range>43.00658530259</range>
+					</LookAt>
+					<Placemark>
+						<name>Plot 1</name>
+						<description><![CDATA[<DIV class=content><DIV style="FLOAT: right; MARGIN-LEFT: 10px"></DIV>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"><IMG class="alignleft  wp-image-42469" alt=UK_globalconstructionreview__credit__low_cost_modular_housing src="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png" width=372 height=221 sizes="(max-width: 372px) 100vw, 372px" srcset="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing-150x89.png 150w, http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png 450w">With the need in the United Kingdom of 250,000 homes per year to meet the demand, <I><B>globalconstructionreview</B></I> is telling <I><B>MHProNews</B></I> a new modular home is touted as being ready to occupy in only eight weeks from start to finih, half the normal 16 weeks to build, according to building research firm BRE. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The company has two demonstration units at its facility in Watford Park, one of which has a photovoltaic roof. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The result of a collaborative effort by a Swiss non-profit technology company, Userhaus AG, and the Scottih developer of prefabricated, energy-efficient housing, Tigh Grian Ltd, a 50-unit housing complex in Scotland is already under way utilizing the system. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Manufactured in Wales using a structural insulated panel system (SIPS), the 15 foot by 35 foot modules can be assembled in a variety of configurations of up to five-stories tall. Each unit</SPAN></SPAN><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"> is fully insulated and heated using a whole house mechanical heat recovery ventilation system, with wall-mounted electric panel heaters. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Dr. Stephen Wittkopf, managing director of Üserhuus AG, says, “<SPAN style="COLOR: #800000">The project on the BRE Innovation Park is howcasing a first-in-the-UK integrated, terracotta style cladding and roofing PV system which points the way for future housing – we are looking forward to seeing how it performs and we want to test other technologies.</SPAN>” ## </SPAN></SPAN></P>
+<P>(Photo credit: <STRONG><EM>globalconstructionreview</EM></STRONG>-two modular models at BRE’s Watford Park. Unit on left has PV roof.)</P>]]></description>
+						<LookAt>
+							<longitude>-0.3734916252624654</longitude>
+							<latitude>51.70096473517146</latitude>
+							<altitude>0</altitude>
+							<heading>-7.632077210364698</heading>
+							<tilt>4.166361914449421</tilt>
+							<range>115.490549403163</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_Dwelling_Type01</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>-0.3736666389554133,51.70098332945017,0</coordinates>
+						</Point>
+					</Placemark>
+					<Placemark>
+						<name>FOOTPRINT</name>
+						<styleUrl>#m_footprintBoundary</styleUrl>
+						<LineString>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-0.3737611174704647,51.70100843441968,0 -0.3736030295427062,51.70101745960309,0 -0.3735913374925082,51.70096517932697,0 -0.3737488003874012,51.70095402594994,0 -0.3737611174704647,51.70100843441968,0 
+							</coordinates>
+						</LineString>
+					</Placemark>
+					<Placemark>
+						<name>Plot 2</name>
+						<description><![CDATA[<DIV class=content><DIV style="FLOAT: right; MARGIN-LEFT: 10px"></DIV>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"><IMG class="alignleft  wp-image-42469" alt=UK_globalconstructionreview__credit__low_cost_modular_housing src="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png" width=372 height=221 sizes="(max-width: 372px) 100vw, 372px" srcset="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing-150x89.png 150w, http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png 450w">With the need in the United Kingdom of 250,000 homes per year to meet the demand, <I><B>globalconstructionreview</B></I> is telling <I><B>MHProNews</B></I> a new modular home is touted as being ready to occupy in only eight weeks from start to finih, half the normal 16 weeks to build, according to building research firm BRE. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The company has two demonstration units at its facility in Watford Park, one of which has a photovoltaic roof. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The result of a collaborative effort by a Swiss non-profit technology company, Userhaus AG, and the Scottih developer of prefabricated, energy-efficient housing, Tigh Grian Ltd, a 50-unit housing complex in Scotland is already under way utilizing the system. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Manufactured in Wales using a structural insulated panel system (SIPS), the 15 foot by 35 foot modules can be assembled in a variety of configurations of up to five-stories tall. Each unit</SPAN></SPAN><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"> is fully insulated and heated using a whole house mechanical heat recovery ventilation system, with wall-mounted electric panel heaters. </SPAN></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Dr. Stephen Wittkopf, managing director of Üserhuus AG, says, “<SPAN style="COLOR: #800000">The project on the BRE Innovation Park is howcasing a first-in-the-UK integrated, terracotta style cladding and roofing PV system which points the way for future housing – we are looking forward to seeing how it performs and we want to test other technologies.</SPAN>” ## </SPAN></SPAN></P>
+<P>(Photo credit: <STRONG><EM>globalconstructionreview</EM></STRONG>-two modular models at BRE’s Watford Park. Unit on left has PV roof.)</P>]]></description>
+						<LookAt>
+							<longitude>-0.3734916252624654</longitude>
+							<latitude>51.70096473517146</latitude>
+							<altitude>0</altitude>
+							<heading>-7.632077210364698</heading>
+							<tilt>4.166361914449421</tilt>
+							<range>115.490549403163</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#Dwelling22</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>-0.3736666389554133,51.70098332945017,0</coordinates>
+						</Point>
+					</Placemark>
+					<Placemark>
+						<name>Model</name>
+						<Style id="default">
+						</Style>
+						<Model id="model_2">
+							<altitudeMode>relativeToGround</altitudeMode>
+							<Location>
+								<longitude>-0.373618</longitude>
+								<latitude>51.700965</latitude>
+								<altitude>0</altitude>
+							</Location>
+							<Orientation>
+								<heading>2.061668731969</heading>
+								<tilt>0</tilt>
+								<roll>0</roll>
+							</Orientation>
+							<Scale>
+								<x>1</x>
+								<y>1</y>
+								<z>1</z>
+							</Scale>
+							<Link>
+								<href>files/untitled.dae</href>
+							</Link>
+							<ResourceMap>
+								<Alias>
+									<targetHref>texture.png</targetHref>
+									<sourceHref>untitled/texture.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_0.png</targetHref>
+									<sourceHref>untitled/texture_0.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_1.png</targetHref>
+									<sourceHref>untitled/texture_1.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_10.png</targetHref>
+									<sourceHref>untitled/texture_10.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_11.png</targetHref>
+									<sourceHref>untitled/texture_11.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_12.png</targetHref>
+									<sourceHref>untitled/texture_12.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_2.png</targetHref>
+									<sourceHref>untitled/texture_2.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_3.png</targetHref>
+									<sourceHref>untitled/texture_3.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_4.png</targetHref>
+									<sourceHref>untitled/texture_4.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_5.png</targetHref>
+									<sourceHref>untitled/texture_5.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_6.png</targetHref>
+									<sourceHref>untitled/texture_6.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_7.png</targetHref>
+									<sourceHref>untitled/texture_7.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_8.png</targetHref>
+									<sourceHref>untitled/texture_8.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_9.png</targetHref>
+									<sourceHref>untitled/texture_9.png</sourceHref>
+								</Alias>
+							</ResourceMap>
+						</Model>
+					</Placemark>
+				</Folder>
+			</Folder>
+			<Folder>
+				<name>Block 2</name>
+				<open>1</open>
+				<Folder>
+					<name>WEINERBERGER</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.3736670761034</longitude>
+						<latitude>51.70109189106</latitude>
+						<altitude>10.97192895564</altitude>
+						<heading>274.9051122468</heading>
+						<tilt>56.86103748663</tilt>
+						<range>18.94081989484</range>
+					</LookAt>
+					<Placemark>
+						<name>Plot 3</name>
+						<description><![CDATA[<!DOCTYPE html>
+<html class=" overthrow-enabled">
+<head>
+<title></title>
+<style>
+.content_page {
+	margin-left: 15px;
+}
+.without_sidebar#wrapper #left_content .content_page {
+	margin: 0 15px;
+}
+#wrapper #left_content {
+	margin-right: 340px;
+}
+.without_sidebar#wrapper #left_content {
+	margin-right: 0px;
+}
+#wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.page_margin {
+	padding-top: 130px;
+}
+#page_overlay, body {
+	min-height: 100%;
+}
+html {
+	height: 100%;
+}
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Lato,sans-serif;
+	color: #39444c;
+}
+section {
+	padding: 35px 0;
+}
+.bottom_strip, .event_holder .padding_25, .float_holder, .image_tile_bg, .mark_holder, .questionnaire_button, .tile, .video_container {
+	overflow: hidden;
+}
+.float_holder {
+	position: relative;
+}
+section.blog .float_holder, section.floated_content .float_holder, section.what_others_say .float_holder {
+	margin-bottom: 25px;
+}
+.image_left {
+	float: left;
+	width: calc(40% - 15px);
+	margin-right: 15px;
+}
+.text_right {
+	float: left;
+	width: 60%;
+}
+#mobile_menu, h2:empty {
+	display: none;
+}
+section h1 {
+	margin-top: 0px;
+}
+p {
+	line-height: 1.4em;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+.text_left h3, .text_right h3, .text_right p:first-of-type, .text_right > h1, .text_right > h2, .text_right > h3, .text_right > p, section.what_others_say .text_left h1 {
+	margin-top: 0px;
+}
+#form_submit_button, #submit_button, .grey_video .text_holder h2, .mark_pod h2, .view_all, footer h3, h1, header, section h1, table th {
+	text-transform: uppercase;
+}
+h1, section h1 {
+	font-weight: 400;
+	font-size: 2em;
+}
+a {
+	transition: all 500ms ease-out;
+}
+.mobile_view #mobile_menu, a {
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+}
+a.content_link:active, a.content_link:link, a.content_link:visited {
+	color: #0084aa;
+	text-decoration: underline;
+}
+.responsive_image {
+	width: 100%;
+}
+.image_left img {
+	margin-bottom: 15px;
+}
+.image_left img:last-child {
+	margin-bottom: 0px;
+}
+</style>
+</head>
+<body><div class="page_margin "><div class="without_sidebar" id="wrapper"><div id="left_content"><div class="content_page">
+<section class="floated_content">
+  <div class="float_holder">
+    <div class="text_right">
+      <h1>INNOVATIVE WIENERBERGER E4 BRICK HOUSE BEING BUILT TO THE HOME QUALITY MARK STANDARDS</h1>
+
+      <img class="responsive_image" alt="E4 brick house" src="http://www.homequalitymark.com/filelibrary/images/e4-brickhouse-cs-page-image.jpg" width="100px">
+      
+
+<p>&nbsp;Work started in February 2015 on the latest inspirational building to be constructed at the BRE Innovation Park in Watford. The Wienerberger e4 brick house™, designed in conjunction with Arup, will be one of the first houses built to achieve the new Home Quality Mark launched at Ecobuild in March 2015.</p>
+<p>The design and construction of the three bedroom detached house focuses on the four pillars of Wienerberger's global e4 concept – energy, economy, environment and emotion. It uses a fabric first approach with a clay building envelope delivering a house that has reduced energy needs – meaning lower running costs for the home owner.</p>
+<p>Speaking at the launch Paul Surin, Head of Built Environment for Wienerberger said, "We believe there is a synergy between e4 and the Home Quality Mark, for example in terms of promoting health, wellbeing and quality of life, with a focus on the end user". Further comments from Paul Surin can be seen on video&nbsp;<a class="content_link" href="https://www.youtube.com/watch?v=H4pwzGppc-o&amp;feature=youtu.be" target="_blank">here.</a></p>
+<p>BRE Business Development Director Miles Watkins said, "We are very pleased the Wienerberger e4 brick house has come to the&nbsp;<a class="content_link" href="http://www.bre.co.uk/innovationpark/" target="_blank">Innovation Park</a>, and to have it pilot the new Home Quality Mark. In the UK we have a critical need for quality, affordable, sustainable homes that can be delivered with speed. We are currently managing to deliver 125,000 housing units against the estimated 250,000 required – homes like the e4 can help us close the gap"</p>
+<p>Richard Brown, Category Marketing Manager at Wienerberger and project lead for e4, commented: "We are delighted to be building an e4 house at the BRE Innovation Park. The Innovation Park is home to some of the world's finest examples of sustainable buildings, landscape designs and hundreds of pioneering low carbon materials and technologies. This is the perfect setting to howcase the Wienerberger e4 Brick House concept."</p>
+<p>The Wienerberger e4 brick house is due for completion in early Spring, and there will be an official opening in June.</p>
+<p>&nbsp;</p>
+      
+    </div>
+    <!--text_right--> 
+  </div>
+  <!--float_holder--> 
+  
+</section>
+<!--floated_content-->
+</div></div></div></div></body>
+</html>]]></description>
+						<LookAt>
+							<longitude>-0.3736171051616066</longitude>
+							<latitude>51.70101911341912</latitude>
+							<altitude>0</altitude>
+							<heading>-7.632175685412952</heading>
+							<tilt>4.166362121156744</tilt>
+							<range>115.8073143694387</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#Dwelling21</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>-0.3737084511313749,51.70107602045616,0</coordinates>
+						</Point>
+					</Placemark>
+					<Placemark>
+						<name>Model</name>
+						<Style id="default">
+						</Style>
+						<Model id="model_4">
+							<altitudeMode>relativeToGround</altitudeMode>
+							<Location>
+								<longitude>-0.373634</longitude>
+								<latitude>51.701065</latitude>
+								<altitude>0</altitude>
+							</Location>
+							<Orientation>
+								<heading>2.061668731969</heading>
+								<tilt>0</tilt>
+								<roll>0</roll>
+							</Orientation>
+							<Scale>
+								<x>1</x>
+								<y>1</y>
+								<z>1</z>
+							</Scale>
+							<Link>
+								<href>files/untitled_0.dae</href>
+							</Link>
+							<ResourceMap>
+								<Alias>
+									<targetHref>texture_13.png</targetHref>
+									<sourceHref>untitled/texture.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_0_0.png</targetHref>
+									<sourceHref>untitled/texture_0.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_1_0.png</targetHref>
+									<sourceHref>untitled/texture_1.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_10_0.png</targetHref>
+									<sourceHref>untitled/texture_10.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_11_0.png</targetHref>
+									<sourceHref>untitled/texture_11.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_12_0.png</targetHref>
+									<sourceHref>untitled/texture_12.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_13_0.png</targetHref>
+									<sourceHref>untitled/texture_13.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_14.png</targetHref>
+									<sourceHref>untitled/texture_14.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_15.png</targetHref>
+									<sourceHref>untitled/texture_15.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_2_0.png</targetHref>
+									<sourceHref>untitled/texture_2.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_3_0.png</targetHref>
+									<sourceHref>untitled/texture_3.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_4_0.png</targetHref>
+									<sourceHref>untitled/texture_4.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_5_0.png</targetHref>
+									<sourceHref>untitled/texture_5.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_6_0.png</targetHref>
+									<sourceHref>untitled/texture_6.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_7_0.png</targetHref>
+									<sourceHref>untitled/texture_7.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_8_0.png</targetHref>
+									<sourceHref>untitled/texture_8.png</sourceHref>
+								</Alias>
+								<Alias>
+									<targetHref>texture_9_0.png</targetHref>
+									<sourceHref>untitled/texture_9.png</sourceHref>
+								</Alias>
+							</ResourceMap>
+						</Model>
+					</Placemark>
+					<Placemark>
+						<name>FOOTPRINT</name>
+						<styleUrl>#m_footprintBoundary</styleUrl>
+						<Polygon>
+							<tessellate>1</tessellate>
+							<outerBoundaryIs>
+								<LinearRing>
+									<coordinates>
+										-0.3737633465540424,51.7010682452905,0 -0.373631789626111,51.70108173241356,0 -0.3736504783431749,51.70114671898548,0 -0.3737789667843117,51.70113363185408,0 -0.3737656418423119,51.70107143919154,0 -0.3737633465540424,51.7010682452905,0 
+									</coordinates>
+								</LinearRing>
+							</outerBoundaryIs>
+						</Polygon>
+					</Placemark>
+				</Folder>
+			</Folder>
+			<Folder>
+				<name>Block 3</name>
+				<open>1</open>
+				<Placemark>
+					<name>Plot 4</name>
+					<description><![CDATA[<!DOCTYPE html>
+<html class="js">
+<head>
+<title></title>
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+header, hgroup, footer, section, article, aside {
+	display: block;
+}
+#content {
+	display: inline;
+	margin: 0;
+	padding-top: 20px;
+}
+:focus {
+	outline: 0;
+}
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+	font-size: 0px;
+}
+#wrap {
+	background: #4B5157;
+	margin: 0 auto;
+	width: 920px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+body {
+	background: #4B5157;
+	line-height: 1;
+}
+body {
+	background: #4B5157;
+	border-top: 5px solid #444;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #fff;
+	font-family: "Arial", Arial, Helvetica, sans-serif;
+}
+p {
+	margin: 0 0 1em;
+}
+img {
+	border: 0;
+}
+strong {
+	font-weight: 700;
+}
+</style>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-20 node-type-page lightbox-processed"><div class="clearfix" id="wrap"><section id="content" role="main"><div class="region region-content"><div class="block block-system" id="block-system-main"><div class="content"><div class="content"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><strong>Custom Build -&nbsp;</strong>Tailor your home to suit your family</p>
+<p><img style="width: 900px; height: 227px;" alt="" src="http://www.zerobillhome.com/img/zbh_design1.jpg"></p>
+<p><strong>1)</strong> Choose your house type</p>
+<p><strong>2)</strong> Choose your internal layout.&nbsp;Each house type has a limited range of internal layout options,&nbsp;which can be chosen without altering the structural design, external&nbsp;window location, or service distribution. Most house types also&nbsp;have the option to construct a ‘room in the roof’, which requires a staircase, some additional services, and an extension of the&nbsp;insulated envelope. This extra room, which provides convenient&nbsp;access to the Solar Loft, can either be included in the initial&nbsp;construction, or residents can wait until&nbsp;they can afford to expand&nbsp;their home to suit their expanding family.</p>
+<p><strong>3)</strong> Design your kitchen / bathroom.&nbsp;Either omit the kitchen / bathroom from the contract and get it done&nbsp;yourself, or chose a layout and specification from a standard set of&nbsp;components, to meet your families requirements.</p>
+<p><strong>4)</strong> Choose external materials.&nbsp;Choose from a limited selection of window colour, render colour,&nbsp;front door colour, soffit colour and arrangement of timber&nbsp;weatherboarding.</p>
+<p><strong>5)</strong> Optional extras include.&nbsp;Wood burner in living room or pellet range in kitchen, electric bike,&nbsp;home energy monitoring system, underground rainwater storage,&nbsp;garden terrace, pond, raised beds. ‘Full Code 6 upgrade pack’&nbsp;includes all additional components and consultancy fees required&nbsp;to&nbsp;achieve the certificate for Cfh level 6 accreditation.</p>
+<p><img style="width: 900px; height: 449px;" alt="" src="http://www.zerobillhome.com/img/zbh_design2.jpg"></p>
+</div></div></div></div></div></div></div></section></div></body>
+</html>]]></description>
+					<LookAt>
+						<longitude>-0.3737879152034673</longitude>
+						<latitude>51.70138437128755</latitude>
+						<altitude>0</altitude>
+						<heading>-122.8366236640648</heading>
+						<tilt>25.88180035734547</tilt>
+						<range>78.70962519855439</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#Dwelling32</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3737123947904042,51.70118911638875,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Plot 5</name>
+				<LookAt>
+					<longitude>-0.3742571526378457</longitude>
+					<latitude>51.70100359673494</latitude>
+					<altitude>0</altitude>
+					<heading>171.1683041328614</heading>
+					<tilt>49.70970570555141</tilt>
+					<range>76.71636925087852</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#Dwelling20</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3740686126923198,51.7011323027386,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Plot 6</name>
+				<LookAt>
+					<longitude>-0.3740970120375853</longitude>
+					<latitude>51.70099126159107</latitude>
+					<altitude>6.089244627457208</altitude>
+					<heading>133.609187472407</heading>
+					<tilt>47.13787602851162</tilt>
+					<range>67.9317355570121</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#Dwelling25</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.37408463312536,51.70102921881727,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Plot 7</name>
+				<LookAt>
+					<longitude>-0.3740996436811783</longitude>
+					<latitude>51.70096561104727</latitude>
+					<altitude>7.934912619528442</altitude>
+					<heading>129.435973134178</heading>
+					<tilt>70.78122174025339</tilt>
+					<range>35.1230376252969</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#Dwelling24</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3741350435365454,51.70093591097315,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Plot 8</name>
+				<LookAt>
+					<longitude>-0.3741424768175161</longitude>
+					<latitude>51.70082546861702</latitude>
+					<altitude>9.865726836393424</altitude>
+					<heading>85.29579048356386</heading>
+					<tilt>38.12309724915735</tilt>
+					<range>29.31120312789417</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#Dwelling23</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.374125230680018,51.70082801848776,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Plot 9</name>
+				<LookAt>
+					<longitude>-0.374281590150759</longitude>
+					<latitude>51.70113541461279</latitude>
+					<altitude>4.864680548599096</altitude>
+					<heading>-23.20876413951961</heading>
+					<tilt>53.03835404551869</tilt>
+					<range>36.29868965061703</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#Dwelling12</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3743675667021373,51.70109564647182,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Plot 10</name>
+				<LookAt>
+					<longitude>-0.3742559460150341</longitude>
+					<latitude>51.70127022591915</latitude>
+					<altitude>0</altitude>
+					<heading>-23.20874401417368</heading>
+					<tilt>53.03935055775341</tilt>
+					<range>44.89246963607728</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#Dwelling30</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3743128038763133,51.70117602525382,0</coordinates>
+				</Point>
+			</Placemark>
+			<Folder>
+				<name>Block 9</name>
+				<open>1</open>
+				<LookAt>
+					<longitude>-0.3740547387921211</longitude>
+					<latitude>51.70147501179264</latitude>
+					<altitude>4.868787630458857</altitude>
+					<heading>-23.2085861085971</heading>
+					<tilt>53.03928998614679</tilt>
+					<range>36.45412954183059</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<Folder>
+					<name>Plot 11</name>
+					<open>1</open>
+					<LookAt>
+						<longitude>-0.3740287379021801</longitude>
+						<latitude>51.70148259596861</latitude>
+						<altitude>1.586056216434937</altitude>
+						<heading>21.25258030161631</heading>
+						<tilt>51.36775538661431</tilt>
+						<range>42.046089331052</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<Placemark>
+						<name>Prince Charles House</name>
+						<LookAt>
+							<longitude>-0.3740472888820923</longitude>
+							<latitude>51.70143278142611</latitude>
+							<altitude>0</altitude>
+							<heading>20.45001577891718</heading>
+							<tilt>48.41016831611519</tilt>
+							<range>44.20998344327041</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#Dwelling34</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>-0.3741254263004379,51.70146457592022,0</coordinates>
+						</Point>
+					</Placemark>
+				</Folder>
+				<Placemark>
+					<name>Plot 12</name>
+					<LookAt>
+						<longitude>-0.3740284895917279</longitude>
+						<latitude>51.70147564787155</latitude>
+						<altitude>0</altitude>
+						<heading>-31.39455525549434</heading>
+						<tilt>49.69609774531345</tilt>
+						<range>43.66733082223043</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#Dwelling28</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3740178988026222,51.70147876080483,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
