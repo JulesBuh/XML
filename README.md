@@ -20,4 +20,4 @@ Related Feasibility exercises for improving the communication of HQM concepts: T
 
 ## Technical Manual as xml
 Concept model for packaging content from authoring software as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.
-[`https://julesbuh.github.io/threeD.js-HQM-Daylighting/`](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
+[`https://julesbuh.github.io/XML/HQMManual.xml`](https://julesbuh.github.io/XML/HQMManual.xml)
