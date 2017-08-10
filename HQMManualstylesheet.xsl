@@ -89,8 +89,8 @@
 				}
 				h2.Section{color:#FFFFFF;
 					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
-				div.Section {
-					width: 1000px;
+					div.Section {
+					width: 1230px;
 					padding: 10px;
 					border: 5px;
 					margin: 0;
@@ -139,11 +139,13 @@
 				</style>
 			</head>
 			<body>
-				<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
+				<xsl:element name="img">
+					<xsl:attribute name="src">
+						<xsl:text>http://www.homequalitymark.com/images/home_quality_mark_logo.png</xsl:text>
+					</xsl:attribute>
+				</xsl:element>
 				<h1>HQM Assessment View</h1>
 				<xsl:apply-templates select="*//Section" mode="assessmentView"/>
-				<h1>Project Object View</h1>
-				<!--<xsl:apply-templates select="/" mode="ProjectView"/>-->
 			</body>
 		</html>
 	</xsl:template>
@@ -167,7 +169,7 @@
 	</xsl:template>
 	<!-- Issue Object -->
 	<xsl:template match="Issue">
-		<div class="Issue" background="{img/@src}';" >
+		<div class="Issue" background="{img/@src}" >
 			<h1 class="Issue">
 				<xsl:apply-templates select="@seq_id" mode="IssueTitle"/>
 			</h1>
@@ -175,7 +177,10 @@
 			<xsl:apply-templates select="Benefits"/> 
 			<xsl:apply-templates select="Context"/>
 			<!--<xsl:apply-templates select="Credits" mode="Credits"/>-->
-			<img width="800" src="{img/@src}"/>
+			<xsl:element name="img">
+				<xsl:attribute name="src"><xsl:value-of select="img/@src"/></xsl:attribute>
+				<xsl:attribute name="width"><xsl:text>800</xsl:text></xsl:attribute>
+			</xsl:element>
 			<!--<xsl:apply-templates select="." mode="CreditSummary" />-->
 			<!--<xsl:apply-templates select="." mode="Criteria" />-->
 		</div>
