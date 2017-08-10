@@ -49,6 +49,28 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 					background-color:#eeeeff;
 				}
 				</style>
+				<style>
+				div.Aim {
+				width: 780px;
+				padding: 10px;
+				margin: 0;
+				color:#39444c;
+				background-color:#FFFFFF;
+				}
+				div.Benefits {
+				width: 780px;
+				padding: 10px;
+				margin: 0;
+				color:#39444c;
+				background-color:#FFFFFF;
+				}
+				div.Context {
+				width: 780px;
+				padding: 10px;
+				margin: 0;
+				color:#39444c;
+				background-color:#FFFFFF;
+				}</style>
 				</head>
 			<body>
 				<h1><xsl:value-of select="bre:BREEAM/Manual/Version/name/."/></h1>
@@ -82,7 +104,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				<xsl:apply-templates select="@seq_id" mode="IssueTitle"/>
 			</h1>
 			<xsl:apply-templates select="Aim" mode="manualView"/>
-			<!--<xsl:apply-templates select="Benefits"/>-->
+			<xsl:apply-templates select="Benefits" mode="manualView"/>
 			<!--<xsl:apply-templates select="Context"/>-->
 			<!--<xsl:apply-templates select="Credits" mode="Credits"/>-->
 			<xsl:element name="img">
@@ -99,6 +121,19 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<h2>Aim</h2>
 			<xsl:for-each select="text()">
 			<p><xsl:value-of select="."/></p>
+			</xsl:for-each>
+		</div>
+	</xsl:template>
+	<!--Benefit Object -->
+	<xsl:template match="Benefits" mode="manualView">
+		<div class="Benefits">
+			<h2>Benefits</h2>
+			<xsl:for-each select="Benefit">
+				
+					<xsl:for-each select="text()">
+			<li><xsl:value-of select="."/></li>
+			</xsl:for-each>
+				
 			</xsl:for-each>
 		</div>
 	</xsl:template>
