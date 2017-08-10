@@ -1,6 +1,7 @@
 <xsl:stylesheet 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:bre="http://www.breeam.com/projects" version="1.0"
     exclude-result-prefixes="xs">
 	<xsl:output method="html" indent="yes"/>
 	<xsl:template match="/">
