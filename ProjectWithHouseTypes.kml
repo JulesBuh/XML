@@ -7,7 +7,7 @@
 		<IconStyle>
 			<scale>2.4</scale>
 			<Icon>
-				<href>icon/DwellingFootprint.png</href>
+				<href>https://julesbuh.github.io/XML/icon/DwellingFootprint.png</href>
 			</Icon>
 			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -51,7 +51,7 @@
 	<Style id="Dwelling19">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type05.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type05.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -61,7 +61,7 @@
 	<Style id="Dwelling13">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type05.jpg</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -131,7 +131,7 @@
 	<Style id="Dwelling18">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type03.jpg</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type03.jpg</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -141,7 +141,7 @@
 	<Style id="Dwelling10">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type02.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -152,7 +152,7 @@
 		<IconStyle>
 			<scale>2.4</scale>
 			<Icon>
-				<href>icon/SiteBoundary.png</href>
+				<href>https://julesbuh.github.io/XML/icon/SiteBoundary.png</href>
 			</Icon>
 			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -199,7 +199,7 @@
 	<Style id="Dwelling8">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type02.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -210,7 +210,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Site.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
 			</Icon>
 		</IconStyle>
 		<LineStyle>
@@ -234,7 +234,7 @@
 	<Style id="Dwelling31">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type04.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -245,7 +245,7 @@
 		<IconStyle>
 			<scale>2.4</scale>
 			<Icon>
-				<href>icon/Site.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
 			</Icon>
 		</IconStyle>
 		<LineStyle>
@@ -259,7 +259,7 @@
 	<Style id="Dwelling14">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -270,7 +270,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>icon/Dwelling_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
 			</Icon>
 		</IconStyle>
 		<ListStyle>
@@ -279,7 +279,7 @@
 	<Style id="Dwelling29">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type03.jpg</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type03.jpg</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -300,7 +300,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>icon/Node_Bike.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -321,7 +321,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Node_Bus.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -391,7 +391,7 @@
 	<Style id="n_Security_TrafficCalming">
 		<IconStyle>
 			<Icon>
-				<href>icon/Security_TrafficCalming.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -412,7 +412,7 @@
 	<Style id="Dwelling4">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type05.jpg</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -422,7 +422,7 @@
 	<Style id="n_Node_CarCharge">
 		<IconStyle>
 			<Icon>
-				<href>icon/Node_CarCharge.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -443,7 +443,7 @@
 	<Style id="n_Security_Overlooking">
 		<IconStyle>
 			<Icon>
-				<href>icon/Security_Overlooking.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -464,7 +464,7 @@
 	<Style id="Dwelling16">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type04.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -515,7 +515,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Node_Bus.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -533,7 +533,7 @@
 	<Style id="Dwelling3">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -566,7 +566,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/SiteBoundary.png</href>
+				<href>https://julesbuh.github.io/XML/icon/SiteBoundary.png</href>
 			</Icon>
 			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -607,7 +607,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Node_Train.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -625,7 +625,7 @@
 	<Style id="Dwelling26">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -688,7 +688,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Node_CarPool.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -736,7 +736,7 @@
 	<Style id="n_Node_Bus0">
 		<IconStyle>
 			<Icon>
-				<href>icon/Node_Bus.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -768,7 +768,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Security_TrafficCalming.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -786,7 +786,7 @@
 	<Style id="Dwelling15">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -857,7 +857,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Security_Overlooking.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -876,7 +876,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/DwellingFootprint.png</href>
+				<href>https://julesbuh.github.io/XML/icon/DwellingFootprint.png</href>
 			</Icon>
 			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -898,7 +898,7 @@
 	<Style id="Dwelling0">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type03.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type03.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -950,7 +950,7 @@
 	<Style id="Dwelling2">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -958,7 +958,7 @@
 	<Style id="n_Node_CarPool">
 		<IconStyle>
 			<Icon>
-				<href>icon/Node_CarPool.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -979,7 +979,7 @@
 	<Style id="Dwelling17">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type05.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type05.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -989,7 +989,7 @@
 	<Style id="Dwelling27">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type04.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type04.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1041,7 +1041,7 @@
 	<Style id="Dwelling33">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type02.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1051,7 +1051,7 @@
 	<Style id="Dwelling5">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1104,7 +1104,7 @@
 	<Style id="Dwelling1">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Flat_Type04.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type04.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1139,7 +1139,7 @@
 	<Style id="Dwelling7">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type03.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type03.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1171,7 +1171,7 @@
 	<Style id="Dwelling11">
 		<IconStyle>
 			<Icon>
-				<href>icon/Dwelling_Type02.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1212,7 +1212,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Node_Bike.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -1236,7 +1236,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Dwelling_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
 			</Icon>
 		</IconStyle>
 		<ListStyle>
@@ -1245,7 +1245,7 @@
 	<Style id="n_Node_Bus">
 		<IconStyle>
 			<Icon>
-				<href>icon/Node_Bus.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -1267,7 +1267,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>icon/Node_CarCharge.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
@@ -1285,7 +1285,7 @@
 	<Style id="n_Node_Train">
 		<IconStyle>
 			<Icon>
-				<href>icon/Node_Train.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -1794,7 +1794,7 @@
 								<z>1</z>
 							</Scale>
 							<Link>
-								<href>icon/untitled.dae</href>
+								<href>https://julesbuh.github.io/XML/icon/untitled.dae</href>
 							</Link>
 							<ResourceMap>
 								<Alias>
@@ -2041,7 +2041,7 @@ a.content_link:active, a.content_link:link, a.content_link:visited {
 								<z>1</z>
 							</Scale>
 							<Link>
-								<href>icon/untitled_0.dae</href>
+								<href>https://julesbuh.github.io/XML/icon/untitled_0.dae</href>
 							</Link>
 							<ResourceMap>
 								<Alias>
