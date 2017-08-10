@@ -105,7 +105,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			</h1>
 			<xsl:apply-templates select="Aim" mode="manualView"/>
 			<xsl:apply-templates select="Benefits" mode="manualView"/>
-			<!--<xsl:apply-templates select="Context"/>-->
+			<xsl:apply-templates select="Context" mode="manualView"/>
 			<!--<xsl:apply-templates select="Credits" mode="Credits"/>-->
 			<xsl:element name="img">
 				<xsl:attribute name="src"><xsl:value-of select="img/@src"/></xsl:attribute>
@@ -129,11 +129,20 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 		<div class="Benefits">
 			<h2>Benefits</h2>
 			<xsl:for-each select="Benefit">
-				
+				<li>
 					<xsl:for-each select="text()">
-			<li><xsl:value-of select="."/></li>
+						<xsl:value-of select="."/>
+					</xsl:for-each>
+				</li>
 			</xsl:for-each>
-				
+		</div>
+	</xsl:template>
+	<!--Context Object -->
+	<xsl:template match="Context" mode="manualView">
+		<div class="Context">
+			<h2>Context</h2>
+			<xsl:for-each select="text()">
+				<p><xsl:value-of select="."/></p>
 			</xsl:for-each>
 		</div>
 	</xsl:template>
