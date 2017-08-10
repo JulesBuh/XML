@@ -73,8 +73,11 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				}</style>
 				</head>
 			<body>
-				<h1><xsl:value-of select="bre:BREEAM/Manual/Version/name/."/></h1>
+				<h1><a href="http://www.homequalitymark.com/standard"><img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/><xsl:value-of select="bre:BREEAM/Manual/Version/name/."/></a></h1>
+				THIS IS A PROTOTYPE and does not guarantee that information contained within matches the ffficial version, To view the official HQM version visit <a href="http://www.homequalitymark.com/standard">http://www.homequalitymark.com/standard</a>
+				
 				<xsl:apply-templates select="*//Section" mode="manualView"/>
+				
 			</body>
 		</html>
 	</xsl:template>
