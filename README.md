@@ -14,7 +14,7 @@ The following file loads the schema associated with the input file and displays 
 [`https://julesbuh.github.io/XML/InputWithSchema.xml`](https://julesbuh.github.io/XML/InputWithSchema.xml)
 
 ## Visualise tools
-Related Feasibility exercises for improving the communication of HQM concepts: This example builds a parametric model for the daylight issue, showing how the equations relate to the geometry. This could aid training as well as be extended to be an actual tool in the online assessment.
+Related Feasibility exercises for improving the communication of HQM concepts: This example builds an interactive parametric model for the daylight issue, showing how the equations relate to the geometry. This could aid training as well as be extended to be an actual tool in the online assessment. The javasript definition for this file could be hard coded into the xml manual in the relevant issue and this page could be built by xsl as the other examples on this page are. 
 
 [`https://julesbuh.github.io/threeD.js-HQM-Daylighting/`](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
 
