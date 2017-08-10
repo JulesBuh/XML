@@ -20,6 +20,7 @@
 				<h2>
 					<xsl:text>KML import</xsl:text>
 				</h2>
+				<iframe src="GoogleMaps.html" width="800" height="400"></iframe>
 				<xsl:call-template name="kmlStyleMaps"/>
 				<xsl:apply-templates select="/" mode="Placemark"/>
 				<xsl:apply-templates select="/" mode="TransportPlacemark"/>
