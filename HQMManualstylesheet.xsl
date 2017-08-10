@@ -17,6 +17,15 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 					margin: 0;
 					background-color:#003552;
 				}
+				h3.Category{color:#FFFFFF;
+					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
+				div.Category {
+					width: 1200px;
+					padding: 10px;
+					border: 5px;
+					margin: 0;
+					background-color:#003552;
+				}
 				</style>
 			</head>
 			<body>
@@ -32,9 +41,19 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<h2 class="Section">
 				<xsl:apply-templates select="@id" mode="SectionTitle"/>
 			</h2>
-			<!--<xsl:apply-templates select="Category" mode="manualView"/>-->
+			<xsl:apply-templates select="Category" mode="manualView"/>
 		</div>		
 	</xsl:template>
+	<!-- Category Object -->
+	<xsl:template match="Category" mode="manualView">
+		<div class="Category">
+			<h3 class="Category">
+				<xsl:apply-templates select="@id" mode="Title"/>
+			</h3>
+			<!--<xsl:apply-templates select="Issue"/> -->
+		</div>
+	</xsl:template>
+
 	
 	<xsl:template match="@id" mode="SectionTitle">
 		<span>
