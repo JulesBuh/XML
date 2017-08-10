@@ -9,9 +9,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<head>
 			</head>
 			<body>
-
-				<h1>HQM Assessment View</h1>
-				<!--<xsl:apply-templates select="*//Section" mode="assessmentView"/>-->
+				<h1><xsl:value-of select="bre:BREEAM/Manual/Version/name/."/></h1>
 			</body>
 		</html>
 	</xsl:template>

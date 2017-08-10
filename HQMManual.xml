@@ -52,7 +52,7 @@ In undertaking an assessment and determining an HQM rating the HQM assessor must
 			The Mark enables consumers to make a smart choice and provides home builders and others with the tools to differentiate their new homes by providing;
 			–A star rating, scored out of 5 stars
 			–Indicators of performance, ranked on a 5 point scale.
-				<?for-each <xsl:value-of select="BREEAM/Manual/SchemeParts/part/name[text()='Indicators']/Indicator/@name" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />?></description>
+				<xsl:value-of select="BREEAM/Manual/SchemeParts/part/name[text()='Indicators']/Indicator/@name" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" /></description>
       <description title="HQM Application&#xA;&#x9;&#x9;&#x9;">
         <description title="What can HQM assess?">
 			The Home Quality Mark can be used to assess the life cycle environmental, social and economic impacts of new build homes in England, Wales, Scotland and Northern Ireland only.
@@ -84,7 +84,7 @@ Anyone wishing to verify a certified assessment and rating of a new home against
 				<xsl:for-each select="BREEAM/Section"><xsl:value-of select="name" /> - <xsl:value-of select="description" /></xsl:for-each></description>
       <description>Each assessment issue has a number of ‘credits’ available and this number reflects the issues importance relative to other issues in the scheme. The HQM assessor awards the appropriate number of credits where it is demonstrated that the new home meets the issue criteria. The sum of these credits determines the star rating and performance against each of the HQM indicators (refer to Appendix A for a description of the scoring and rating methodology and benchmarks).</description>
       <description>Each of the assessment issues that define HQM is structured as follows:
-				<?for-each <xsl:value-of select="BREEAM/Manual/SchemeParts/part[@type='IssueStructure']/name" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />?></description>
+				<xsl:value-of select="BREEAM/Manual/SchemeParts/part[@type='IssueStructure']/name" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" /></description>
     </Documentation>
     <SchemeParts>
       <part type="SchemeStructure">
@@ -182,7 +182,7 @@ Anyone wishing to verify a certified assessment and rating of a new home against
           <Indicator name="My Footprint" />
         </Indicators>
         <credit ref="Issue/Criteria/Credits/credit">
-          <?for-each <xsl:value-of select="sum(Category/Credits/credit)" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />?>
+          <xsl:value-of select="sum(Category/Credits/credit)" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />
         </credit>
       </Credits>
       <Category id="1.01">
@@ -200,7 +200,7 @@ Anyone wishing to verify a certified assessment and rating of a new home against
             <Indicator name="My Footprint" />
           </Indicators>
           <credit ref="Issue/Criteria/Credits/credit">
-            <?for-each <xsl:value-of select="sum(Issue/Credits/credit)" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />?>
+            <xsl:value-of select="sum(Issue/Credits/credit)" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />
           </credit>
         </Credits>
         <Issue id="1.01.01" seq_id="1">
