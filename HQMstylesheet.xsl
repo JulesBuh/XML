@@ -123,7 +123,7 @@
 
 	<xsl:template match="/" mode="ProjectDetails">
 		<h2>
-			<img src="icon\Phases.png" width="50px"/>Project Information
+			<img src="icon/Phases.png" width="50px"/>Project Information
 		</h2>
 		<table class="validity">	
 			<tr>
@@ -445,7 +445,7 @@
 
 	<xsl:template match="/" mode="TeamDetails">
 		<h2>
-			<img src="icon\logo-breeam.png" width="50px"/>Project Team Information
+			<img src="icon/logo-breeam.png" width="50px"/>Project Team Information
 		</h2>
 		<table class="validity">	
 			<tr>
@@ -805,7 +805,7 @@
 
 	<xsl:template match="/" mode="SiteDetails">
 		<h2>
-			<img src="icon\Site.png" width="50px"/>Site Information
+			<img src="icon/Site.png" width="50px"/>Site Information
 		</h2>
 		<table class="validity">	
 			<tr>
@@ -916,7 +916,7 @@
 
 
 		<h2>
-			<img src="icon\Block.png" width="50px"/>Block Information
+			<img src="icon/Block.png" width="50px"/>Block Information
 		</h2>
 		<xsl:for-each select="*//Issue">
 			<xsl:sort select="../../Issue//@id"/>
@@ -927,7 +927,7 @@
 		</xsl:for-each>
 
 		<h2>
-			<img src="icon\Dwelling.png" width="50px"/>Dwelling Information
+			<img src="icon/Dwelling.png" width="50px"/>Dwelling Information
 		</h2>
 		<xsl:for-each select="*//PropertyType">
 			<p>
@@ -938,7 +938,7 @@
 				<xsl:value-of select="."/> - (<xsl:value-of select="../../..//@id"/>)</p>
 		</xsl:for-each>
 		<h2>
-			<img src="icon\Room.png" width="50px"/>Space Information
+			<img src="icon/Room.png" width="50px"/>Space Information
 		</h2>
 		<xsl:for-each select="*//Issue">
 
@@ -966,7 +966,7 @@
 			</xsl:for-each>
 		</xsl:for-each>
 		<h2>
-			<img src="icon\constructions.png" width="50px"/>Construction Information
+			<img src="icon/constructions.png" width="50px"/>Construction Information
 		</h2>
 		<xsl:for-each select="*//system">
 			<p>
@@ -1084,7 +1084,7 @@
 
 	<xsl:template match="ProjectDetails">
 		<h4>
-			<img src="icon\phases.png" width="20px"/>Project Information
+			<img src="icon/phases.png" width="20px"/>Project Information
 		</h4>
 		<span>
 			<xsl:for-each select=".">
@@ -1096,7 +1096,7 @@
 
 	<xsl:template match="siteDetails">
 		<h4>
-			<img src="icon\Site.png" width="20px"/>Site Information
+			<img src="icon/Site.png" width="20px"/>Site Information
 		</h4>
 		<span>
 			<xsl:for-each select=".">
@@ -1109,7 +1109,7 @@
 
 	<xsl:template match="PropertyDetails">
 		<h4>
-			<img src="icon\Dwelling.png" width="20px"/>Dwelling Information
+			<img src="icon/Dwelling.png" width="20px"/>Dwelling Information
 		</h4>
 		<span>
 			<xsl:for-each select=".">
@@ -1122,7 +1122,7 @@
 
 	<xsl:template match="dwellingTypeDetails">
 		<h4>
-			<img src="icon\Dwelling.png" width="20px"/>Dwelling Type Information
+			<img src="icon/Dwelling.png" width="20px"/>Dwelling Type Information
 		</h4> 
 		<span>
 
@@ -1135,7 +1135,7 @@
 
 	<xsl:template match="constructionSystems">
 		<h4>
-			<img src="icon\constructions.png" width="20px"/>Construction Information
+			<img src="icon/constructions.png" width="20px"/>Construction Information
 		</h4>
 		<span>
 			<xsl:for-each select="system">
@@ -1150,7 +1150,7 @@
 
 	<xsl:template match="constructionProducts">
 		<h4>
-			<img src="icon\constructions.png" width="20px"/>Product Information
+			<img src="icon/constructions.png" width="20px"/>Product Information
 		</h4>
 		<span>
 			<xsl:for-each select="product">
@@ -1164,7 +1164,7 @@
 
 	<xsl:template match="Spaces">
 		<h4>
-			<img src="icon\Room.png" width="20px"/>Spatial Information
+			<img src="icon/Room.png" width="20px"/>Spatial Information
 		</h4>
 		<span>
 			<xsl:value-of select="."/> (<xsl:value-of select="../../..//@id"/>)
