@@ -16,28 +16,28 @@
 					font-family:FrutigerBQ-Bold,Calvert;}
 					h2{color:#232D96;}
 				</style>
-				<style>
-				div.Aim {
-					width: 800px;
-					padding: 10px;
-					margin: 0;
-					color:#39444c;
-					background-color:#FFFFFF;
-				}
-				div.Benefits {
-					width: 800px;
-					padding: 10px;
-					margin: 0;
-					color:#39444c;
-					background-color:#FFFFFF;
-				}
-				div.Context {
-					width: 800px;
-					padding: 10px;
-					margin: 0;
-					color:#39444c;
-					background-color:#FFFFFF;
-				}</style>
+			<style>
+	div.Aim {
+	width: 780px;
+	padding: 10px;
+	margin: 0;
+	color:#39444c;
+	background-color:#FFFFFF;
+	}
+	div.Benefits {
+	width: 780px;
+	padding: 10px;
+	margin: 0;
+	color:#39444c;
+	background-color:#FFFFFF;
+	}
+	div.Context {
+	width: 780px;
+	padding: 10px;
+	margin: 0;
+	color:#39444c;
+	background-color:#FFFFFF;
+	}</style>
 				<style>
 				h2.Credits{color:#FFFFFF;}
 				div.Credits {
@@ -145,7 +145,7 @@
 					</xsl:attribute>
 				</xsl:element>
 				<h1>HQM Assessment View</h1>
-				<xsl:apply-templates select="*//Section" mode="assessmentView"/>
+				<!--<xsl:apply-templates select="*//Section" mode="assessmentView"/>-->
 			</body>
 		</html>
 	</xsl:template>
