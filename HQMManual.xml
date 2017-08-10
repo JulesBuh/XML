@@ -3316,23 +3316,20 @@ Note: Pedestrian routes that are outside of the development site and therefore n
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
-          <Aim>
-            <target>
-              <person>Assessor
-								<Uniclass code="PM_10_80_27">Environmental assessor</Uniclass></person>
-              <person>Designer
-								<Uniclass code="PM_10_50_25">Design lead</Uniclass></person>
-            </target>
+          <Aim><target>
+              <person>Assessor<Uniclass code="PM_10_80_27">Environmental assessor</Uniclass></person>
+              <person>Designer<Uniclass code="PM_10_50_25">Design lead</Uniclass></person>
+            </target>To promote good daylighting, thereby improving the occupants’ quality of life and reducing the amount of energy used to light the home
           </Aim>
           <Benefits>
-            <Benefit>
+            <Benefit>Provides mental and physical benefits to the occupier
               <target>
                 <person>Assessor
 									<Uniclass code="PM_10_80_27">Environmental assessor</Uniclass><Uniclass code="PM_10_90_01">Access consultant</Uniclass></person>
                 <person>Homeowner</person>
               </target>
             </Benefit>
-            <Benefit>
+            <Benefit>Helps lower energy costs and environmental impact by reducing the need for artificial light
               <target>
                 <person>Assessor
 									<Uniclass code="PM_10_80_27">Environmental assessor</Uniclass></person>
@@ -3341,17 +3338,12 @@ Note: Pedestrian routes that are outside of the development site and therefore n
 									<Uniclass code="PM_10_70_64">Planning consultant</Uniclass><Uniclass code="PM_10_90_01">Access consultant</Uniclass><Uniclass code="PM_10_65_73">Public health engineer</Uniclass></person>
               </target>
             </Benefit>
-            <Benefit>
-              <target>
-                <person>Assessor
-									<Uniclass code="PM_10_80_27">Environmental assessor</Uniclass></person>
-                <person>Homeowner</person>
-                <person>Lender
-									<Uniclass code="PM_10_20_05">Asset manager</Uniclass><Uniclass code="PM_10_20_10">Asset management advisor</Uniclass><Uniclass code="PM_10_95_43">Insurance consultant</Uniclass><Uniclass code="PM_10_60_22">Cost consultant</Uniclass><Uniclass code="PM_10_90_01">Access consultant</Uniclass></person>
-              </target>						</Benefit>
           </Benefits>
-          <Context>
-		  <iframe src=" https://julesbuh.github.io/threeD.js-HQM-Daylighting/" height="800px" width="800px"></iframe>
+          <Context>Evidence indicates that good daylight is one of the most sought-after qualities of a home. Daylight has important health benefits. Exposure to high levels of light during the day aids maintenance of circadian rhythms, especially in elderly people. This improves the quantity and quality of sleep and may benefit the cardiovascular system. Daylight has also been shown to improve mood and reduce depression, including seasonal affective disorder (SAD). Daylight provision is often associated with view out, which provides contact with the outside and a further benefit to mood.
+		  
+		  HQM awards credits for meeting and improving upon the minimum average daylight factor suggested in BS 8206-2.
+
+		  <iframe src=" https://julesbuh.github.io/threeD.js-HQM-Daylighting/" height="800px" width="780px"></iframe>
 		 </Context>
           <References>
             <Reference id="1">
