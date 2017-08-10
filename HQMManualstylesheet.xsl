@@ -17,6 +17,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 					h1{color:#50C8F5;
 					font-family:FrutigerBQ-Bold,Calvert;}
 					h2{color:#232D96;}
+				body.disclaim{
+				width: 1030px;
+				}
 				</style>
 				<style>
 				h2.Section{color:#FFFFFF;
@@ -74,7 +77,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				</head>
 			<body>
 				<h1><a href="http://www.homequalitymark.com/standard"><img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/><xsl:value-of select="bre:BREEAM/Manual/Version/name/."/></a></h1>
-				THIS IS A PROTOTYPE and does not guarantee that information contained within matches the ffficial version, To view the official HQM version visit <a href="http://www.homequalitymark.com/standard">http://www.homequalitymark.com/standard</a>
+				<div class="disclaim">THIS IS A PROTOTYPE showing how the HQM manual, stored within a BREEAM defined xml, can be transformed for display and utilised for the authoring of tools
+				The content on this page is not guaranteed to match the ffficial version, To view the official HQM version visit <a href="http://www.homequalitymark.com/standard">http://www.homequalitymark.com/standard</a></div>
 				
 				<xsl:apply-templates select="*//Section" mode="manualView"/>
 				
