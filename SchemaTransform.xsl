@@ -44,7 +44,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 		
 		<head/>
 		<body>		
-				
+				This page displays the xml file with the associated schema. It and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema with drop downs for defined accepted values for simple enumerator lists.
 			<table>
 			
 				<xsl:copy-of select="$header" />				
