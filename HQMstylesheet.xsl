@@ -938,10 +938,6 @@
 				<xsl:value-of select="."/> - (<xsl:value-of select="../../..//@id"/>)</p>
 		</xsl:for-each>
 		<h2>
-			<xsl:element name="img">
-			<xsl:attribute name="src"><xsl:text>icon/Room.png</xsl:text></xsl:attribute>
-			<xsl:attribute name="width"><xsl:text>50px</xsl:text></xsl:attribute>
-			</xsl:element>
 			<img src="icon/Room.png" width="50px"/>Space Information
 		</h2>
 		<xsl:for-each select="*//Issue">
@@ -1030,7 +1026,7 @@
 				</style>
 			</head>
 			<body>
-				<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
+				<img src="https://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
 				<h2>HQM XML Inputs</h2>
 				<h1>Project Object View</h1>
 				<xsl:apply-templates select="/" mode="ProjectView"/>
