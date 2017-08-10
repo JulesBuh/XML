@@ -1,4 +1,4 @@
-# Hosting XML demonstrating vision for HQM tools and manual authoring
+# Hosting XML demonstrating vision for HQM tools and Technical Manual authoring
 This is a prototype repository for hosting xml, xsd and xsl as a webpage. It does not attempt to match the official HQM release which can be found [http://www.homequalitymark.com/standard](http://www.homequalitymark.com/standard). The standard and trademarks belong to BRE Global Ltd. The purpose of these prototypes are to demonstrate the potential of the XML schema that has been developed by BRE for the HQM standard.
 
 It uses prototype schemas based on the work for [HQM](http://www.homequalitymark.com/) data exchanges used in [HQM assessments](http://www.homequalitymark.com/).
