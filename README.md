@@ -4,7 +4,7 @@ This is a prototype repository for hosting xml, xsd and xsl as a webpage. It doe
 It uses prototype schemas based on the work for [HQM](http://www.homequalitymark.com/) data exchanges used in [HQM assessments](http://www.homequalitymark.com/).
 
 ## Cross-assessment discrepancy checks (QA)
-The following xml file is a hypothetical merged file containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective. 
+The following xml file is a hypothetical merged HQMXMLfile containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective. e.g where different project names have been erroneously entered. It can also accomodate different people contributing to different issues (for example where several contractors have been used at different stages of the project to provide information for a particular issue) 
 
 [`https://julesbuh.github.io/XML/ExampleMergedHQMOutputFile.xml`](https://julesbuh.github.io/XML/ExampleMergedHQMOutputFile.xml)
 
