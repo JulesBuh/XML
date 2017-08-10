@@ -13,7 +13,7 @@ The following file loads the schema associated with the input file and displays 
 
 [`https://julesbuh.github.io/XML/InputWithSchema.xml`](https://julesbuh.github.io/XML/InputWithSchema.xml)
 
-## Visualise tools
+## Visualise tools (Training and assessment potential)
 Related Feasibility exercises for improving the communication of HQM concepts: This example builds an interactive parametric model for the daylight issue, showing how the equations relate to the geometry. This could aid training as well as be extended to be an actual tool in the online assessment. The javasript definition for this file could be hard coded into the xml manual in the relevant issue or the url to the javascript page as demonstrated in the [manual in issue 10](https://julesbuh.github.io/XML/HQMManual.xml#2.01.02)
 
 [`https://julesbuh.github.io/threeD.js-HQM-Daylighting/`](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
@@ -24,6 +24,6 @@ Concept model for packaging content as xml which can then be used to output the 
 [`https://julesbuh.github.io/XML/HQMManual.xml`](https://julesbuh.github.io/XML/HQMManual.xml)
 
 ## Google Earth and kmz files
-Concept of using icons created to facilitate data input for a large number of dwellings and getting their co-ordinates for assessing against our surroundigs issues such as transport. The xsl file transforms the .kml file found within a kmz and where particular HQM icons have been used for the placemarker, information can be extracted.
+Concept of using icons created to facilitate data input for a large number of dwellings and getting their co-ordinates for assessing against ['Our Surroundings'](https://julesbuh.github.io/XML/HQMManual.xml#1) issues such as transport. The xsl file transforms the .kml file found within a kmz and where particular HQM icons have been used for the placemarker, information can be extracted.
 
 [`https://julesbuh.github.io/XML/ProjectWithHouseTypes.unzipped.kmz/doc.xml`](https://julesbuh.github.io/XML/ProjectWithHouseTypes.unzipped.kmz/doc.xml)
