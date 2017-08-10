@@ -1026,7 +1026,7 @@
 				</style>
 			</head>
 			<body>
-				<img src="https://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
+				<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
 				<h2>HQM XML Inputs</h2>
 				<h1>Project Object View</h1>
 				<xsl:apply-templates select="/" mode="ProjectView"/>
