@@ -17,7 +17,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 					h1{color:#50C8F5;
 					font-family:FrutigerBQ-Bold,Calvert;}
 					h2{color:#232D96;}
-				body.disclaim{
+				div.disclaim{
 				width: 1030px;
 				}
 				</style>
@@ -80,7 +80,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				<div class="disclaim">THIS IS A PROTOTYPE showing how the HQM manual, stored within a BREEAM defined xml, can be transformed for display and utilised for the authoring of tools.
 				<p>The content on this page is not guaranteed to match the ffficial version, To view the official HQM version visit <a href="http://www.homequalitymark.com/standard">http://www.homequalitymark.com/standard</a></p>
 				
-				<p>Concept model for packaging content from authoring software as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.</p></div>
+				<p>This xml file is a concept model for packaging content from authoring software as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.</p></div>
 				
 				<xsl:apply-templates select="*//Section" mode="manualView"/>
 				
