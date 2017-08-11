@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://julesbuh.github.io/XML/xsl/KMLstylefinder.xsl"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
@@ -30,7 +30,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/cycling.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -82,7 +82,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/subway.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -107,7 +107,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/gas_stations.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -178,7 +178,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/rail.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -340,7 +340,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/cabs.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -544,7 +544,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/gas_stations.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -582,7 +582,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/cabs.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -666,7 +666,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/caution.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -807,7 +807,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/cycling.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -832,7 +832,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/bus.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -909,7 +909,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/subway.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1000,7 +1000,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/police.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1080,7 +1080,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/police.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1115,7 +1115,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/caution.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1150,7 +1150,7 @@
 		<IconStyle>
 			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/bus.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1317,7 +1317,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapicon/kml/shapes/rail.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1716,13 +1716,7 @@
 					</LookAt>
 					<Placemark>
 						<name>Plot 1</name>
-						<description><![CDATA[<DIV class=content><DIV style="FLOAT: right; MARGIN-LEFT: 10px"></DIV>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"><IMG class="alignleft  wp-image-42469" alt=UK_globalconstructionreview__credit__low_cost_modular_housing src="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png" width=372 height=221 sizes="(max-width: 372px) 100vw, 372px" srcset="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing-150x89.png 150w, http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png 450w">With the need in the United Kingdom of 250,000 homes per year to meet the demand, <I><B>globalconstructionreview</B></I> is telling <I><B>MHProNews</B></I> a new modular home is touted as being ready to occupy in only eight weeks from start to finih, half the normal 16 weeks to build, according to building research firm BRE. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The company has two demonstration units at its facility in Watford Park, one of which has a photovoltaic roof. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The result of a collaborative effort by a Swiss non-profit technology company, Userhaus AG, and the Scottih developer of prefabricated, energy-efficient housing, Tigh Grian Ltd, a 50-unit housing complex in Scotland is already under way utilizing the system. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Manufactured in Wales using a structural insulated panel system (SIPS), the 15 foot by 35 foot modules can be assembled in a variety of configurations of up to five-stories tall. Each unit</SPAN></SPAN><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"> is fully insulated and heated using a whole house mechanical heat recovery ventilation system, with wall-mounted electric panel heaters. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Dr. Stephen Wittkopf, managing director of Üserhuus AG, says, “<SPAN style="COLOR: #800000">The project on the BRE Innovation Park is howcasing a first-in-the-UK integrated, terracotta style cladding and roofing PV system which points the way for future housing – we are looking forward to seeing how it performs and we want to test other technologies.</SPAN>” ## </SPAN></SPAN></P>
-<P>(Photo credit: <STRONG><EM>globalconstructionreview</EM></STRONG>-two modular models at BRE’s Watford Park. Unit on left has PV roof.)</P>]]></description>
+						<description></description>
 						<LookAt>
 							<longitude>-0.3734916252624654</longitude>
 							<latitude>51.70096473517146</latitude>
@@ -1750,13 +1744,7 @@
 					</Placemark>
 					<Placemark>
 						<name>Plot 2</name>
-						<description><![CDATA[<DIV class=content><DIV style="FLOAT: right; MARGIN-LEFT: 10px"></DIV>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"><IMG class="alignleft  wp-image-42469" alt=UK_globalconstructionreview__credit__low_cost_modular_housing src="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png" width=372 height=221 sizes="(max-width: 372px) 100vw, 372px" srcset="http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing-150x89.png 150w, http://www.mhmarketingsalesmanagement.com/blogs/daily-business-news/wp-content/uploads/2015/09/UK_globalconstructionreview__credit__low_cost_modular_housing.png 450w">With the need in the United Kingdom of 250,000 homes per year to meet the demand, <I><B>globalconstructionreview</B></I> is telling <I><B>MHProNews</B></I> a new modular home is touted as being ready to occupy in only eight weeks from start to finih, half the normal 16 weeks to build, according to building research firm BRE. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The company has two demonstration units at its facility in Watford Park, one of which has a photovoltaic roof. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">The result of a collaborative effort by a Swiss non-profit technology company, Userhaus AG, and the Scottih developer of prefabricated, energy-efficient housing, Tigh Grian Ltd, a 50-unit housing complex in Scotland is already under way utilizing the system. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Manufactured in Wales using a structural insulated panel system (SIPS), the 15 foot by 35 foot modules can be assembled in a variety of configurations of up to five-stories tall. Each unit</SPAN></SPAN><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small"> is fully insulated and heated using a whole house mechanical heat recovery ventilation system, with wall-mounted electric panel heaters. </SPAN></SPAN></P>
-<P><SPAN style="FONT-FAMILY: Tahoma,sans-serif"><SPAN style="FONT-SIZE: small">Dr. Stephen Wittkopf, managing director of Üserhuus AG, says, “<SPAN style="COLOR: #800000">The project on the BRE Innovation Park is howcasing a first-in-the-UK integrated, terracotta style cladding and roofing PV system which points the way for future housing – we are looking forward to seeing how it performs and we want to test other technologies.</SPAN>” ## </SPAN></SPAN></P>
-<P>(Photo credit: <STRONG><EM>globalconstructionreview</EM></STRONG>-two modular models at BRE’s Watford Park. Unit on left has PV roof.)</P>]]></description>
+						<description></description>
 						<LookAt>
 							<longitude>-0.3734916252624654</longitude>
 							<latitude>51.70096473517146</latitude>
@@ -1794,7 +1782,7 @@
 								<z>1</z>
 							</Scale>
 							<Link>
-								<href>https://julesbuh.github.io/XML/icon/untitled.dae</href>
+								<href>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/untitled.dae</href>
 							</Link>
 							<ResourceMap>
 								<Alias>
@@ -1874,136 +1862,7 @@
 					</LookAt>
 					<Placemark>
 						<name>Plot 3</name>
-						<description><![CDATA[<!DOCTYPE html>
-<html class=" overthrow-enabled">
-<head>
-<title></title>
-<style>
-.content_page {
-	margin-left: 15px;
-}
-.without_sidebar#wrapper #left_content .content_page {
-	margin: 0 15px;
-}
-#wrapper #left_content {
-	margin-right: 340px;
-}
-.without_sidebar#wrapper #left_content {
-	margin-right: 0px;
-}
-#wrapper {
-	position: relative;
-	width: 100%;
-	max-width: 1366px;
-	margin: 0 auto;
-}
-.page_margin {
-	padding-top: 130px;
-}
-#page_overlay, body {
-	min-height: 100%;
-}
-html {
-	height: 100%;
-}
-body, html {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: Lato,sans-serif;
-	color: #39444c;
-}
-section {
-	padding: 35px 0;
-}
-.bottom_strip, .event_holder .padding_25, .float_holder, .image_tile_bg, .mark_holder, .questionnaire_button, .tile, .video_container {
-	overflow: hidden;
-}
-.float_holder {
-	position: relative;
-}
-section.blog .float_holder, section.floated_content .float_holder, section.what_others_say .float_holder {
-	margin-bottom: 25px;
-}
-.image_left {
-	float: left;
-	width: calc(40% - 15px);
-	margin-right: 15px;
-}
-.text_right {
-	float: left;
-	width: 60%;
-}
-#mobile_menu, h2:empty {
-	display: none;
-}
-section h1 {
-	margin-top: 0px;
-}
-p {
-	line-height: 1.4em;
-	font-weight: 300;
-	font-size: 1.1em;
-}
-.text_left h3, .text_right h3, .text_right p:first-of-type, .text_right > h1, .text_right > h2, .text_right > h3, .text_right > p, section.what_others_say .text_left h1 {
-	margin-top: 0px;
-}
-#form_submit_button, #submit_button, .grey_video .text_holder h2, .mark_pod h2, .view_all, footer h3, h1, header, section h1, table th {
-	text-transform: uppercase;
-}
-h1, section h1 {
-	font-weight: 400;
-	font-size: 2em;
-}
-a {
-	transition: all 500ms ease-out;
-}
-.mobile_view #mobile_menu, a {
-	-webkit-transition: all 500ms ease-out;
-	-moz-transition: all 500ms ease-out;
-	-o-transition: all 500ms ease-out;
-}
-a.content_link:active, a.content_link:link, a.content_link:visited {
-	color: #0084aa;
-	text-decoration: underline;
-}
-.responsive_image {
-	width: 100%;
-}
-.image_left img {
-	margin-bottom: 15px;
-}
-.image_left img:last-child {
-	margin-bottom: 0px;
-}
-</style>
-</head>
-<body><div class="page_margin "><div class="without_sidebar" id="wrapper"><div id="left_content"><div class="content_page">
-<section class="floated_content">
-  <div class="float_holder">
-    <div class="text_right">
-      <h1>INNOVATIVE WIENERBERGER E4 BRICK HOUSE BEING BUILT TO THE HOME QUALITY MARK STANDARDS</h1>
-
-      <img class="responsive_image" alt="E4 brick house" src="http://www.homequalitymark.com/filelibrary/images/e4-brickhouse-cs-page-image.jpg" width="100px">
-      
-
-<p>&nbsp;Work started in February 2015 on the latest inspirational building to be constructed at the BRE Innovation Park in Watford. The Wienerberger e4 brick house™, designed in conjunction with Arup, will be one of the first houses built to achieve the new Home Quality Mark launched at Ecobuild in March 2015.</p>
-<p>The design and construction of the three bedroom detached house focuses on the four pillars of Wienerberger's global e4 concept – energy, economy, environment and emotion. It uses a fabric first approach with a clay building envelope delivering a house that has reduced energy needs – meaning lower running costs for the home owner.</p>
-<p>Speaking at the launch Paul Surin, Head of Built Environment for Wienerberger said, "We believe there is a synergy between e4 and the Home Quality Mark, for example in terms of promoting health, wellbeing and quality of life, with a focus on the end user". Further comments from Paul Surin can be seen on video&nbsp;<a class="content_link" href="https://www.youtube.com/watch?v=H4pwzGppc-o&amp;feature=youtu.be" target="_blank">here.</a></p>
-<p>BRE Business Development Director Miles Watkins said, "We are very pleased the Wienerberger e4 brick house has come to the&nbsp;<a class="content_link" href="http://www.bre.co.uk/innovationpark/" target="_blank">Innovation Park</a>, and to have it pilot the new Home Quality Mark. In the UK we have a critical need for quality, affordable, sustainable homes that can be delivered with speed. We are currently managing to deliver 125,000 housing units against the estimated 250,000 required – homes like the e4 can help us close the gap"</p>
-<p>Richard Brown, Category Marketing Manager at Wienerberger and project lead for e4, commented: "We are delighted to be building an e4 house at the BRE Innovation Park. The Innovation Park is home to some of the world's finest examples of sustainable buildings, landscape designs and hundreds of pioneering low carbon materials and technologies. This is the perfect setting to howcase the Wienerberger e4 Brick House concept."</p>
-<p>The Wienerberger e4 brick house is due for completion in early Spring, and there will be an official opening in June.</p>
-<p>&nbsp;</p>
-      
-    </div>
-    <!--text_right--> 
-  </div>
-  <!--float_holder--> 
-  
-</section>
-<!--floated_content-->
-</div></div></div></div></body>
-</html>]]></description>
+						<description></description>
 						<LookAt>
 							<longitude>-0.3736171051616066</longitude>
 							<latitude>51.70101911341912</latitude>
@@ -2041,7 +1900,7 @@ a.content_link:active, a.content_link:link, a.content_link:visited {
 								<z>1</z>
 							</Scale>
 							<Link>
-								<href>https://julesbuh.github.io/XML/icon/untitled_0.dae</href>
+								<href>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/untitled_0.dae</href>
 							</Link>
 							<ResourceMap>
 								<Alias>
@@ -2136,99 +1995,7 @@ a.content_link:active, a.content_link:link, a.content_link:visited {
 				<open>1</open>
 				<Placemark>
 					<name>Plot 4</name>
-					<description><![CDATA[<!DOCTYPE html>
-<html class="js">
-<head>
-<title></title>
-<style>
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-	vertical-align: baseline;
-}
-header, hgroup, footer, section, article, aside {
-	display: block;
-}
-#content {
-	display: inline;
-	margin: 0;
-	padding-top: 20px;
-}
-:focus {
-	outline: 0;
-}
-.clearfix::after {
-	content: ".";
-	display: block;
-	height: 0px;
-	clear: both;
-	visibility: hidden;
-}
-.clearfix::after {
-	content: ".";
-	display: block;
-	height: 0px;
-	clear: both;
-	visibility: hidden;
-}
-.clearfix::after {
-	content: ".";
-	display: block;
-	height: 0px;
-	clear: both;
-	visibility: hidden;
-	font-size: 0px;
-}
-#wrap {
-	background: #4B5157;
-	margin: 0 auto;
-	width: 920px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-body {
-	background: #4B5157;
-	line-height: 1;
-}
-body {
-	background: #4B5157;
-	border-top: 5px solid #444;
-	font-size: 12px;
-	line-height: 1.5em;
-	color: #fff;
-	font-family: "Arial", Arial, Helvetica, sans-serif;
-}
-p {
-	margin: 0 0 1em;
-}
-img {
-	border: 0;
-}
-strong {
-	font-weight: 700;
-}
-</style>
-</head>
-<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-20 node-type-page lightbox-processed"><div class="clearfix" id="wrap"><section id="content" role="main"><div class="region region-content"><div class="block block-system" id="block-system-main"><div class="content"><div class="content"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><strong>Custom Build -&nbsp;</strong>Tailor your home to suit your family</p>
-<p><img style="width: 900px; height: 227px;" alt="" src="http://www.zerobillhome.com/img/zbh_design1.jpg"></p>
-<p><strong>1)</strong> Choose your house type</p>
-<p><strong>2)</strong> Choose your internal layout.&nbsp;Each house type has a limited range of internal layout options,&nbsp;which can be chosen without altering the structural design, external&nbsp;window location, or service distribution. Most house types also&nbsp;have the option to construct a ‘room in the roof’, which requires a staircase, some additional services, and an extension of the&nbsp;insulated envelope. This extra room, which provides convenient&nbsp;access to the Solar Loft, can either be included in the initial&nbsp;construction, or residents can wait until&nbsp;they can afford to expand&nbsp;their home to suit their expanding family.</p>
-<p><strong>3)</strong> Design your kitchen / bathroom.&nbsp;Either omit the kitchen / bathroom from the contract and get it done&nbsp;yourself, or chose a layout and specification from a standard set of&nbsp;components, to meet your families requirements.</p>
-<p><strong>4)</strong> Choose external materials.&nbsp;Choose from a limited selection of window colour, render colour,&nbsp;front door colour, soffit colour and arrangement of timber&nbsp;weatherboarding.</p>
-<p><strong>5)</strong> Optional extras include.&nbsp;Wood burner in living room or pellet range in kitchen, electric bike,&nbsp;home energy monitoring system, underground rainwater storage,&nbsp;garden terrace, pond, raised beds. ‘Full Code 6 upgrade pack’&nbsp;includes all additional components and consultancy fees required&nbsp;to&nbsp;achieve the certificate for Cfh level 6 accreditation.</p>
-<p><img style="width: 900px; height: 449px;" alt="" src="http://www.zerobillhome.com/img/zbh_design2.jpg"></p>
-</div></div></div></div></div></div></div></section></div></body>
-</html>]]></description>
+					<description></description>
 					<LookAt>
 						<longitude>-0.3737879152034673</longitude>
 						<latitude>51.70138437128755</latitude>
