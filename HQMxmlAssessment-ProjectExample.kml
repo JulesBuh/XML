@@ -11,16 +11,31 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_cabs">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_cabs</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_cabs</styleUrl>
-		</Pair>
-	</StyleMap>
+	<Style id="sn_cabs">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="n_Security_Overlooking">
 		<IconStyle>
 			<Icon>
@@ -62,21 +77,52 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="Dwelling28">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling13</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling4</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_Node_Bike">
+	<Style id="sh_water">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/water.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_Node_CarPool">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling14">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_Security_Overlooking">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -94,14 +140,34 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_cycling">
+	<StyleMap id="Dwelling28">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_cycling</styleUrl>
+			<styleUrl>#Dwelling13</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_cycling</styleUrl>
+			<styleUrl>#Dwelling4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_caution">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_caution</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_caution</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dining">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dining</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dining</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="Dwelling7">
@@ -111,6 +177,27 @@
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
+	</Style>
+	<Style id="sn_Security_Overlooking0">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
 	</Style>
 	<Style id="n_Node_Bus">
 		<IconStyle>
@@ -143,6 +230,12 @@
 			<styleUrl>#h_hqm_logo</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
 	<Style id="Dwelling2">
 		<IconStyle>
 			<Icon>
@@ -198,6 +291,17 @@
 		<PolyStyle>
 			<color>00000000</color>
 		</PolyStyle>
+	</Style>
+	<Style id="sn_dining">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dining.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
 	<Style id="Dwelling0">
 		<IconStyle>
@@ -289,14 +393,37 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<Style id="Dwelling14">
+	<Style id="sn_Security_TrafficCalming">
 		<IconStyle>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
 			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
 	</Style>
+	<StyleMap id="msn_play">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_play</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_play</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_Node_Bike">
 		<Pair>
 			<key>normal</key>
@@ -333,6 +460,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#Dwelling15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_Node_CarCharge">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Node_CarCharge</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Node_CarCharge</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="Dwelling19">
@@ -383,6 +520,52 @@
 			<styleUrl>#h_Node_Bus0</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sn_Node_CarCharge">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_caution">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="Dwelling16">
 		<IconStyle>
 			<Icon>
@@ -417,6 +600,31 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
+	<Style id="sn_cycling">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="Dwelling29">
 		<IconStyle>
 			<Icon>
@@ -425,6 +633,16 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
+	<StyleMap id="msn_Security_TrafficCalming">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Security_TrafficCalming</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Security_TrafficCalming</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="Dwelling34">
 		<Pair>
 			<key>normal</key>
@@ -439,14 +657,6 @@
 		<IconStyle>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="Dwelling3">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -472,16 +682,6 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="m_Node_CarCharge">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Node_CarCharge</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Node_CarCharge</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="Dwelling10">
 		<IconStyle>
 			<Icon>
@@ -500,45 +700,26 @@
 			<styleUrl>#h_HQM</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="h_Node_CarPool">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_gas_stations">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
+	<StyleMap id="msn_Security_Overlooking">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Security_Overlooking</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Security_Overlooking</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_cabs">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cabs</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cabs</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="Dwelling20">
 		<Pair>
 			<key>normal</key>
@@ -585,15 +766,13 @@
 			<styleUrl>#h_Security_Overlooking</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="n_Node_CarPool">
+	<Style id="sh_Security_Overlooking">
 		<IconStyle>
+			<scale>1.2</scale>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
 			</Icon>
 		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
 		<BalloonStyle>
 			<text>$[description]</text>
 		</BalloonStyle>
@@ -606,27 +785,27 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="n_Node_CarCharge">
+	<Style id="sh_parks">
 		<IconStyle>
+			<scale>1.4</scale>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/parks.png</href>
 			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
+	<StyleMap id="msn_gas_stations">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_gas_stations</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_gas_stations</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="m_Node_Bus">
 		<Pair>
 			<key>normal</key>
@@ -637,29 +816,26 @@
 			<styleUrl>#h_Node_Bus</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_cycling">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_Security_Overlooking0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Security_Overlooking0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Security_Overlooking0</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_police">
 		<Pair>
 			<key>normal</key>
@@ -691,45 +867,52 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_cycling">
+	<Style id="Dwelling3">
 		<IconStyle>
-			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
 			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
-	<Style id="sh_caution">
+	<Style id="sn_play">
 		<IconStyle>
-			<scale>1.4</scale>
+			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/play.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="Dwelling24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2">
 		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
+			<color>ff00ffff</color>
+			<width>5</width>
 		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
 	</Style>
 	<StyleMap id="Dwelling25">
 		<Pair>
@@ -751,6 +934,30 @@
 			<styleUrl>#h_Site</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sn_Node_Bike">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="sn_rail">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -812,25 +1019,6 @@
 			<fill>0</fill>
 		</PolyStyle>
 	</Style>
-	<Style id="sh_Node_Bike">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
 	<StyleMap id="Dwelling12">
 		<Pair>
 			<key>normal</key>
@@ -841,27 +1029,13 @@
 			<styleUrl>#Dwelling18</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="Dwelling24">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling14</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_cabs">
+	<Style id="sh_Security_TrafficCalming">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
 			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
 		<BalloonStyle>
 			<text>$[description]</text>
 		</BalloonStyle>
@@ -918,187 +1092,55 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
+	<Style id="sh_gas_stations">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_water">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_water</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_water</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_water">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/water.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
 	<Style id="h_Node_Train">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
 			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_Dwelling_Type01">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="Dwelling31">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="h_Node_CarCharge">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_caution">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_subway">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_subway</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_subway</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_caution">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_caution</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_caution</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_bus">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_bus</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_bus</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_gas_stations">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_gas_stations</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_gas_stations</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="h_Security_Overlooking">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="h_Site">
-		<IconStyle>
-			<scale>2.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
-			</Icon>
-		</IconStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_subway">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_cabs">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 		<BalloonStyle>
 			<text>$[description]</text>
@@ -1126,6 +1168,8 @@
 		<BalloonStyle>
 			<text>$[description]</text>
 		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
 		<LineStyle>
 			<color>00000000</color>
 			<width>0</width>
@@ -1135,6 +1179,229 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="sn_Dwelling_Type01">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dining">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dining.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_Node_Bike">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="Dwelling31">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_parks">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_parks</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_parks</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_subway">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_subway</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_subway</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_bus">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_bus</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_bus</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="h_Security_Overlooking">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_parks">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/parks.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_Node_CarPool">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Site">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_cabs">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_Node_CarPool">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Node_CarPool</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Node_CarPool</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_subway">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_cycling">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cycling</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cycling</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="h_Security_TrafficCalming">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -1235,6 +1502,88 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
+	<Style id="sh_caution">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_Security_Overlooking0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_Node_CarCharge">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_cycling">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="n_HQM">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -1248,16 +1597,17 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="m_Node_CarPool">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Node_CarPool</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Node_CarPool</styleUrl>
-		</Pair>
-	</StyleMap>
+	<Style id="sh_play">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/play.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
 	<Folder>
 		<name>Project</name>
 		<open>1</open>
@@ -1296,6 +1646,7 @@
 				</Placemark>
 				<Placemark>
 					<name>speed limit</name>
+					<description>traffic control speed limit</description>
 					<LookAt>
 						<longitude>-0.3736809188218526</longitude>
 						<latitude>51.70108921844781</latitude>
@@ -1313,6 +1664,7 @@
 				</Placemark>
 				<Placemark>
 					<name>Overlooking</name>
+					<description>Natural suveillancce, neghbourhood watch - Overlooking distance</description>
 					<LookAt>
 						<longitude>-0.373612255911755</longitude>
 						<latitude>51.70114248752078</latitude>
@@ -1322,7 +1674,7 @@
 						<range>159.4099289076043</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#m_Security_Overlooking</styleUrl>
+					<styleUrl>#msn_Security_Overlooking0</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>-0.374225971901343,51.70105011968027,0</coordinates>
@@ -1347,6 +1699,7 @@
 				</Placemark>
 				<Placemark>
 					<name>Overlooking</name>
+					<description>natural surveillancce, neghbour watch</description>
 					<LookAt>
 						<longitude>-0.373612255911755</longitude>
 						<latitude>51.70114248752078</latitude>
@@ -1356,7 +1709,7 @@
 						<range>159.4099289076043</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#m_Security_Overlooking</styleUrl>
+					<styleUrl>#msn_Security_Overlooking</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>-0.3740390501883451,51.7013988535763,0</coordinates>
@@ -1364,6 +1717,7 @@
 				</Placemark>
 				<Placemark>
 					<name>Traffic Table</name>
+					<description>Traffic Tables - speed controls</description>
 					<LookAt>
 						<longitude>-0.3736225115396519</longitude>
 						<latitude>51.70112250916976</latitude>
@@ -1373,7 +1727,7 @@
 						<range>158.0050543959349</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#m_Security_TrafficCalming</styleUrl>
+					<styleUrl>#msn_Security_TrafficCalming</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>-0.3740332028223836,51.70130801515012,0</coordinates>
@@ -1381,6 +1735,7 @@
 				</Placemark>
 				<Placemark>
 					<name>Home Zone</name>
+					<description>Home Zone</description>
 					<LookAt>
 						<longitude>-0.3736809188218526</longitude>
 						<latitude>51.70108921844781</latitude>
@@ -1390,7 +1745,7 @@
 						<range>155.3871862262883</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#m_Security_TrafficCalming</styleUrl>
+					<styleUrl>#msn_Security_TrafficCalming</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>-0.3742532735423809,51.70102224494633,0</coordinates>
@@ -1427,25 +1782,25 @@
 				</Placemark>
 				<Placemark>
 					<name>Car Pool Scheme</name>
-					<open>1</open>
+					<description>Car Pool Scheme</description>
 					<LookAt>
-						<longitude>-0.3732628809256433</longitude>
-						<latitude>51.70106044517155</latitude>
+						<longitude>-0.373911387415432</longitude>
+						<latitude>51.70098885338961</latitude>
 						<altitude>0</altitude>
-						<heading>-6.903842306815816</heading>
-						<tilt>14.15157898235313</tilt>
-						<range>143.2540824631327</range>
+						<heading>-12.03793709365257</heading>
+						<tilt>6.646287821760833</tilt>
+						<range>200.2085078462752</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
 					<styleUrl>#msn_cabs</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>-0.3732628809256433,51.70106044517155,0</coordinates>
+						<coordinates>-0.3732889947023044,51.70111269463449,0</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
 					<name>Car Charging point</name>
-					<open>1</open>
+					<description>Car Charging Point</description>
 					<LookAt>
 						<longitude>-0.3733922302407822</longitude>
 						<latitude>51.70090191496931</latitude>
@@ -1463,7 +1818,6 @@
 				</Placemark>
 				<Placemark>
 					<name>Bricket Wood</name>
-					<open>1</open>
 					<styleUrl>#msn_rail</styleUrl>
 					<Point>
 						<coordinates>-0.3590918,51.7054312,0</coordinates>
@@ -1477,7 +1831,26 @@
 					</Point>
 				</Placemark>
 				<Placemark>
-					<name>Bike Storage</name>
+					<name>Car Charging point</name>
+					<description>Car Charging point</description>
+					<LookAt>
+						<longitude>-0.3737569396612661</longitude>
+						<latitude>51.70095060925966</latitude>
+						<altitude>0</altitude>
+						<heading>-12.03782398699204</heading>
+						<tilt>16.62603386364267</tilt>
+						<range>142.2291985475744</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_Node_CarCharge</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>-0.3734608358320302,51.7008561387233,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bicycle Storage</name>
+					<description>Bicycle Storage</description>
 					<LookAt>
 						<longitude>-0.3738000234715355</longitude>
 						<latitude>51.70100260588231</latitude>
@@ -1491,23 +1864,6 @@
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>-0.3740055282833232,51.70101246213341,0</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>Car Charging point</name>
-					<LookAt>
-						<longitude>-0.3733922302407822</longitude>
-						<latitude>51.70090191496931</latitude>
-						<altitude>0</altitude>
-						<heading>-12.20074105466338</heading>
-						<tilt>0</tilt>
-						<range>63.63965101011813</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#m_Node_CarCharge</styleUrl>
-					<Point>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>-0.3734656767113576,51.70087526599734,0</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
@@ -1533,24 +1889,25 @@
 				</Placemark>
 				<Placemark>
 					<name>Bike Storage</name>
-					<open>1</open>
+					<description>Bicycle Storage</description>
 					<LookAt>
-						<longitude>-0.3739641838202501</longitude>
-						<latitude>51.7011064594811</latitude>
-						<altitude>7.912147334756708</altitude>
-						<heading>-29.05199170083721</heading>
-						<tilt>29.62326064270716</tilt>
-						<range>212.9356107097549</range>
+						<longitude>-0.3737434216261049</longitude>
+						<latitude>51.70103723025106</latitude>
+						<altitude>0</altitude>
+						<heading>-12.67986930849353</heading>
+						<tilt>0</tilt>
+						<range>173.2910370983284</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
 					<styleUrl>#msn_Node_Bike</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>-0.373773074670235,51.70113626252235,0</coordinates>
+						<coordinates>-0.3738192950928243,51.70113158646991,0</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
-					<name>Car Pool Scheme</name>
+					<name>car Pool scheme</name>
+					<description>Car Pool</description>
 					<LookAt>
 						<longitude>-0.3732628809256433</longitude>
 						<latitude>51.70106044517155</latitude>
@@ -1560,7 +1917,7 @@
 						<range>143.2540824631327</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#m_Node_CarPool</styleUrl>
+					<styleUrl>#msn_Node_CarPool</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>-0.3732628809256433,51.70106044517155,0</coordinates>
@@ -1591,6 +1948,16 @@
 				</Polygon>
 			</Placemark>
 			<Placemark>
+				<name>Distance to Bus Stop</name>
+				<styleUrl>#inline1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						-0.3741868720371266,51.70090323186531,81.43459224763565 -0.3746775585436735,51.69993033784078,79.15369810045958 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
 				<name>Site</name>
 				<LookAt>
 					<longitude>-0.3734916252624654</longitude>
@@ -1605,6 +1972,70 @@
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
 					<coordinates>-0.3739632566961026,51.70096684754255,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>walk route to bus stop</name>
+				<description>walk route to bus stop</description>
+				<styleUrl>#inline0</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						-0.3742209343751668,51.70090041222048,0 -0.3743345883542049,51.70082236639225,0 -0.3743606706449221,51.70068374085958,0 -0.3745833129750442,51.70065963175637,0 -0.3745060020007118,51.70017069296112,0 -0.3746231435540193,51.70010112254387,0 -0.3745716910546981,51.69998330079385,0 -0.3746396694415777,51.69989593756444,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Amenities</name>
+				<description>Amenities</description>
+				<LookAt>
+					<longitude>-0.3730739943974748</longitude>
+					<latitude>51.70070115965532</latitude>
+					<altitude>0</altitude>
+					<heading>-11.5603450205742</heading>
+					<tilt>2.914767628562573</tilt>
+					<range>451.4903679686017</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_parks</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3752936617765745,51.69947682547129,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Tennis Courts</name>
+				<LookAt>
+					<longitude>-0.3728513705100801</longitude>
+					<latitude>51.70000714010028</latitude>
+					<altitude>0</altitude>
+					<heading>-11.56017050101317</heading>
+					<tilt>2.91515140530847</tilt>
+					<range>580.8140080120502</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_play</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3731201476399426,51.69929609629681,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>cafe</name>
+				<description>Bucknalls Cafe</description>
+				<LookAt>
+					<longitude>-0.3733067659716705</longitude>
+					<latitude>51.70035232682614</latitude>
+					<altitude>0</altitude>
+					<heading>-11.56052788079819</heading>
+					<tilt>2.91515151879246</tilt>
+					<range>581.0629188522875</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_dining</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3732927953353726,51.69972139356198,0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
@@ -1622,7 +2053,6 @@
 			</LookAt>
 			<Folder>
 				<name>Block 1</name>
-				<open>1</open>
 				<Folder>
 					<name>ùserhaus</name>
 					<open>1</open>
@@ -1766,7 +2196,6 @@
 			</Folder>
 			<Folder>
 				<name>Block 2</name>
-				<open>1</open>
 				<Folder>
 					<name>WEINERBERGER</name>
 					<open>1</open>
@@ -1905,7 +2334,6 @@
 			</Folder>
 			<Folder>
 				<name>Block 3</name>
-				<open>1</open>
 				<Placemark>
 					<name>Plot 4</name>
 					<LookAt>
@@ -2028,7 +2456,6 @@
 			</Placemark>
 			<Folder>
 				<name>Block 9</name>
-				<open>1</open>
 				<LookAt>
 					<longitude>-0.3740547387921211</longitude>
 					<latitude>51.70147501179264</latitude>
@@ -2086,6 +2513,24 @@
 					</Point>
 				</Placemark>
 			</Folder>
+			<Placemark>
+				<name>Flood Risk</name>
+				<description>Flood Zone 1</description>
+				<LookAt>
+					<longitude>-0.373779149819029</longitude>
+					<latitude>51.70094725868746</latitude>
+					<altitude>0</altitude>
+					<heading>-11.56091633727989</heading>
+					<tilt>0</tilt>
+					<range>185.5782724493059</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_water</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-0.3737642115886664,51.70067531005432,0</coordinates>
+				</Point>
+			</Placemark>
 		</Folder>
 	</Folder>
 </Document>
