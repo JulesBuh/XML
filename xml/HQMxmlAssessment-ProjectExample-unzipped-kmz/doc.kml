@@ -1,445 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://julesbuh.github.io/XML/xsl/KMLstylefinder.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>ProjectWithHouseTypes.kmz</name>
-	<Style id="h_HQM">
-		<IconStyle>
-			<scale>2.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/DwellingFootprint.png</href>
-			</Icon>
-			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff0000</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="Dwelling23">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling33</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling8</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_cycling">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling19">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type05.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="Dwelling13">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<StyleMap id="m_footprintBoundary">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_HQM</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_HQM</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_subway">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_gas_stations">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling18">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type03.jpg</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="Dwelling10">
+	<open>1</open>
+	<Style id="Dwelling11">
 		<IconStyle>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="h_hqm_logo">
-		<IconStyle>
-			<scale>2.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/SiteBoundary.png</href>
-			</Icon>
-			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="m_Security_Overlooking">
+	<StyleMap id="msn_cabs">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#n_Security_Overlooking</styleUrl>
+			<styleUrl>#sn_cabs</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#h_Security_Overlooking</styleUrl>
+			<styleUrl>#sh_cabs</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_rail">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling8">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type02.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="n_Site">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
-			</Icon>
-		</IconStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="m_Node_Bus0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Node_Bus</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Node_Bus0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="Dwelling31">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="h_Site">
-		<IconStyle>
-			<scale>2.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
-			</Icon>
-		</IconStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling14">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="sh_Dwelling_Type01">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
-			</Icon>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="Dwelling29">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type03.jpg</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<StyleMap id="Dwelling28">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling13</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling4</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_Node_Bike">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="h_Node_Bus">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_cabs">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="Dwelling21">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling11</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_Site">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Site</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Site</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_Security_TrafficCalming">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Security_TrafficCalming</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Security_TrafficCalming</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="n_Security_TrafficCalming">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling4">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="n_Node_CarCharge">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="n_Security_Overlooking">
 		<IconStyle>
 			<Icon>
@@ -461,54 +42,179 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="Dwelling16">
+	<Style id="sh_rail">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling28">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_Node_Bike">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_cycling">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cycling</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cycling</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling7">
 		<IconStyle>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type03.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<StyleMap id="Dwelling22">
+	<Style id="n_Node_Bus">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_siteBoundary">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#Dwelling26</styleUrl>
+			<styleUrl>#s_hqm_logo0</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#Dwelling15</styleUrl>
+			<styleUrl>#h_hqm_logo</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_Dwelling_Type01">
+	<Style id="Dwelling2">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="h_Node_Bus">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling18">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type03.jpg</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="n_Node_Train">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling0">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type03.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_Node_Train">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_Dwelling_Type01</styleUrl>
+			<styleUrl>#n_Node_Train</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_Dwelling_Type01</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="Dwelling32">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling7</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="Dwelling25">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling19</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling17</styleUrl>
+			<styleUrl>#h_Node_Train</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="h_Node_Bus0">
@@ -530,435 +236,10 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="Dwelling3">
+	<Style id="n_Security_TrafficCalming">
 		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="sh_gas_stations">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="s_hqm_logo0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/SiteBoundary.png</href>
-			</Icon>
-			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_cabs">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="h_Node_Train">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling26">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<StyleMap id="msn_gas_stations">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_gas_stations</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_gas_stations</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_caution">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_caution</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_caution</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="Dwelling24">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling14</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_caution">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="h_Node_CarPool">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_subway">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_subway</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_subway</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="Dwelling30">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling27</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_police">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_police</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_police</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="n_Node_Bus0">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_Node_Bike">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_Node_Bike</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_Node_Bike</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="h_Security_TrafficCalming">
-		<IconStyle>
-			<scale>1.2</scale>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling15">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<StyleMap id="m_Node_Train">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Node_Train</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Node_Train</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_cycling">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_bus">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="h_Security_Overlooking">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="n_HQM">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/DwellingFootprint.png</href>
-			</Icon>
-			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff0000</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="m_Node_CarCharge">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Node_CarCharge</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Node_CarCharge</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="Dwelling0">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type03.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="sh_subway">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_cycling">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_cycling</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_cycling</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="Dwelling20">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling31</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling16</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="Dwelling2">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="n_Node_CarPool">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
@@ -983,41 +264,49 @@
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="Dwelling27">
+	<Style id="s_hqm_logo0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/SiteBoundary.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling33">
 		<IconStyle>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type04.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="sh_police">
+	<Style id="Dwelling14">
 		<IconStyle>
-			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
 			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
 	</Style>
+	<StyleMap id="msn_Node_Bike">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Node_Bike</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Node_Bike</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_rail">
 		<Pair>
 			<key>normal</key>
@@ -1028,155 +317,113 @@
 			<styleUrl>#sh_rail</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="m_Node_Bus">
+	<Style id="Dwelling26">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="Dwelling22">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#n_Node_Bus0</styleUrl>
+			<styleUrl>#Dwelling26</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#h_Node_Bus</styleUrl>
+			<styleUrl>#Dwelling15</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="Dwelling33">
+	<Style id="Dwelling19">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type05.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_subway">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling27</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_Node_Bus0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_Bus</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_Bus0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling16">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="Dwelling32">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling8">
 		<IconStyle>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type02.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="Dwelling5">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="m_Node_CarPool">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#n_Node_CarPool</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_Node_CarPool</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="Dwelling12">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#Dwelling29</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#Dwelling18</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_police">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling1">
+	<Style id="Dwelling27">
 		<IconStyle>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type04.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="sn_caution">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling7">
+	<Style id="Dwelling29">
 		<IconStyle>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type03.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type03.jpg</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="sh_bus">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="Dwelling11">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type02.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
 	<StyleMap id="Dwelling34">
 		<Pair>
@@ -1188,61 +435,23 @@
 			<styleUrl>#Dwelling5</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="m_siteBoundary">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_hqm_logo0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#h_hqm_logo</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_bus">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_bus</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_bus</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_Node_Bike">
+	<Style id="Dwelling13">
 		<IconStyle>
-			<scale>1.2</scale>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
 			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
 	</Style>
-	<Style id="sn_Dwelling_Type01">
+	<Style id="Dwelling3">
 		<IconStyle>
-			<scale>1.2</scale>
 			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type01.png</href>
 			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="n_Node_Bus">
+	<Style id="n_Node_Bus0">
 		<IconStyle>
 			<Icon>
 				<href>https://julesbuh.github.io/XML/icon/Node_Bus.png</href>
@@ -1263,6 +472,487 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="m_Node_CarCharge">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_CarCharge</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_CarCharge</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling10">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type02.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_footprintBoundary">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_HQM</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_HQM</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="h_Node_CarPool">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_gas_stations">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling31</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_Security_TrafficCalming">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Security_TrafficCalming</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Security_TrafficCalming</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling1">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="Dwelling5">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_Security_Overlooking">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Security_Overlooking</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Security_Overlooking</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="n_Node_CarPool">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarPool.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="n_Node_CarCharge">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_CarCharge.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_Node_Bus">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_Bus0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_Bus</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_cycling">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_police">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_police</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_police</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_Dwelling_Type01">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="h_HQM">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/DwellingFootprint.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_cycling">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_caution">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling25">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_Site">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Site</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Site</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_rail">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_bus">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="n_Site">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_Node_Bike">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Bike.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling29</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_cabs">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_hqm_logo">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/SiteBoundary.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_police">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Dwelling4">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Flat_Type05.jpg</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="h_Node_Train">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_Dwelling_Type01">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="Dwelling31">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type04.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
 	<Style id="h_Node_CarCharge">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -1282,42 +972,11 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="n_Node_Train">
-		<IconStyle>
-			<Icon>
-				<href>https://julesbuh.github.io/XML/icon/Node_Train.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text>$[description]</text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>00000000</color>
-			<width>0</width>
-			<gx:labelVisibility>1</gx:labelVisibility>
-		</LineStyle>
-		<PolyStyle>
-			<color>00000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_cabs">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_cabs</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_cabs</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_rail">
+	<Style id="sn_caution">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -1327,8 +986,6 @@
 		<BalloonStyle>
 			<text>$[description]</text>
 		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
 		<LineStyle>
 			<color>00000000</color>
 			<width>0</width>
@@ -1338,6 +995,269 @@
 			<color>00000000</color>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="msn_subway">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_subway</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_subway</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_caution">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_caution</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_caution</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_bus">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_bus</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_bus</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_gas_stations">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_gas_stations</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_gas_stations</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="h_Security_Overlooking">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Security_Overlooking.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Site">
+		<IconStyle>
+			<scale>2.4</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Site.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_subway">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_cabs">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_gas_stations">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/gas_stations.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="h_Security_TrafficCalming">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Security_TrafficCalming.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_Dwelling_Type01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Dwelling_Type01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Dwelling_Type01</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Dwelling23">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling33</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_police">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_bus">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00000000</color>
+			<width>0</width>
+			<gx:labelVisibility>1</gx:labelVisibility>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Dwelling21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Dwelling11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Dwelling10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Dwelling15">
+		<IconStyle>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/Dwelling_Type01.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="n_HQM">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://julesbuh.github.io/XML/icon/DwellingFootprint.png</href>
+			</Icon>
+			<hotSpot x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_Node_CarPool">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#n_Node_CarPool</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#h_Node_CarPool</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Folder>
 		<name>Project</name>
 		<open>1</open>
@@ -1716,7 +1636,6 @@
 					</LookAt>
 					<Placemark>
 						<name>Plot 1</name>
-						<description></description>
 						<LookAt>
 							<longitude>-0.3734916252624654</longitude>
 							<latitude>51.70096473517146</latitude>
@@ -1744,7 +1663,6 @@
 					</Placemark>
 					<Placemark>
 						<name>Plot 2</name>
-						<description></description>
 						<LookAt>
 							<longitude>-0.3734916252624654</longitude>
 							<latitude>51.70096473517146</latitude>
@@ -1786,59 +1704,59 @@
 							</Link>
 							<ResourceMap>
 								<Alias>
-									<targetHref>texture.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture.png</targetHref>
 									<sourceHref>untitled/texture.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_0.png</targetHref>
 									<sourceHref>untitled/texture_0.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_1.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_1.png</targetHref>
 									<sourceHref>untitled/texture_1.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_10.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_10.png</targetHref>
 									<sourceHref>untitled/texture_10.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_11.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_11.png</targetHref>
 									<sourceHref>untitled/texture_11.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_12.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_12.png</targetHref>
 									<sourceHref>untitled/texture_12.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_2.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_2.png</targetHref>
 									<sourceHref>untitled/texture_2.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_3.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_3.png</targetHref>
 									<sourceHref>untitled/texture_3.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_4.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_4.png</targetHref>
 									<sourceHref>untitled/texture_4.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_5.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_5.png</targetHref>
 									<sourceHref>untitled/texture_5.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_6.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_6.png</targetHref>
 									<sourceHref>untitled/texture_6.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_7.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_7.png</targetHref>
 									<sourceHref>untitled/texture_7.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_8.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_8.png</targetHref>
 									<sourceHref>untitled/texture_8.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_9.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_9.png</targetHref>
 									<sourceHref>untitled/texture_9.png</sourceHref>
 								</Alias>
 							</ResourceMap>
@@ -1862,7 +1780,6 @@
 					</LookAt>
 					<Placemark>
 						<name>Plot 3</name>
-						<description></description>
 						<LookAt>
 							<longitude>-0.3736171051616066</longitude>
 							<latitude>51.70101911341912</latitude>
@@ -1904,71 +1821,67 @@
 							</Link>
 							<ResourceMap>
 								<Alias>
-									<targetHref>texture_13.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_13.png</targetHref>
 									<sourceHref>untitled/texture.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_0_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_0_0.png</targetHref>
 									<sourceHref>untitled/texture_0.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_1_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_1_0.png</targetHref>
 									<sourceHref>untitled/texture_1.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_10_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_10_0.png</targetHref>
 									<sourceHref>untitled/texture_10.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_11_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_11_0.png</targetHref>
 									<sourceHref>untitled/texture_11.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_12_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_12_0.png</targetHref>
 									<sourceHref>untitled/texture_12.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_13_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_13_0.png</targetHref>
 									<sourceHref>untitled/texture_13.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_14.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_14.png</targetHref>
 									<sourceHref>untitled/texture_14.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_15.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_15.png</targetHref>
 									<sourceHref>untitled/texture_15.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_2_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_2_0.png</targetHref>
 									<sourceHref>untitled/texture_2.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_3_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_3_0.png</targetHref>
 									<sourceHref>untitled/texture_3.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_4_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_4_0.png</targetHref>
 									<sourceHref>untitled/texture_4.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_5_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_5_0.png</targetHref>
 									<sourceHref>untitled/texture_5.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_6_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_6_0.png</targetHref>
 									<sourceHref>untitled/texture_6.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_7_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_7_0.png</targetHref>
 									<sourceHref>untitled/texture_7.png</sourceHref>
 								</Alias>
 								<Alias>
-									<targetHref>texture_8_0.png</targetHref>
-									<sourceHref>untitled/texture_8.png</sourceHref>
-								</Alias>
-								<Alias>
-									<targetHref>texture_9_0.png</targetHref>
+									<targetHref>https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample-unzipped-kmz/files/texture_9_0.png</targetHref>
 									<sourceHref>untitled/texture_9.png</sourceHref>
 								</Alias>
 							</ResourceMap>
@@ -1995,7 +1908,6 @@
 				<open>1</open>
 				<Placemark>
 					<name>Plot 4</name>
-					<description></description>
 					<LookAt>
 						<longitude>-0.3737879152034673</longitude>
 						<latitude>51.70138437128755</latitude>
