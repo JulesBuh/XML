@@ -16,15 +16,15 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				<p>The content on this page is not guaranteed to match the official version, To view the official HQM version visit <a href="http://www.homequalitymark.com/standard">http://www.homequalitymark.com/standard</a></p>
 				
 				<p>This xml file is a concept model for packaging content from authoring software as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.</p></div>
-				<p>The kml example is embedded in the following issues</p>
-				<li><a href="#1.01.01">Showing Transport Nodes</a></li>
-				<li><a href="#1.01.02">Showing Charging Points and Bike Storage</a></li>
-				<li><a href="#1.01.03">Showing Local Amenities</a></li>
-				<li><a href="#1.02.01">Showing Planting</a></li>
-				<li><a href="#1.02.02">Showing Recrestional Spaces</a></li>
-				<li><a href="#1.03.03">Showing Ecology</a></li>
-				<li><a href="#1.03.03">Showing Flood Zones</a></li>
-				<li><a href="#1.03.03">Showing Security</a></li>
+				<p>The <a hre="https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml">kml example</a> is embedded in issue 1 and can aso be used in the following issues:</p>
+				<li><a href="#1.01.01">01. Showing Transport Nodes</a></li>
+				<li><a href="#1.01.02">02. Showing Charging Points and Bike Storage</a></li>
+				<li><a href="#1.01.03">03. Showing Local Amenities</a></li>
+				<li><a href="#1.02.01">04. Showing Planting</a></li>
+				<li><a href="#1.02.02">05. Showing Recrestional Spaces</a></li>
+				<li><a href="#1.03.03">06. Showing Ecology</a></li>
+				<li><a href="#1.03.03">07. Showing Flood Zones</a></li>
+				<li><a href="#1.03.03">08. Showing Security</a></li>
 				<p>Take Interactive 3D example for daylighting visual can also be <a href="#2.01.02">embedded into the issue within the manual</a></p>
 				<xsl:apply-templates select="*//Section" mode="manualView"/>
 				
