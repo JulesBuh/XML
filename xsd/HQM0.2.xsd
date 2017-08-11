@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="HQMXSDstylesheet.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/HQMXSDstylesheet.xsl"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.breeam.com/projects" xmlns:bre="http://www.breeam.com/projects" xmlns:hqm="http://www.homequalitymark.com" targetNamespace="http://www.breeam.com/projects" elementFormDefault="unqualified" attributeFormDefault="unqualified" version="HQM0.2">
  
   <xs:element nillable="false" name="BREEAM">
