@@ -14,7 +14,10 @@
 
 	<xsl:template match="/">
 		<html>
-			<head/>
+			<head>
+				<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/Manual.css"/>
+			</head>
 			<body>
 				<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
 				<h2>

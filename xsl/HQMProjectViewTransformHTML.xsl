@@ -985,45 +985,8 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<style>
-				body,html{width:100%;
-				margin:0;
-				padding:0;
-				font-family:Lato,sans-serif;
-				color:#39444c
-				z-index:-100;}
-				</style>
-				<style>
-				table.validity{
-				width:400px;
-				border:0;}
-				tr.invalid{
-				color:#AA0000;
-				background-color:#FFCCDD;
-				}
-				tr.valid{
-				color:#00AA00;
-				background-color:#CCFFDD;
-				}
-				tr.mismatch{
-				color:#0000AA;
-				background-color:#DDCCFF;
-				}
-				#DivForHoverItem {
-				height: 20px;
-				width:  90px;
-				background-color:#DCDCDC;
-				}
-				#HiddenText {
-					display: none;
-					z-index:100;
-				}
-				#DivForHoverItem:hover #HiddenText {
-					display:block;
-					z-index:100;
-				}
-
-				</style>
+				<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/Manual.css"/>
 			</head>
 			<body>
 				This xml file is a hypothetical merged file containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective

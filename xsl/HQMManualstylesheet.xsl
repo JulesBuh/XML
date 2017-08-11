@@ -7,74 +7,9 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:template match="/">
 		<html>
 			<head>
-				<style>
-				body,html{width:100%;
-					margin:0;
-					padding:0;
-					font-family:Lato,sans-serif;
-					color:#39444c
-					z-index:-100;}
-					h1{color:#50C8F5;
-					font-family:FrutigerBQ-Bold,Calvert;}
-					h2{color:#232D96;}
-				div.disclaim{
-				width: 1030px;
-				}
-				</style>
-				<style>
-				h2.Section{color:#FFFFFF;
-					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
-					div.Section {
-					width: 1030px;
-					padding: 10px;
-					border: 5px;
-					margin: 0;
-					background-color:#003552;
-				}
-				h3.Category{color:#FFFFFF;
-					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
-				div.Category {
-					width: 1000px;
-					padding: 10px;
-					border: 5px;
-					margin: 0;
-					background-color:#003552;
-				}
-				</style>
-				<style>
-				h1.Issue{color:#50C8F5;
-					font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;}
-				div.Issue {
-					width: 800px;
-					padding: 100px;
-					border: 5px;
-					margin: 0;
-					background-color:#eeeeff;
-				}
-				</style>
-				<style>
-				div.Aim {
-				width: 780px;
-				padding: 10px;
-				margin: 0;
-				color:#39444c;
-				background-color:#FFFFFF;
-				}
-				div.Benefits {
-				width: 780px;
-				padding: 10px;
-				margin: 0;
-				color:#39444c;
-				background-color:#FFFFFF;
-				}
-				div.Context {
-				width: 780px;
-				padding: 10px;
-				margin: 0;
-				color:#39444c;
-				background-color:#FFFFFF;
-				}</style>
-				</head>
+				<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/Manual.css"/>
+			</head>
 			<body>
 				<h1><a href="http://www.homequalitymark.com/standard"><img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/><xsl:value-of select="bre:BREEAM/Manual/Version/name/."/></a></h1>
 				<div class="disclaim">THIS IS A PROTOTYPE showing how the HQM manual, stored within a BREEAM defined xml, can be transformed for display and utilised for the authoring of tools.
