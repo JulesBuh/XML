@@ -1,7 +1,7 @@
 # Hosting XML demonstrating vision for HQM tools and Technical Manual authoring
 This is a prototype repository for hosting xml, xsd and xsl as a webpage. It does not attempt to match the official HQM release which can be found [http://www.homequalitymark.com/standard](http://www.homequalitymark.com/standard). The standard and trademarks belong to BRE Global Ltd. The purpose of these prototypes are to demonstrate the potential of the XML schema that has been developed by BRE for the HQM standard.
 
-#### [View on github](https://github.com/JulesBuh/XML)
+#### [![View on github](img/gh.png) View on github](https://github.com/JulesBuh/XML)
 It uses prototype schemas based on the work for [HQM](http://www.homequalitymark.com/) data exchanges used in [HQM assessments](http://www.homequalitymark.com/).
 
 1.[Example 1 xml cross-validation](#example-1-cross-assessment-discrepancy-checks-potential-for-qa-cross-validation)
