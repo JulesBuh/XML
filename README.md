@@ -18,7 +18,7 @@ The following file loads the schema associated with the input file and displays 
 
 ![img/XSD Diagram](img/diagram2.png)
 
-## Visualise tools (Training and assessment potential)
+## [Visualise tools (Training and assessment potential)](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
 Related Feasibility exercises for improving the communication of HQM concepts: This example builds an interactive parametric model for the daylight issue, showing how the equations relate to the geometry. This could aid training as well as be extended to be an actual tool in the online assessment. The javasript definition for this file could be hard coded into the xml manual in the relevant issue or the url to the javascript page as demonstrated in the [manual in issue 10](https://julesbuh.github.io/XML/xml/HQMManual-Example.xml#2.01.02)
 
 [`https://julesbuh.github.io/threeD.js-HQM-Daylighting/`](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
