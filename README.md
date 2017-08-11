@@ -11,6 +11,8 @@ The following xml file is a hypothetical merged HQMXMLfile containing 4 out of 3
 ## Referencing Schemas (Accessing defined drop-downs for co-ordinating assessment tools)
 The following file loads the schema associated with the input file and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file (similar to above) and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema with drop downs for defined accepted values for simple enumerator lists. There is also potential for BREEAM projects to create hqmXML files for use in offline purposes and development for reintegrating an offline hqmxml file is feasible. Other potential areas of development could be allowing the creation the suit of offline Excel/OpenofficeCalc and Word/OpenofficeWriter tools for each assessment on-the-fly, populating all of the information that has already been defined on BREEAM Projects.
 
+[!Diagram.png]
+
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml)
 
 ## Visualise tools (Training and assessment potential)
