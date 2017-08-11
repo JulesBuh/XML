@@ -13,6 +13,7 @@ It uses prototype schemas based on the work for [HQM](http://www.homequalitymark
 4.[Example 4 xml manual](#example-4-technical-manual-as-xml-potential-for-streamlining-authoring-and-presenting-information-to-third-party-apps)
 
 5.[Example 5 kml](#example-5-google-earth-and-kmz-files-streamline-assessment-potential-for-batch-upload-and-our-surroundings-issues-evidence)
+
 ________________________________________________________________________________________________________
 ## [Example 1. Cross-assessment discrepancy checks (potential for QA cross validation)](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-MultipleIssuesExample.xml)
 The following xml file is a hypothetical merged HQMXMLfile containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective. e.g where different project names for an assessment have been erroneously entered. It can also accommodate different people contributing to different issues (for example where several contractors have been used at different stages of the project to provide information for a particular issue).
