@@ -1,35 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="SchemaTransform.xsl"?>
-
-<!--BRE Global Ltd. © 2017
-	██  ██  ███ ███  █  █   █ ™
-	█ █ █ █ █   █   █ █ ██ ██ 
-	█ █ █ █ █   █   █ █ █ █ █ 
-	██  ██  ██  ██  ███ █   █ 
-	█ █ █ █ █   █   █ █ █   █ 
-	█ █ █ █ █   █   █ █ █   █ 
-	██  █ █ ███ ███ █ █ █   █ 
--->
-<bre:BREEAM xmlns:bre="http://www.breeam.com/projects" xmlns:xsi="http://www.w3.org/2001/XMLSchema">
-	<DocProps>
-    <title xml:lang="en-GB">File title (this is not the file name)</title>
-    <subject xml:lang="en-GB">subjects are written here</subject>
-    <keyword xml:lang="en-GB">keywords, are, written, here</keyword>
-    <comments xml:lang="en-GB">Comments are written here</comments>
-    <creator xml:lang="en-GB">- BRE Global Ltd.</creator>
-    <editor xml:lang="en-GB">- unknown</editor>
-    <dateCreated xml:lang="en-GB">2017-05-09T09:25:22.741000000</dateCreated>
-    <dateModified xml:lang="en-GB">2017-05-10T11:55:26.436000000</dateModified>
-    <Software>Spreadsheet</Software>
-    <CreditsAvailable>6</CreditsAvailable>
-    <Issue>Temperature Bolt-On</Issue>
-    <Section>My Home</Section>
-    <ToolVersion>1.0</ToolVersion>
-    <Uniclass_Co>Co_45_10</Uniclass_Co>
-    <Uniclass_En>En_45_10</Uniclass_En>
-    <xslversion>1.0</xslversion>
-	<xsdversion>HQM0.2.xsd</xsdversion>
-  </DocProps>
+<?xml-stylesheet type="text/xsl" href="../xsl/HQMProjectViewTransformHTML.xsl"?>
+<ns1:BREEAM xmlns:ns1="http://www.breeam.com/projects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Assessment>
 		<Section id="2">
 			<name>My Home</name>
@@ -455,4 +426,4 @@
 			</Category>
 		</Section>
 	</Assessment>
-</bre:BREEAM>
+</ns1:BREEAM>

@@ -36,8 +36,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:template match="/">
 		
 		
-
-		<xsl:variable name="xsd" select="document(bre:BREEAM/DocProps/xsdversion/.)"/>
+		
+		<xsl:variable name="xsd" select="document(concat('../xsd/',bre:BREEAM/DocProps/xsdversion/.))"/>
 		<xsl:variable name="xsdelementtype"  select="$xsd//xs:element/@type|$xsd//xs:attrribute/@type"/>
 		<xsl:variable name="xsdusedtypes" select="$xsd//xs:simpleType[@name=$xsdelementtype]|$xsd//xs:complexType[@name=$xsdelementtype]|$xsd//xs:union[contains(@memberTypes,'NRM')]" />
 		<xsl:variable name="xsdtypes" select="$xsdusedtypes/@name" />

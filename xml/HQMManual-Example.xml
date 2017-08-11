@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="HQMManualstylesheet.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/HQMManualstylesheet.xsl"?>
 <bre:BREEAM xmlns:bre="http://www.breeam.com/projects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <Manual>
     <Version>
@@ -23,7 +23,7 @@ This is a controlled Scheme Document and subject to potential revision and re-is
 			</Copyright>
       <TradeMarks>
 			BRE, BRE Global, Home Quality Mark, BREEAM, SMARTWaste and the Green Guide are all trademarks owned by either BRE or BRE Global Ltd and may not be used without written permission from BRE or BRE Global Limited.
-				<icon src="icon/HQM.png" /><logo src="img/logo.png" /></TradeMarks>
+				<icon src="https://julesbuh.github.io/XML/icon/HQM.png" /><logo src="https://julesbuh.github.io/XML/img/logo.png" /></TradeMarks>
       <Acknowledgements>
 			The Home Quality Mark has been made possible through the continued efforts of many dedicated BRE Group staff members, the BRE Global Ltd Governing Body, the BRE Global Ltd Standing Panel of Experts, BRE Global licensed assessors and those who have responded to our consultation calls and meetings or provided feedback in other ways. BRE also extends its gratitude to those who support the HQM and BREEAM by specifying and applying the method and contributing to building a better world.</Acknowledgements>
     </Documentation>
@@ -100,21 +100,21 @@ Anyone wishing to verify a certified assessment and rating of a new home against
 			–Performance of the home in extreme weather
 			–Access to transport and amenity
 			This indicator could influence mortgages, insurance and financing for development.</description>
-          <icon src="icon/MyCost.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/MyCost.png" />
         </Indicator>
         <Indicator name="My Wellbeing">
           <description>
 			Provides an indication of how the home will impact the occupier’s health and wellbeing. This takes account of;
 			–Quality of living space (air, temperature, light and noise)
 			–Local amenity</description>
-          <icon src="icon/MyWellbeing.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/MyWellbeing.png" />
         </Indicator>
         <Indicator name="My Footptrint">
           <description>
 			Provides an indication of how the home will impact the environment in its construction and use. This takes account of;
 			–Local and Global emissions in use
 			–Impact of the homes construction</description>
-          <icon src="icon/MyFootprint.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/MyFootprint.png" />
         </Indicator>
         <description>The overall star rating and indicators are presented as a HQM ‘scorecard’. This scorecard provides those buying and renting new homes with an easy to understand comparator of householder costs, positive impacts on health and wellbeing, and environmental footprint.</description>
       </part>
@@ -173,7 +173,7 @@ Anyone wishing to verify a certified assessment and rating of a new home against
     </SchemeParts>
     <Section id="1">
       <name>Our Surroundings</name>
-      <icon src="icon/1.png" />
+      <icon src="https://julesbuh.github.io/XML/icon/1.png" />
       <description>includes issues that address the ability of homes to work with current and future surroundings.</description>
       <Credits aggregates="true" inherits="false">
         <Indicators>
@@ -187,7 +187,7 @@ Anyone wishing to verify a certified assessment and rating of a new home against
       </Credits>
       <Category id="1.01">
         <name>Transport And Movement</name>
-        <icon src="icon/1.01.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/1.01.png" />
         <description />
         <Uniclass code="Co_80">Transport complexes</Uniclass>
         <Uniclass code="En_80">Transport entities</Uniclass>
@@ -205,8 +205,8 @@ Anyone wishing to verify a certified assessment and rating of a new home against
         </Credits>
         <Issue id="1.01.01" seq_id="1">
           <name>Accessible Public Transport</name>
-          <icon src="icon/1.01.01.png" />
-          <img src="img/1.01.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.01.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.01.01.png" />
           <Uniclass code="Co_80_90">Transport interchange complexes</Uniclass>
           <Uniclass code="En_80_90">Transport hub entities</Uniclass>
           <Uniclass code="SL_80_90">Transport hubs</Uniclass>
@@ -250,7 +250,9 @@ Anyone wishing to verify a certified assessment and rating of a new home against
 						</Benefit>
           </Benefits>
           <Context>
-					Transport accounts for around a quarter of UK greenhouse gas emissions, <a ref="../References/Reference/Title[text()='UK Greenhouse Gas Emissions, Final Figures']">significantly affecting air quality at the roadside</a>. Public transport offers a route to addressing transport-related greenhouse gas emissions and will contribute towards the UK's long term goal of reducing greenhouse gas emissions by at least 80% compared to 1990 levels by 2050. The emissions from trains and buses can be up to <a ref="../References/Reference/Title[text()='Why use public transport']">eight times lower than car travel</a>. Furthermore we have all experienced poor access to public transport and traffic congestion, adding in some cases, hours onto our travel times. It is not just about having capacity in our public transport, but also about ensuring that the public transport is accessible for all and operates at convenient times to meet our needs. The <a ref="../References/Reference/Title[text()='National Planning Policy Framework']">National Planning Policy Framework</a> places significant emphasis on sustainable transport options stating that planning should <a ref="../References/Reference/Title[text()='Measuring Public Transport Accessibility Levels - PTALs - Summary']">“make the fullest possible use of public transport, walking and cycling, and focus on significant development in locations which are or can be made sustainable”</a>.
+					Transport accounts for around a quarter of UK greenhouse gas emissions, <a ref="../References/Reference/Title[text()='UK Greenhouse Gas Emissions, Final Figures']">significantly affecting air quality at the roadside</a>. Public transport offers a route to addressing transport-related greenhouse gas emissions and will contribute towards the UK's long term goal of reducing greenhouse gas emissions by at least 80% compared to 1990 levels by 2050. The emissions from trains and buses can be up to <a ref="../References/Reference/Title[text()='Why use public transport']">eight times lower than car travel</a>. Furthermore we have all experienced poor access to public transport and traffic congestion, adding in some cases, hours onto our travel times. It is not just about having capacity in our public transport, but also about ensuring that the public transport is accessible for all and operates at convenient times to meet our needs. The <a ref="../References/Reference/Title[text()='National Planning Policy Framework']">National Planning Policy Framework</a> places significant emphasis on sustainable transport options stating that planning should <a ref="../References/Reference/Title[text()='Measuring Public Transport Accessibility Levels - PTALs - Summary']">“make the fullest possible use of public transport, walking and cycling, and focus on significant development in locations which are or can be made sustainable”
+					</a>.
+					<iframe src=" https://julesbuh.github.io/XML/xsl/PreviewKml.html" width="790" height="400"></iframe>
 					</Context>
           <References>
             <Reference id="1">
@@ -540,8 +542,8 @@ applies to the expected post-development population.</description>
         </Issue>
         <Issue id="1.01.02" seq_id="2">
           <name>Alternative Sustainable Transport Options</name>
-          <icon src="icon/1.01.02.png" />
-          <img src="img/1.01.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.01.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.01.02.png" />
           <Uniclass code="En_80_40">Pathways</Uniclass>
           <Uniclass code="En_80_45">Highway storage and maintenance activities</Uniclass>
           <Uniclass code="SL_90_50">Storage spaces</Uniclass>
@@ -945,8 +947,8 @@ Where the location is external to the home, access from the bike storage area to
         </Issue>
         <Issue id="1.01.03" seq_id="3">
           <name>Local Amenities</name>
-          <icon src="icon/1.01.02.png" />
-          <img src="img/1.01.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.01.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.01.02.png" />
           <Uniclass code="En_80_40">Pathways</Uniclass>
           <Uniclass code="En_80_45">Highway storage and maintenance activities</Uniclass>
           <Uniclass code="SL_90_50">Storage spaces</Uniclass>
@@ -1217,7 +1219,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="1.02">
         <name>Outdoors</name>
-        <icon src="icon/1.02.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/1.02.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -1225,8 +1227,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         <Uniclass code="" />
         <Issue id="1.02.01" seq_id="4">
           <name>Ecology</name>
-          <icon src="icon/1.02.01.png" />
-          <img src="img/1.02.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.02.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.02.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -1767,8 +1769,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="1.02.02" seq_id="5">
           <name>Recreational Space</name>
-          <icon src="icon/1.02.02.png" />
-          <img src="img/1.02.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.02.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.02.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -2158,7 +2160,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="1.03">
         <name>Safety and Resilience</name>
-        <icon src="icon/1.03.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/1.03.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -2176,8 +2178,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="1.03.01" seq_id="6">
           <name>Ecology</name>
-          <icon src="icon/1.03.01.png" />
-          <img src="img/1.03.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.03.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.03.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -2452,8 +2454,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="1.03.02" seq_id="7">
           <name>Managing the Impact of Rainfall</name>
-          <icon src="icon/1.03.02.png" />
-          <img src="img/1.03.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.03.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.03.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -2728,8 +2730,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="1.03.03" seq_id="8">
           <name>Security</name>
-          <icon src="icon/1.03.03.png" />
-          <img src="img/1.03.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/1.03.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/1.03.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -3006,7 +3008,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
     </Section>
     <Section id="2">
       <name>My Home</name>
-      <icon src="icon/2.png" />
+      <icon src="https://julesbuh.github.io/XML/icon/2.png" />
       <description>includes issues that address the provision of living spaces that are comfortable, healthy, cost effective and have reduced environmental impacts.</description>
       <Credits aggregates="true" inherits="false">
         <Indicators>
@@ -3020,7 +3022,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Credits>
       <Category id="2.01">
         <name>Comfort</name>
-        <icon src="icon/2.01.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/2.01.png" />
         <description />
         <Uniclass code="" />
         <Credits aggregates="true" inherits="false">
@@ -3035,8 +3037,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="2.01.01" seq_id="9">
           <name>Indoor Pollutants</name>
-          <icon src="icon/2.01.01.png" />
-          <img src="img/2.01.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.01.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.01.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -3311,8 +3313,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.01.02" seq_id="10">
           <name>Daylight</name>
-          <icon src="icon/2.01.02.png" />
-          <img src="img/2.01.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.01.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.01.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -3581,8 +3583,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.01.03" seq_id="11">
           <name>Internal and External Noise</name>
-          <icon src="icon/2.01.03.png" />
-          <img src="img/2.01.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.01.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.01.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -3857,8 +3859,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.01.04" seq_id="12">
           <name>Sound Insulation</name>
-          <icon src="icon/2.01.04.png" />
-          <img src="img/2.01.04.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.01.04.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.01.04.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -4133,8 +4135,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.01.05" seq_id="13">
           <name>Temperature</name>
-          <icon src="icon/2.01.05.png" />
-          <img src="img/2.01.05.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.01.05.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.01.05.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -4409,8 +4411,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.01.06" seq_id="14">
           <name>Ventilation</name>
-          <icon src="icon/2.01.06.png" />
-          <img src="img/2.01.06.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.01.06.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.01.06.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -4686,7 +4688,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="2.02">
         <name>Energy and Cost</name>
-        <icon src="icon/2.02.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/2.02.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -4704,8 +4706,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="2.02.01" seq_id="15">
           <name>Energy and cost</name>
-          <icon src="icon/2.02.01.png" />
-          <img src="img/2.02.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.02.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.02.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -4980,8 +4982,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.02.02" seq_id="16">
           <name>Decentralised Energy</name>
-          <icon src="icon/2.02.02.png" />
-          <img src="img/2.02.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.02.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.02.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -5256,8 +5258,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.02.03" seq_id="17">
           <name>Impact on Local Air Quality</name>
-          <icon src="icon/2.02.03.png" />
-          <img src="img/2.02.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.02.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.02.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -5533,7 +5535,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="2.03">
         <name>Materials</name>
-        <icon src="icon/2.03.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/2.03.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -5551,8 +5553,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="2.03.01" seq_id="18">
           <name>Responsible sourcing of construction products</name>
-          <icon src="icon/2.03.01.png" />
-          <img src="img/2.03.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.03.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.03.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -5827,8 +5829,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.03.02" seq_id="19">
           <name>Environmental Impact from Construction Products</name>
-          <icon src="icon/2.03.02.png" />
-          <img src="img/2.03.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.03.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.03.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -6103,8 +6105,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.03.03" seq_id="20">
           <name>Life Cycle Costing of Construction Products</name>
-          <icon src="icon/2.03.03.png" />
-          <img src="img/2.03.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.03.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.03.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -6379,8 +6381,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.03.04" seq_id="21">
           <name>Durability of Construction Products</name>
-          <icon src="icon/2.03.04.png" />
-          <img src="img/2.03.04.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.03.04.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.03.04.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -6656,7 +6658,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="2.04">
         <name>Space</name>
-        <icon src="icon/2.04.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/2.04.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -6674,8 +6676,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="2.04.01" seq_id="22">
           <name>Drying Space</name>
-          <icon src="icon/2.04.01.png" />
-          <img src="img/2.04.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.04.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.04.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -6950,8 +6952,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.04.02" seq_id="23">
           <name>Access and Space</name>
-          <icon src="icon/2.04.02.png" />
-          <img src="img/2.04.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.04.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.04.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -7226,8 +7228,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="2.04.03" seq_id="24">
           <name>Recyclable Waste</name>
-          <icon src="icon/2.04.03.png" />
-          <img src="img/2.04.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.04.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.04.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -7503,7 +7505,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="2.05">
         <name>Water</name>
-        <icon src="icon/2.05.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/2.05.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -7521,8 +7523,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="2.05.01" seq_id="25">
           <name>Water Efficiency</name>
-          <icon src="icon/2.05.01.png" />
-          <img src="img/2.05.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/2.05.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/2.05.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -7799,7 +7801,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
     </Section>
     <Section id="3">
       <name>Knowledge Sharing</name>
-      <icon src="icon/3.png" />
+      <icon src="https://julesbuh.github.io/XML/icon/3.png" />
       <description>includes issues that address the processes that enhance understanding and co-operation between the designer, constructor, client and householder.</description>
       <Credits aggregates="true" inherits="false">
         <Indicators>
@@ -7813,7 +7815,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Credits>
       <Category id="3.01">
         <name>Home Delivery</name>
-        <icon src="icon/3.01.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/3.01.png" />
         <description />
         <Uniclass code="" />
         <Credits aggregates="true" inherits="false">
@@ -7828,8 +7830,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="3.01.01" seq_id="26">
           <name>Commissioning and Performance</name>
-          <icon src="icon/3.01.01.png" />
-          <img src="img/3.01.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.01.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.01.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -8104,8 +8106,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.01.02" seq_id="27">
           <name>Quality Improvement</name>
-          <icon src="icon/3.01.02.png" />
-          <img src="img/3.01.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.01.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.01.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -8380,8 +8382,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.01.03" seq_id="28">
           <name>Considerate Construction</name>
-          <icon src="icon/3.01.03.png" />
-          <img src="img/3.01.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.01.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.01.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -8656,8 +8658,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.01.04" seq_id="29">
           <name>Construction Energy Use</name>
-          <icon src="icon/3.01.04.png" />
-          <img src="img/3.01.04.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.01.04.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.01.04.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -8932,8 +8934,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.01.05" seq_id="30">
           <name>Construction Water Use</name>
-          <icon src="icon/3.01.05.png" />
-          <img src="img/3.01.05.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.01.05.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.01.05.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -9208,8 +9210,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.01.06" seq_id="31">
           <name>Site Waste</name>
-          <icon src="icon/3.01.06.png" />
-          <img src="img/3.01.06.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.01.06.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.01.06.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -9485,7 +9487,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="3.02">
         <name>User Experience</name>
-        <icon src="icon/3.02.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/3.02.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -9503,8 +9505,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="3.02.01" seq_id="32">
           <name>Aftercare</name>
-          <icon src="icon/3.02.01.png" />
-          <img src="img/3.02.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.02.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.02.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -9779,8 +9781,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.02.02" seq_id="33">
           <name>Home Information</name>
-          <icon src="icon/3.02.02.png" />
-          <img src="img/3.02.02.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.02.02.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.02.02.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -10055,8 +10057,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Issue>
         <Issue id="3.02.03" seq_id="34">
           <name>Smart Homes</name>
-          <icon src="icon/3.02.03.png" />
-          <img src="img/3.02.03.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.02.03.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.02.03.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />
@@ -10332,7 +10334,7 @@ Note: Pedestrian routes that are outside of the development site and therefore n
       </Category>
       <Category id="3.03">
         <name>Future Learning</name>
-        <icon src="icon/3.03.png" />
+        <icon src="https://julesbuh.github.io/XML/icon/3.03.png" />
         <description />
         <Uniclass code="" />
         <Uniclass code="" />
@@ -10350,8 +10352,8 @@ Note: Pedestrian routes that are outside of the development site and therefore n
         </Credits>
         <Issue id="3.03.01" seq_id="35">
           <name>Post-Occupancy Evaluation</name>
-          <icon src="icon/3.03.01.png" />
-          <img src="img/3.03.01.png" />
+          <icon src="https://julesbuh.github.io/XML/icon/3.03.01.png" />
+          <img src="https://julesbuh.github.io/XML/img/3.03.01.png" />
           <Uniclass code="" />
           <Uniclass code="" />
           <Uniclass code="" />

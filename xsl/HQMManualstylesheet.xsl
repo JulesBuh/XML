@@ -82,7 +82,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 				
 				<p>This xml file is a concept model for packaging content from authoring software as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.</p></div>
 				
-				<p>Take a look for how the interactive daylighting visual can be <a href="https://julesbuh.github.io/XML/HQMManual.xml#2.01.02">embedded into the issue within the manual</a></p>
+				<p>Take a look for how the interactive daylighting visual can be <a href="#2.01.02">embedded into the issue within the manual</a></p>
 				<xsl:apply-templates select="*//Section" mode="manualView"/>
 				
 			</body>
