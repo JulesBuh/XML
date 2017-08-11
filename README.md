@@ -1,6 +1,7 @@
 # Hosting XML demonstrating vision for HQM tools and Technical Manual authoring
 This is a prototype repository for hosting xml, xsd and xsl as a webpage. It does not attempt to match the official HQM release which can be found [http://www.homequalitymark.com/standard](http://www.homequalitymark.com/standard). The standard and trademarks belong to BRE Global Ltd. The purpose of these prototypes are to demonstrate the potential of the XML schema that has been developed by BRE for the HQM standard.
 
+#### [View on github](https://github.com/JulesBuh/XML)
 It uses prototype schemas based on the work for [HQM](http://www.homequalitymark.com/) data exchanges used in [HQM assessments](http://www.homequalitymark.com/).
 
 ## Cross-assessment discrepancy checks (potential for QA cross validation)
@@ -8,10 +9,12 @@ The following xml file is a hypothetical merged HQMXMLfile containing 4 out of 3
 
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-MultipleIssuesExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-MultipleIssuesExample.xml)
 
+[!img/Diagram.png](img/Diagram.png)
+
 ## Referencing Schemas (Accessing defined drop-downs for co-ordinating assessment tools)
 The following file loads the schema associated with the input file and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file (similar to above) and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema with drop downs for defined accepted values for simple enumerator lists. There is also potential for BREEAM projects to create hqmXML files for use in offline purposes and development for reintegrating an offline hqmxml file is feasible. Other potential areas of development could be allowing the creation the suit of offline Excel/OpenofficeCalc and Word/OpenofficeWriter tools for each assessment on-the-fly, populating all of the information that has already been defined on BREEAM Projects.
 
-[!img/Diagram.png]
+
 
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml)
 
