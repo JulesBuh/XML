@@ -6,33 +6,6 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 	<xsl:output method="html" indent="yes"/>
 
-	<xsl:template match = "*" mode = "print" > 
-		<xsl:value-of select = "local-name()" />
-		<xsl:text >/</xsl:text>
-	</xsl:template> 
-	
-	<xsl:variable name="header">
-		<tr bgcolor="#096492">
-		Using schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." />
-			<th>path</th>
-			<th>element name</th>
-			<th>attribute name:value</th>
-			<th>element values</th>
-		</tr>
-	</xsl:variable>	
-
-
-	
-	<xsl:template name="Picklist" match="xs:restriction/xs:enumeration/@value" mode="Picklist">
-		<for-each select=".">
-			<xsl:element name="option">
-				<xsl:attribute name="value"><xsl:value-of select ="."/></xsl:attribute>
-				<xsl:value-of select ="."/><xsl:text> - (</xsl:text><xsl:value-of select ="../xs:annotation/xs:documentation/."/>)
-			</xsl:element >									
-		</for-each>
-	</xsl:template>
-	
-	
 	<xsl:template match="/">
 		
 		
@@ -47,7 +20,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 		<link rel="stylesheet" type="text/css" href="../css/Manual.css"/>
 		</head>
 		<body>		
-				This page displays the xml file with the associated schema. It and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema with drop downs for defined accepted values for simple enumerator lists.
+				<div class="disclaim">This page displays the xml file with the associated schema. It and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema with drop downs for defined accepted values for simple enumerator lists.</div>
 			<table>
 			
 				<xsl:copy-of select="$header" />				
@@ -144,4 +117,33 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			</table>
 		</body>
 	</xsl:template>
+
+	
+	<xsl:template match = "*" mode = "print" > 
+		<xsl:value-of select = "local-name()" />
+		<xsl:text >/</xsl:text>
+	</xsl:template> 
+	
+	<xsl:variable name="header">
+		<tr bgcolor="#096492">
+		Using schema version: <xsl:value-of select="bre:BREEAM/DocProps/xsdversion/." />
+			<th>path</th>
+			<th>element name</th>
+			<th>attribute name:value</th>
+			<th>element values</th>
+		</tr>
+	</xsl:variable>	
+
+
+	
+	<xsl:template name="Picklist" match="xs:restriction/xs:enumeration/@value" mode="Picklist">
+		<for-each select=".">
+			<xsl:element name="option">
+				<xsl:attribute name="value"><xsl:value-of select ="."/></xsl:attribute>
+				<xsl:value-of select ="."/><xsl:text> - (</xsl:text><xsl:value-of select ="../xs:annotation/xs:documentation/."/>)
+			</xsl:element >									
+		</for-each>
+	</xsl:template>
+	
+	
 </xsl:stylesheet>

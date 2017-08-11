@@ -71,32 +71,44 @@ div.Context {
 	color:#39444c;
 	background-color:#FFFFFF;
 }
-
+#DivHover{
+background-color:#FFFFFF;
+position:relative;
+left:50;
+z-index:100;
+}
+th{
+background-color:#EEEEEE;
+}
 table.validity{
 width:400px;
 border:0;}
 tr.invalid{
 color:#AA0000;
 background-color:#FFCCDD;
+z-index:100;
 }
 tr.valid{
 color:#00AA00;
 background-color:#CCFFDD;
+z-index:100;
 }
 tr.mismatch{
 color:#0000AA;
 background-color:#DDCCFF;
+z-index:100;
 }
 #DivForHoverItem {
 height: 20px;
 width:  90px;
 background-color:#DCDCDC;
+z-index:0;
 }
 #HiddenText {
 	display: none;
-	z-index:100;
+	z-index:0;
 }
 #DivForHoverItem:hover #HiddenText {
 	display:block;
-	z-index:100;
+	z-index:0;
 }

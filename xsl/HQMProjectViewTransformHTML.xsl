@@ -1,131 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+	<!--html-->
+	<xsl:template match="/">
+		<html>
+			<head>
+				<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/Manual.css"/>
+			</head>
+			<body>
+				<div class="disclaim">This xml file is a hypothetical merged file containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective. Hover over the validity to see the continuity and discrepancy status for each input.</div>
+
+				<h2>HQM XML Inputs</h2>
+				<h1>Project Object View</h1>
+				<xsl:apply-templates select="/" mode="ProjectView"/>
+				<h1>HQM Assessment View</h1>
+				<xsl:apply-templates select="*//Section" mode="assessmentView"/>
+			</body>
+		</html>
+	</xsl:template>
+
 	<!--project-->
 	<!-- finds the first BREARN to Test against -->
 	<xsl:param name="BREARN" select="//BREARN[1]"/>
 	<xsl:template match="/" mode="BREARN">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="*//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(BREARN[contains(text(),$BREARN)])">
-						<tr class="valid">
-							<td>Valid Issue</td>
-							<td>
-								<xsl:value-of select="BREARN"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="invalid" >
-							<td>Invalid Issue</td>
-							<td>
-								<xsl:value-of select="BREARN"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="*//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(BREARN[contains(text(),$BREARN)])">
+							<tr class="valid">
+								<td>Valid Issue</td>
+								<td>
+									<xsl:value-of select="BREARN"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="invalid" >
+								<td>Invalid Issue</td>
+								<td>
+									<xsl:value-of select="BREARN"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<!-- finds the first Project Name to Test against -->
 	<xsl:param name="ProjectName" select="//ProjectName[1]"/>
 	<xsl:template match="/" mode="ProjectName">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="*//ProjectDetails">
-				<xsl:choose>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="*//ProjectDetails">
+					<xsl:choose>
 
-					<xsl:when test="count(ProjectName[contains(text(),$ProjectName)])">
-						<tr class="valid">
-							<td>Valid Issue</td>
-							<td>
-								<xsl:value-of select="ProjectName"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="invalid" >
-							<td >Invalid Issue</td>
-							<td>
-								<xsl:value-of select="ProjectName"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+						<xsl:when test="count(ProjectName[contains(text(),$ProjectName)])">
+							<tr class="valid">
+								<td>Valid Issue</td>
+								<td>
+									<xsl:value-of select="ProjectName"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="invalid" >
+								<td >Invalid Issue</td>
+								<td>
+									<xsl:value-of select="ProjectName"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<!-- finds the first Assessment Stage to Test against -->
 	<xsl:param name="AssessmentStage" select="//AssessmentStage[1]"/>
 	<xsl:template match="/" mode="AssessmentStage">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="*//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(AssessmentStage[contains(text(),$AssessmentStage)])">
-						<tr class="valid">
-							<td>Valid Issue</td>
-							<td>
-								<xsl:value-of select="AssessmentStage"/> Stage Assessment
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="invalid" >
-							<td>Invalid Issue</td>
-							<td>
-								<xsl:value-of select="AssessmentStage"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="*//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(AssessmentStage[contains(text(),$AssessmentStage)])">
+							<tr class="valid">
+								<td>Valid Issue</td>
+								<td>
+									<xsl:value-of select="AssessmentStage"/> Stage Assessment
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="invalid" >
+								<td>Invalid Issue</td>
+								<td>
+									<xsl:value-of select="AssessmentStage"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="/" mode="ProjectDetails">
 		<h2>
 			<img src="https://julesbuh.github.io/XML/icon/Phases.png" width="50px"/>Project Information
 		</h2>
-		<table class="validity">	
+		<table>	
 			<tr>
 				<td>BRE Assessment Registration Number:</td>
 
@@ -196,251 +221,265 @@
 	<!--people-->
 	<xsl:param name="HQMAssessor" select="//HQMAssessor/person/Name[1]"/>
 	<xsl:template match="/" mode="HQMAssessor">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(Roles/HQMAssessor/person/Name[contains(text(),$HQMAssessor)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="Roles/HQMAssessor/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="Roles/HQMAssessor/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(Roles/HQMAssessor/person/Name[contains(text(),$HQMAssessor)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="Roles/HQMAssessor/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="Roles/HQMAssessor/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="Developer" select="//Developer/person/Name[1]"/>
 	<xsl:template match="/" mode="Developer">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(Roles/Developer/person/Name[contains(text(),$Developer)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="Roles/Developer/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="Roles/Developer/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(Roles/Developer/person/Name[contains(text(),$Developer)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="Roles/Developer/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="Roles/Developer/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="Constructor" select="//Constructor/person/Name[1]"/>
 	<xsl:template match="/" mode="Constructor">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(Roles/Constructor/person/Name[contains(text(),$Constructor)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="Roles/Constructor/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="Roles/Constructor/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(Roles/Constructor/person/Name[contains(text(),$Constructor)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="Roles/Constructor/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="Roles/Constructor/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="Designer" select="//Designer/person/Name[1]"/>
 	<xsl:template match="/" mode="Designer">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(Roles/Designer/person/Name[contains(text(),$Designer)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="Roles/Designer/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="Roles/Designer/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(Roles/Designer/person/Name[contains(text(),$Designer)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="Roles/Designer/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="Roles/Designer/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="StructuralEngineer" select="//StructuralEngineer/person/Name[1]"/>
 	<xsl:template match="/" mode="StructuralEngineer">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(Roles/StructuralEngineer/person/Name[contains(text(),$StructuralEngineer)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="Roles/StructuralEngineer/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="Roles/StructuralEngineer/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(Roles/StructuralEngineer/person/Name[contains(text(),$StructuralEngineer)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="Roles/StructuralEngineer/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="Roles/StructuralEngineer/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="Ecologist" select="//Ecologist/person/Name[1]"/>
 	<xsl:template match="/" mode="Ecologist">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//ProjectDetails">
-				<xsl:choose>
-					<xsl:when test="count(Roles/Ecologist/person/Name[contains(text(),$Ecologist)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="Roles/Ecologist/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="Roles/Ecologist/person/Name"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//ProjectDetails">
+					<xsl:choose>
+						<xsl:when test="count(Roles/Ecologist/person/Name[contains(text(),$Ecologist)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="Roles/Ecologist/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="Roles/Ecologist/person/Name"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:variable name="others" select="person/Name" />
 	<xsl:template match="/" mode="Others">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="$others">
-				<xsl:if test="generate-id() = generate-id($others[. = current()][1])">
-					<tr>
-						<td>
-							<xsl:value-of select="." />
-						</td>
-					</tr>
-					<br />
-				</xsl:if>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="$others">
+					<xsl:if test="generate-id() = generate-id($others[. = current()][1])">
+						<tr>
+							<td>
+								<xsl:value-of select="." />
+							</td>
+						</tr>
+						<br />
+					</xsl:if>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="/" mode="TeamDetails">
@@ -575,238 +614,251 @@
 	<!--site-->
 	<xsl:param name="siteLocation" select="//inputs/siteDetails/Address/Address[1]"/>
 	<xsl:template match="/" mode="siteLocation">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//inputs">
-				<xsl:choose>
-					<xsl:when test="count(siteDetails/Address/Address[.=$siteLocation])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="siteDetails/Address/Address"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../@id"/>.<xsl:value-of select="../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="siteDetails/Address/Address"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../@id"/>.<xsl:value-of select=" ../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//inputs">
+					<xsl:choose>
+						<xsl:when test="count(siteDetails/Address/Address[.=$siteLocation])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="siteDetails/Address/Address"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../@id"/>.<xsl:value-of select="../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="siteDetails/Address/Address"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../@id"/>.<xsl:value-of select=" ../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 
 	<xsl:param name="terrainType" select="//terrainType[1]"/>
 	<xsl:template match="/" mode="terrainType">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//siteDetails">
-				<xsl:choose>
-					<xsl:when test="count(terrainType[contains(text(),$terrainType)])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="terrainType"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="terrainType"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//siteDetails">
+					<xsl:choose>
+						<xsl:when test="count(terrainType[contains(text(),$terrainType)])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="terrainType"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="terrainType"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="surroundingsHighAlbedo" select="//@surroundingsHighAlbedo[1]"/>
 	<xsl:template match="/" mode="surroundingsHighAlbedo">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//siteDetails">
-				<xsl:choose>
-					<xsl:when test="count(@surroundingsHighAlbedo[.=$surroundingsHighAlbedo])">
-						<tr class="valid">
-							<td>Valid</td>
-							<td>
-								<xsl:value-of select="@surroundingsHighAlbedo"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="@surroundingsHighAlbedo"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//siteDetails">
+					<xsl:choose>
+						<xsl:when test="count(@surroundingsHighAlbedo[.=$surroundingsHighAlbedo])">
+							<tr class="valid">
+								<td>Valid</td>
+								<td>
+									<xsl:value-of select="@surroundingsHighAlbedo"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="@surroundingsHighAlbedo"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="highAlbedoLocal" select="//@highAlbedoLocal[1]"/>
 	<xsl:template match="/" mode="highAlbedoLocal">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//siteDetails">
-				<xsl:choose>
-					<xsl:when test="count(@highAlbedoLocal[.=$highAlbedoLocal])">
-						<tr class="valid">
-							<td>Valid</td>
-							<td>
-								<xsl:value-of select="@highAlbedoLocal"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="@highAlbedoLocal"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//siteDetails">
+					<xsl:choose>
+						<xsl:when test="count(@highAlbedoLocal[.=$highAlbedoLocal])">
+							<tr class="valid">
+								<td>Valid</td>
+								<td>
+									<xsl:value-of select="@highAlbedoLocal"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="@highAlbedoLocal"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../../@id"/>.<xsl:value-of select="../../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="BuildScale" select="//BuildScale[1]"/>
 	<xsl:template match="/" mode="BuildScale">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//inputs">
-				<xsl:choose>
-					<xsl:when test="count(//BuildScale[text()=$BuildScale])">
-						<tr class="valid">
-							<td>Valid</td>
-							<td>
-								<xsl:value-of select="//BuildScale"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../@id"/>.<xsl:value-of select="../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="//BuildScale"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../@id"/>.<xsl:value-of select=" ../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//inputs">
+					<xsl:choose>
+						<xsl:when test="count(//BuildScale[text()=$BuildScale])">
+							<tr class="valid">
+								<td>Valid</td>
+								<td>
+									<xsl:value-of select="//BuildScale"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../@id"/>.<xsl:value-of select="../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="//BuildScale"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../@id"/>.<xsl:value-of select=" ../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:param name="FloodRisks" select="//FloodRisks[1]"/>
 	<xsl:template match="/" mode="FloodRisks">
-		<table class="validity">
-			<tr>
-				<th>Validity</th>
-				<th>Value</th>
-				<th>In Issue</th>
-			</tr>
-			<xsl:for-each select="//inputs">
-				<xsl:choose>
-					<xsl:when test="count(//FloodRisks[text()=$FloodRisks])">
-						<tr class="valid">
-							<td>Continuous</td>
-							<td>
-								<xsl:value-of select="//FloodRisks"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../@id"/>.<xsl:value-of select="../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:when>
-					<xsl:otherwise>
-						<tr class="mismatch" >
-							<td>Discontinuous</td>
-							<td>
-								<xsl:value-of select="//FloodRisks"/>
-							</td>
-							<td>
-								<xsl:value-of select="../../@id"/>.<xsl:value-of select=" ../@id"/>
-								<br/>
-							</td>
-						</tr>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</table>
+		<div id="DivHover">
+			<table class="validity">
+				<tr>
+					<th>Validity</th>
+					<th>Value</th>
+					<th>In Issue</th>
+				</tr>
+				<xsl:for-each select="//inputs">
+					<xsl:choose>
+						<xsl:when test="count(//FloodRisks[text()=$FloodRisks])">
+							<tr class="valid">
+								<td>Continuous</td>
+								<td>
+									<xsl:value-of select="//FloodRisks"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../@id"/>.<xsl:value-of select="../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:when>
+						<xsl:otherwise>
+							<tr class="mismatch" >
+								<td>Discontinuous</td>
+								<td>
+									<xsl:value-of select="//FloodRisks"/>
+								</td>
+								<td>
+									<xsl:value-of select="../../@id"/>.<xsl:value-of select=" ../@id"/>
+									<br/>
+								</td>
+							</tr>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</table>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="/" mode="SiteDetails">
 		<h2>
 			<img src="https://julesbuh.github.io/XML/icon/Site.png" width="50px"/>Site Information
 		</h2>
+
 		<table class="validity">	
 			<tr>
 				<td>Site Location:</td>
@@ -982,23 +1034,6 @@
 
 
 
-	<xsl:template match="/">
-		<html>
-			<head>
-				<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
-				<link rel="stylesheet" type="text/css" href="../css/Manual.css"/>
-			</head>
-			<body>
-				This xml file is a hypothetical merged file containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective
-				<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
-				<h2>HQM XML Inputs</h2>
-				<h1>Project Object View</h1>
-				<xsl:apply-templates select="/" mode="ProjectView"/>
-				<h1>HQM Assessment View</h1>
-				<xsl:apply-templates select="*//Section" mode="assessmentView"/>
-			</body>
-		</html>
-	</xsl:template>
 
 	<xsl:template match="Section" mode="assessmentView">
 
