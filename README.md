@@ -32,7 +32,9 @@ Concept model for packaging content as xml which can then be used to output the 
 
 ![img/Manual as a schema Diagram](img/diagram4.png)
 
-## Google Earth and kmz files (Streamline Assessment Potential for Batch Upload and Our Surroundings Issues Evidence)
+## [Google Earth and kmz files (Streamline Assessment Potential for Batch Upload and Our Surroundings Issues Evidence)](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml)
 Concept of using icons created to facilitate data input for a large number of dwellings and getting their co-ordinates for assessing against ['Our Surroundings'](https://julesbuh.github.io/XML/xml/HQMManual-Example.xml#1) issues such as transport. The xsl file transforms the .kml file found within a kmz and where particular HQM icons have been used for the placemarker, information can be extracted.
 
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml)
+
+![img/Manual as a schema Diagram](img/diagram5.png)
