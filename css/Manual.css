@@ -8,7 +8,7 @@ body,html{
 }
 h1{
 	color:#50C8F5;
-	font-family:FrutigerBQ-Bold,Calvert;
+	font-family:Calvert MT W01 Light,FrutigerBQ-Bold,Calvert;
 }
 h2{
 	color:#232D96;
@@ -18,7 +18,7 @@ div.disclaim{
 }
 h2.Section{
 	color:#FFFFFF;
-	font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;
+	font-family:Rockwell,Arial-BoldMT,Calvert MT W01 Light,FrutigerBQ-Bold,Calvert;
 }
 div.Section {
 	width: 1030px;
@@ -29,7 +29,7 @@ div.Section {
 }
 h3.Category{
 	color:#FFFFFF;
-	font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;
+	font-family:Rockwell,Arial-BoldMT,Calvert MT W01 Light,FrutigerBQ-Bold,Calvert;
 }
 div.Category {
 	
@@ -41,7 +41,7 @@ div.Category {
 	}
 h1.Issue{
 	color:#50C8F5;
-	font-family:Rockwell,Arial-BoldMT,FrutigerBQ-Bold,Calvert;
+	font-family:Rockwell,Arial-BoldMT,Calvert MT W01 Light,FrutigerBQ-Bold,Calvert;
 }
 div.Issue {
 	width: 800px;
@@ -112,3 +112,10 @@ z-index:0;
 	display:block;
 	z-index:0;
 }
+@media print {
+  h1 { 
+    page-break-before: always;
+  }
+  h2 { 
+    page-break-before: always;
+  }
