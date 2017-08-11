@@ -19,9 +19,9 @@ The following xml file is a hypothetical merged HQMXMLfile containing 4 out of 3
 
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-MultipleIssuesExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-MultipleIssuesExample.xml)
 
-![img/XSL Diagram.png](img/diagram.png)
+![img/XSL Diagram](img/diagram.png)
 
-
+[![img/Go to example](img/btn_viewExample.png)](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-MultipleIssuesExample.xml)
 
 ## [Example 2. Referencing Schemas (Accessing defined drop-downs for co-ordinating assessment tools)](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml)
 The following file loads the schema associated with the input file and displays dropdown lists for possible input values. The intention of this exercise this is to scrape the data from the exchange file (similar to above) and marry it to the schema on which its validated against. The xsl only goes as far as loading the contents of the exchange file, reading the schema version and then loading the xsd schema with drop downs for defined accepted values for simple enumerator lists. There is also potential for BREEAM projects to create hqmXML files for use in offline purposes and development for reintegrating an offline hqmxml file is feasible. Other potential areas of development could be allowing the creation the suit of offline Excel/OpenofficeCalc and Word/OpenofficeWriter tools for each assessment on-the-fly, populating all of the information that has already been defined on BREEAM Projects.
@@ -29,8 +29,7 @@ The following file loads the schema associated with the input file and displays 
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml)
 
 ![img/XSD Diagram](img/diagram2.png)
-
-
+[![img/Go to example](img/btn_viewExample.png)](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-SingleIssueExample.xml)
 
 ## [Example 3. Visualise tools (Training and assessment potential)](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
 Related Feasibility exercises for improving the communication of HQM concepts: This example builds an interactive parametric model for the daylight issue, showing how the equations relate to the geometry. This could aid training as well as be extended to be an actual tool in the online assessment. The javasript definition for this file could be hard coded into the xml manual in the relevant issue or the url to the javascript page as demonstrated in the [manual in issue 10](https://julesbuh.github.io/XML/xml/HQMManual-Example.xml#2.01.02)
@@ -38,8 +37,7 @@ Related Feasibility exercises for improving the communication of HQM concepts: T
 [`https://julesbuh.github.io/threeD.js-HQM-Daylighting/`](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
 
 ![img/InteractiveDaylightVisual](img/thumbnailPreview.png)
-
-
+[![img/Go to example](img/btn_viewExample.png)](https://julesbuh.github.io/threeD.js-HQM-Daylighting)
 
 ## [Example 4. Technical Manual as xml (potential for streamlining authoring and presenting information to third party apps)](https://julesbuh.github.io/XML/xml/HQMManual-Example.xml)
 Concept model for packaging content as xml which can then be used to output the manual as well as drive the tools. e.g drop down lists and credit tables which are defined in each issue can be utilised within the relevant tool (both online and offline versions of the tool. Methodology and tool troubleshooting could also be defined in this way.
@@ -47,6 +45,7 @@ Concept model for packaging content as xml which can then be used to output the 
 [`https://julesbuh.github.io/XML/xml/HQMManual-Example.xml`](https://julesbuh.github.io/XML/xml/HQMManual-Example.xml)
 
 ![img/Manual as a schema Diagram](img/diagram4.png)
+[![img/Go to example](img/btn_viewExample.png)](https://julesbuh.github.io/XML/xml/HQMManual-Example.xml)
 
 
 
@@ -56,3 +55,4 @@ Concept of using icons created to facilitate data input for a large number of dw
 [`https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml`](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml)
 
 ![img/Manual as a schema Diagram](img/diagram5.png)
+[![img/Go to example](img/btn_viewExample.png)](https://julesbuh.github.io/XML/xml/HQMxmlAssessment-ProjectExample.xml)
