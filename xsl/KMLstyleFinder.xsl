@@ -165,10 +165,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'Dwelling')or contains(text(),'shapes/realestate') or contains(text(),'shapes/homegardenbusiness') or contains(text(),'shapes/ranger_station') or contains(text(),'shapes/lodgings')">
-						                  <img src="files/Dwelling.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Dwelling.png" width="40px"/>
 					                </xsl:when>
 					                <xsl:otherwise>
-						                  <img src="files/hqm_logo.png" width="20px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/hqm_logo.png" width="20px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
@@ -214,10 +214,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'Train') or contains(text(),'subway') or contains(text(),'rail')">
-						                  <img src="files/Node_Train.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Node_Train.png" width="40px"/>
 					                </xsl:when>			
 					                <xsl:otherwise>
-						                  <img src="files/hqm_logo.png" width="20px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/hqm_logo.png" width="20px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
@@ -256,10 +256,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'Bus') or contains(text(),'bus')">
-						                  <img src="files/Node_Bus.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Node_Bus.png" width="40px"/>
 					                </xsl:when>			
 					                <xsl:otherwise>
-						                  <img src="files/hqm_logo.png" width="20px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/hqm_logo.png" width="20px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
@@ -297,10 +297,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'Bike')">
-						                  <img src="files/Node_Bike.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Node_Bike.png" width="40px"/>
 					                </xsl:when>			
 					                <xsl:otherwise>
-						                  <img src="files/Node_Bike.png" width="20px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Node_Bike.png" width="20px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
@@ -338,10 +338,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'CarCharge') or contains(text(),'gas_stations')">
-						                  <img src="files/Node_CarCharge.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Node_CarCharge.png" width="40px"/>
 					                </xsl:when>			
 					                <xsl:otherwise>
-						                  <img src="files/hqm_logo.png" width="20px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/hqm_logo.png" width="20px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
@@ -379,10 +379,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'CarPool') or contains(text(),'cabs')">
-						                  <img src="files/Node_CarPool.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/Node_CarPool.png" width="40px"/>
 					                </xsl:when>			
 					                <xsl:otherwise>
-						                  <img src="files/hqm_logo.png" width="20px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/hqm_logo.png" width="20px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
@@ -421,10 +421,10 @@
 				           <td>
 				              <xsl:choose>
 					                <xsl:when test="contains(text(),'site')">
-						                  <img src="files/site.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/site.png" width="40px"/>
 					                </xsl:when>			
 					                <xsl:otherwise>
-						                  <img src="files/hqm_logo.png" width="40px"/>
+						                  <img src="https://julesbuh.github.io/XML/icon/hqm_logo.png" width="40px"/>
 					                </xsl:otherwise>
 				              </xsl:choose>
 				           </td>
