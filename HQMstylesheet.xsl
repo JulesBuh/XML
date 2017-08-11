@@ -1026,6 +1026,7 @@
 				</style>
 			</head>
 			<body>
+				This xml file is a hypothetical merged file containing 4 out of 36 issues that assessment information has been entered for. The xsl file transforms the data to a project orientated view to be able to compare discrepancies from a project perspective
 				<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png"/>
 				<h2>HQM XML Inputs</h2>
 				<h1>Project Object View</h1>
