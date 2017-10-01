@@ -1,8 +1,104 @@
-source,target,value
-Barry,Elvis,2
-Frodo,Elvis,2
-Frodo,Sarah,2
-Barry,Alice,2
-Elvis,Sarah,2
-Elvis,Alice,2
-Sarah,Alice,4
+Type of change,ISSUE,value
+New Content,Accessible Public Transport,5
+New Content,Ecology,20
+New Content,Indoor Pollutants,5
+New Content,Internal External Noise,10
+New Content,Sound Insulation,10
+New Content,Impact on local air,20
+New Content,Access & Space,5
+New Content,Recyclable waste,3
+New Content,Quality improvement,20
+New Content,Considerate Construction,20
+New Content,Aftercare,15
+New Content,Home Information,15
+New Content,Smart Homes,20
+New Content,POE,10
+Amended Content,Accessible Public Transport,3
+Amended Content,Alternative Sustainable Transport option,3
+Amended Content,Recreational Space,6
+Amended Content,Flood Risk,2
+Amended Content,Indoor Pollutants,10
+Amended Content,Internal External Noise,10
+Amended Content,Sound Insulation,10
+Amended Content,Temperature,5
+Amended Content,Ventilation,5
+Amended Content,Energy & Cost,10
+Amended Content,Decentralised Energy,8
+Amended Content,Drying Sapace,5
+Amended Content,Access & Space,5
+Amended Content,Commissioning,3
+Amended Content,Quality improvement,10
+Amended Content,Considerate Construction,10
+Amended Content,Aftercare,10
+Amended Content,Home Information,10
+Amended Content,Smart Homes,10
+Amended Content,POE,10
+New  Pre-requisite or Mandatory requirement,Ecology,1
+New  Pre-requisite or Mandatory requirement,Flood Risk,1
+New  Pre-requisite or Mandatory requirement,Security,1
+New  Pre-requisite or Mandatory requirement,Indoor Pollutants,1
+New  Pre-requisite or Mandatory requirement,Ventilation,1
+New  Pre-requisite or Mandatory requirement,Quality improvement,1
+New  Pre-requisite or Mandatory requirement,Home Information,1
+New  Pre-requisite or Mandatory requirement,Smart Homes,1
+Alternative Method  of compliance,Ecology,1
+Alternative Method  of compliance,Quality improvement,1
+Alternative Method  of compliance,Consiederate Construction,1
+Alternative Method  of compliance,Home Information,1
+Alternative Method  of compliance,POE,1
+Criteria Restructuring ,Acessible Public Transport,5
+Criteria Restructuring ,Alternative Sustainable Transport option,5
+Criteria Restructuring ,Ecology,10
+Criteria Restructuring ,Sound Insulation,7
+Criteria Restructuring ,Access and Space,5
+Criteria Restructuring ,Recyclable waste,5
+Criteria Restructuring ,Quality improvement,10
+Criteria Restructuring ,Considerate Construction,10
+Criteria Restructuring ,Home Information,10
+Criteria Restructuring ,Smart Homes,10
+Criteria Restructuring ,POE,10
+Wording tweaks for clarity,Acessible Public Transport,10
+Wording tweaks for clarity,Alternative Sustainable Transport option,10
+Wording tweaks for clarity,Local Amenities,5
+Wording tweaks for clarity,Ecology,10
+Wording tweaks for clarity,Recreational Space,10
+Wording tweaks for clarity,Flood Risk,5
+Wording tweaks for clarity,Managing the Impact of rainfall,5
+Wording tweaks for clarity,Security,5
+Wording tweaks for clarity,Indoor Pollutants,10
+Wording tweaks for clarity,Daylight,5
+Wording tweaks for clarity,Internal External Noise,10
+Wording tweaks for clarity,Sound Insulation,10
+Wording tweaks for clarity,Temperature,10
+Wording tweaks for clarity,Ventilation,10
+Wording tweaks for clarity,Energy & Cost,10
+Wording tweaks for clarity,Decentralised Energy,10
+Wording tweaks for clarity,Impact on local air,10
+Wording tweaks for clarity,Responsible sourcing of construction Products,10
+Wording tweaks for clarity,Environmental Impact of Materials,10
+Wording tweaks for clarity,LCC,10
+Wording tweaks for clarity,Drying Space,10
+Wording tweaks for clarity,Recyclable waste,10
+Wording tweaks for clarity,Commissioning & Performance,10
+Wording tweaks for clarity,Quality improvement,10
+Wording tweaks for clarity,Considerate Construction,10
+Wording tweaks for clarity,Construction Energy Use,5
+Wording tweaks for clarity,Construction Water Use,5
+Wording tweaks for clarity,Aftercare,10
+Wording tweaks for clarity,Home Information,10
+Wording tweaks for clarity,POE,10
+Upated Standards,Accessible Public Transport,1
+Upated Standards,Flood Risk,1
+Upated Standards,Security,1
+Upated Standards,Temperature,1
+Upated Standards,Energy & Cost,1
+Upated Standards,Recyclable waste,1
+Upated Standards,Water Efficiency,1
+Upated Standards,Quality improvement,1
+Upated Standards,Considerate Construction,1
+Upated Standards,Sire Waste,1
+Upated Standards,Smart Homes,1
+New Standards,Accessible Public Transport,1
+New Standards,Ventilation,1
+New Standards,Decentralised Energy,1
+New Standards,Site waste,1
