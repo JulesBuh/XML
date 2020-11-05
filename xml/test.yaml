@@ -1,0 +1,190 @@
+name: Style
+description: >-
+  Creates a custom style, applies a custom and built-in styles to a range, gets
+  style properties, and deletes the custom style.
+host: EXCEL
+api_set: {}
+script:
+  content: >
+    $("#setup").click(() => tryCatch(setup));
+
+
+    $("#delete-new-style").click(() => tryCatch(deleteTemplaterStyles));
+
+
+
+    /*Not used yet kept for reference
+
+    //$("#apply-new-style").click(() => tryCatch(applyNewStyle));
+
+    //$("#apply-built-in-style").click(() => tryCatch(applyBuiltInStyle));
+
+    //$("#get-style-font").click(() => tryCatch(getStyleFontProperties));
+
+    //$("#get-style-alignment").click(() =>
+    tryCatch(getStyleAlignmentProperties));
+
+    async function applyBuiltInStyle() {
+      await Excel.run(async (context) => {
+        let worksheet = context.workbook.worksheets.getItem("Sample");
+        let range = worksheet.getRange("A1:E1");
+
+        // Apply built-in style.
+        // Styles are in the Home tab ribbon.
+        range.style = Excel.BuiltInStyle.neutral;
+        range.format.horizontalAlignment = "Right";
+
+        await context.sync();
+      });
+    }
+
+
+    async function getStyleFontProperties() {
+      await Excel.run(async (context) => {
+        let style = context.workbook.styles.getItem("Normal");
+        style.font.load("bold, color, italic, name, size");
+        style.fill.load("color");
+
+        await context.sync();
+
+        console.log("Bold: " + style.font.bold);
+        console.log("Font color: " + style.font.color);
+        console.log("Italic: " + style.font.italic);
+        console.log("Name: " + style.font.name);
+        console.log("Size: " + style.font.size);
+        console.log("Fill color: " + style.fill.color);
+      });
+    }
+
+
+    async function getStyleAlignmentProperties() {
+      await Excel.run(async (context) => {
+        let style = context.workbook.styles.getItem("Diagonal Orientation Style");
+        style.load(
+          "textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked"
+        );
+
+        await context.sync();
+
+        console.log("Orientation: " + style.textOrientation);
+        console.log("Horizontal alignment: " + style.horizontalAlignment);
+        console.log("Add indent: " + style.autoIndent);
+        console.log("Reading order: " + style.readingOrder);
+        console.log("Wrap text: " + style.wrapText);
+        console.log("Include protection: " + style.includeProtection);
+        console.log("Shrink to fit: " + style.shrinkToFit);
+        console.log("Style locked: " + style.locked);
+      });
+    }*/
+
+
+    async function deleteTemplaterStyles() {
+      await Excel.run(async (context) => {
+        //Note that there are limits to the names of styles in length and characters. [A-Za-z0-9\_\s]{1,24}
+        context.workbook.styles.getItem("Templater_Actor").delete();
+        context.workbook.styles.getItem("Templater_PropertyCommon").delete();
+        context.workbook.styles.getItem("Templater_PropertyGeneric").delete();
+        context.workbook.styles.getItem("Templater_PropertySpecific").delete();
+        context.workbook.styles.getItem("Templater_Taxonomy").delete();
+        context.workbook.styles.getItem("Templater_Organisation").delete();
+        context.workbook.styles.getItem("Templater_Team").delete();
+        context.workbook.styles.getItem("Templater_Stage").delete();
+        context.workbook.styles.getItem("Templater_Activity").delete();
+        context.workbook.styles.getItem("Templater_Category").delete();
+        context.workbook.styles.getItem("Lexicon_Secretariat").delete();
+        context.workbook.styles.getItem("Lexicon_RelevantAuthority").delete();
+        context.workbook.styles.getItem("Templater_Subject").delete();
+        context.workbook.styles.getItem("Templater_Unit").delete();
+
+        // Styles are in the Home tab ribbon.
+
+
+        await context.sync();
+
+        console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+      });
+    }
+
+
+    async function setup() {
+      await Excel.run(async (context) => {
+        context.workbook.worksheets.getItemOrNullObject("Templater Styles").delete();
+        const sheet = context.workbook.worksheets.add("Templater Styles");
+
+        // creates the styles
+        let styles = context.workbook.styles;
+        // Add a new style to the style collection.
+        // Styles is in the Home tab ribbon.
+
+        //the add below requires a catch if already exists
+        styles.add("Templater_Actor");
+        styles.add("Templater_PropertyCommon");
+        styles.add("Templater_PropertyGeneric");
+        styles.add("Templater_PropertySpecific");
+        styles.add("Templater_Taxonomy");
+        styles.add("Templater_Organisation");
+        styles.add("Templater_Team");
+        styles.add("Templater_Stage");
+        styles.add("Templater_Activity");
+        styles.add("Templater_Category");
+        styles.add("Templater_Subject");
+        styles.add("Lexicon_Secretariat");
+        styles.add("Lexicon_RelevantAuthority");
+        styles.add("Templater_Unit");
+
+        //set the defintion of the styles wit hthe following
+        let newStyle = styles.getItem("Templater_Actor");
+        // The "Diagonal Orientation Style" properties.
+        newStyle.includeProtection = true;
+        newStyle.locked = false;
+        newStyle.fill.color = "black";
+
+        await context.sync();
+
+        //console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+        // HERE --- Add Cells with styles applies and names and descriptions of the cell symbology.
+        sheet.activate();
+        await context.sync();
+      });
+    }
+
+
+    /** Default helper for invoking an action and handling errors. */
+
+    async function tryCatch(callback) {
+      try {
+        await callback();
+      } catch (error) {
+        // Note: In a production add-in, you'd want to notify the user through your add-in's UI.
+        console.error(error);
+      }
+    }
+  language: typescript
+template:
+  content: "<section class=\"ms-font-m\">\n\t<p>This sample shows how to add, apply, get and delete styles.</p>\n</section>\n\n<section class=\"setup ms-font-m\">\n\t<h3>Set up</h3>\n  <p> This function does not work if the workbook is protected. This is because Styles cannot be added to protected workbooks. This will require a catch error and attempt an alternative technique. </p>\n\t<button id=\"setup\" class=\"ms-Button\">\n        <span class=\"ms-Button-label\">Add templater styles</span>\n    </button>\n\t<p>NOTE: It does work if only individual sheets are protected.</p>\n</section>\n\n<section class=\"samples ms-font-m\">\n\t<h3>Apply</h3>\n\n<section class=\"samples ms-font-m\">\n  <p>UNDER CONSTRUCTION</p>\n\t<button id=\"apply-new-style\" class=\"ms-Button\">\n        <span class=\"ms-Button-label\">Contribute Actors</span>\n    </button>\n</section>\n\n<section class=\"samples ms-font-m\">\n\t<button id=\"apply-built-in-style\" class=\"ms-Button\">\n        <span class=\"ms-Button-label\">Contribute Categories</span>\n    </button>\n</section>\n\n<section class=\"samples ms-font-m\">\n\t<button id=\"get-style-font\" class=\"ms-Button\">\n        <span class=\"ms-Button-label\">Contribute Teams</span>\n    </button>\n</section>\n\n<section class=\"samples ms-font-m\">\n\t<button id=\"get-style-alignment\" class=\"ms-Button\">\n        <span class=\"ms-Button-label\">Contribute Organisations</span>\n    </button>\n</section>\n<p> etc .. etc... </p>\n</section>\n<section class=\"setup ms-font-m\">\n\t<h3>Clean up</h3>\n\t<p> Removes All trace of added templater styles</p>\n\t<button id=\"delete-new-style\" class=\"ms-Button\">\n        <span class=\"ms-Button-label\">Delete templater styles</span>\n    </button>\n</section>"
+  language: html
+style:
+  content: |-
+    section.samples {
+        margin-top: 20px;
+    }
+
+    section.samples .ms-Button, section.setup .ms-Button {
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        min-width: 80px;
+    }
+  language: css
+libraries: |
+  https://appsforoffice.microsoft.com/lib/1/hosted/office.js
+  @types/office-js
+
+  office-ui-fabric-js@1.4.0/dist/css/fabric.min.css
+  office-ui-fabric-js@1.4.0/dist/css/fabric.components.min.css
+
+  core-js@2.4.1/client/core.min.js
+  @types/core-js
+
+  jquery@3.1.1
+  @types/jquery@3.3.1
