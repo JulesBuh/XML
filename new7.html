@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Home Quality Mark</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="index.jsp">
+					<img src="http://www.homequalitymark.com/images/home_quality_mark_logo.png" width="158" height="77" alt="Home Quality Mark" />
+				</a>
+			</div>
+		</header>
+	<div class="page_margin ">
+		<div id="wrapper" class="without_sidebar">
+			<div id="left_content">
+
+			<h1 style="text-align: center">Summary of Changes - Infographic</h1>
+
+			<p>This interactive infographic provides a summary of the proposed changes to the HQM scheme manual. It captures the main types of changes to issues in the scheme manual.</p>
+			<p>Hover over a type of change for issues are affected by it. Alternatively hover over an HQM issue to reveal the types of changes affecting the issue. The height of the bar in an issue indicates the extent of the change for that issue. Please see descriptors below to know what each item listed under Type of Change relates to.</p>
+			<p>Please note the interactive version of the infographic cannot be viewed in some browsers.</p> 
+
+			<div id="diagram_holder" class="diagram_holder" ></div>
+
+			<p>
+				<strong>Amended Content:</strong> Substantial changes to the criteria, methodology, benchmarks, scope or compliance notes.</p>
+			<p>
+				<strong>Credits Changes:</strong> Increase or decrease in the total number of credits available for an issue. In some cases this can relate to a change in benchmarks.</p>
+			<p>
+				<strong>Issue Restructure:</strong> Contents of the issue has been reorganised for clarity and to ensure content is appropriate for the section. This can mean restructuring of content within a section (example regrouping of criteria requirements) or across sections (example compliance notes have been moved into the methodology section or the definition section)</p>
+			<p>
+				<strong>New Content:</strong> Introduction of new criteria, methodology, checklist, compliance note, benchmark or definition</p>
+			<p>
+				<strong>New Minimum requirement / pre-requisite -</strong> Introduction of a new minimum requirements or prerequisite in an issue</p>
+			<p>
+				<strong>Scotland Specific Content -</strong> Criteria, methodology, benchmark, compliance note, definition or standard applicable to assessments in Scotland.</p>
+			<p>
+				<strong>Change of Standards -</strong> Update or replacement of standards referenced in an issue or introduction of new standards Wales Specific Content- Criteria, methodology, benchmark, compliance note, definition or standard applicable to assessments in Wales.</p>
+			<p>
+				<strong>Wording Tweaks -</strong> Minor structural changes, wording changes or deletions to aim, benefit, context, criteria, methodology, compliance notes, definitions, evidence requirements or notes to improve clarity.</p>
+						<script>
+var data = [
+['Amended Content','01. Accessible Public Transport',2000],
+['New Content','01. Accessible Public Transport',1200],
+['Wording Tweaks','01. Accessible Public Transport',2000],
+['Amended Content','02. Alternative Sustainable Transport Options',2000],
+['Credit Changes','02. Alternative Sustainable Transport Options',2000],
+['Wording Tweaks','02. Alternative Sustainable Transport Options',2000],
+['Credit Changes','03. Local Amenities',2000],
+['Wording Tweaks','03. Local Amenities',1200],
+['Credit Changes','04. Ecology',2000],
+['Issue Restructure','04. Ecology',2000],
+['New Minimum Requirement/Prerequisite','04. Ecology',4000],
+['New Content','04. Ecology',12000],
+['Wording Tweaks','04. Ecology',2000],
+['Amended Content','05. Recreational Space',8000],
+['Credit Changes','05. Recreational Space',2000],
+['Wording Tweaks','05. Recreational Space',1200],
+['Amended Content','06. Flood Risk',1500],
+['Change of Standards','06. Flood Risk',1500],
+['Credit Changes','06. Flood Risk',2000],
+['New Minimum Requirement/Prerequisite','06. Flood Risk',2000],
+['Scotland Specific Content','06. Flood Risk',4000],
+['Wales Specific Content','06. Flood Risk',2000],
+['Wording Tweaks','06. Flood Risk',4000],
+['Change of Standards','07. Managing the Impact of Rainfall',1500],
+['Credit Changes','07. Managing the Impact of Rainfall',2000],
+['Wording Tweaks','07. Managing the Impact of Rainfall',2000],
+['Amended Content','08. Security',2000],
+['Credit Changes','08. Security',2000],
+['Scotland Specific Content','08. Security',4000],
+['Wales Specific Content','08. Security',2000],
+['Wording Tweaks','08. Security',2000],
+['Amended Content','09. Indoor Pollutants',4000],
+['Credit Changes','09. Indoor Pollutants',5000],
+['New Minimum Requirement/Prerequisite','09. Indoor Pollutants',2000],
+['New Content','09. Indoor Pollutants',8000],
+['Wording Tweaks','09. Indoor Pollutants',4000],
+['Credit Changes','10. Daylight',2000],
+['Wording Tweaks','10. Daylight',1200],
+['New Content','11. Internal and External Noise',6000],
+['Wording Tweaks','11. Internal and External Noise',5000],
+['Credit Changes','12. Sound Insulation',4000],
+['New Content','12. Sound Insulation',8000],
+['Scotland Specific Content','12. Sound Insulation',4000],
+['Wales Specific Content','12. Sound Insulation',2000],
+['Wording Tweaks','12. Sound Insulation',2000],
+['Change of Standards','13. Temperature',1500],
+['Credit Changes','13. Temperature',4000],
+['Issue Restructure','13. Temperature',2000],
+['New Minimum Requirement/Prerequisite','13. Temperature',2000],
+['Wording Tweaks','13. Temperature',4000],
+['Credit Changes','14. Ventilation',2000],
+['New Minimum Requirement/Prerequisite','14. Ventilation',4000],
+['Scotland Specific Content','14. Ventilation',4000],
+['Wales Specific Content','14. Ventilation',2000],
+['Wording Tweaks','14. Ventilation',2000],
+['Amended Content','15. Energy and Cost',8000],
+['Change of Standards','15. Energy and Cost',1500],
+['Credit Changes','15. Energy and Cost',4000],
+['Issue Restructure','15. Energy and Cost',2000],
+['Scotland Specific Content','15. Energy and Cost',4000],
+['Wales Specific Content','15. Energy and Cost',2000],
+['Wording Tweaks','15. Energy and Cost',6000],
+['Amended Content','16. Decentralised Energy',2000],
+['Credit Changes','16. Decentralised Energy',4000],
+['New Minimum Requirement/Prerequisite','16. Decentralised Energy',2000],
+['Scotland Specific Content','16. Decentralised Energy',4000],
+['Wales Specific Content','16. Decentralised Energy',2000],
+['Wording Tweaks','16. Decentralised Energy',2000],
+['Credit Changes','17. Impact on Local Air Quality',4000],
+['Issue Restructure','17. Impact on Local Air Quality',2000],
+['New Content','17. Impact on Local Air Quality',12000],
+['Wording Tweaks','17. Impact on Local Air Quality',2000],
+['Credit Changes','18. Responsible Sourcing of Construction Products',4000],
+['Issue Restructure','18. Responsible Sourcing of Construction Products',4000],
+['Wording Tweaks','18. Responsible Sourcing of Construction Products',4000],
+['Credit Changes','19. Environmental Impact from Construction Products',4000],
+['Issue Restructure','19. Environmental Impact from Construction Products',2000],
+['Wording Tweaks','19. Environmental Impact from Construction Products',4000],
+['Credit Changes','20. Life Cycle Costing of Construction Products',4000],
+['New Content','20. Life Cycle Costing of Construction Products',1200],
+['Wording Tweaks','20. Life Cycle Costing of Construction Products',4000],
+['Credit Changes','21. Durability of Construction Products',4000],
+['Wording Tweaks','21. Durability of Construction Products',4000],
+['Amended Content','22. Drying Space',6000],
+['Wording Tweaks','22. Drying Space',2000],
+['Amended Content','23. Access and Space',8000],
+['Credit Changes','23. Access and Space',4000],
+['Issue Restructure','23. Access and Space',4000],
+['New Content','23. Access and Space',6000],
+['Wording Tweaks','23. Access and Space',2000],
+['Issue Restructure','24. Recyclable Waste',1200],
+['Wording Tweaks','24. Recyclable Waste',2000],
+['Credit Changes','25. Water Efficiency',4000],
+['Scotland Specific Content','25. Water Efficiency',4000],
+['Wales Specific Content','25. Water Efficiency',2000],
+['Amended Content','26. Project Preparation',8000],
+['Credit Changes','26. Project Preparation',4000],
+['Issue Restructure','26. Project Preparation',4000],
+['New Minimum Requirement/Prerequisite','26. Project Preparation',2000],
+['New Content','26. Project Preparation',6000],
+['Wording Tweaks','26. Project Preparation',2000],
+['Amended Content','27. Commissioning and Testing',10000],
+['Credit Changes','27. Commissioning and Testing',2000],
+['Issue Restructure','27. Commissioning and Testing',6000],
+['New Minimum Requirement/Prerequisite','27. Commissioning and Testing',4000],
+['New Content','27. Commissioning and Testing',12000],
+['Wording Tweaks','27. Commissioning and Testing',6000],
+['New Minimum Requirement/Prerequisite','28. Inspection and Completion',4000],
+['New Content','28. Inspection and Completion',15000],
+['Credit Changes','29. Responsible Construction Management',4000],
+['New Content','29. Responsible Construction Management',9000],
+['Wording Tweaks','29. Responsible Construction Management',4000],
+['Credit Changes','30. Construction Energy Use',3000],
+['Wording Tweaks','30. Construction Energy Use',2000],
+['Credit Changes','31. Construction Water Use',3000],
+['Wording Tweaks','31. Construction Water Use',2000],
+['Wording Tweaks','32. Site Waste',1200],
+['Amended Content','33. Aftercare',8000],
+['Credit Changes','33. Aftercare',3000],
+['Issue Restructure','33. Aftercare',6000],
+['Wording Tweaks','33. Aftercare',4000],
+['Credit Changes','34. Home Information',4000],
+['Issue Restructure','34. Home Information',8000],
+['New Minimum Requirement/Prerequisite','34. Home Information',12000],
+['New Content','34. Home Information',10000],
+['Wales Specific Content','34. Home Information',2000],
+['Wording Tweaks','34. Home Information',2000],
+['Amended Content','35. Smart Homes',4000],
+['Change of Standards','35. Smart Homes',1500],
+['New Content','35. Smart Homes',15000],
+['Wording Tweaks','35. Smart Homes',2000],
+['Amended Content','36. Post Occupancy Evaluation',6000],
+['Credit Changes','36. Post Occupancy Evaluation',4000],
+['Issue Restructure','36. Post Occupancy Evaluation',8000],
+['Wording Tweaks','36. Post Occupancy Evaluation',3000],
+['Amended Content','Appendix A',6000]
+];
+
+var color ={'Amended Content':"#00d4d4", 'New Content':"#0094d9", 'Wording Tweaks':"#33a828", 'Credit Changes':"#3c3c8c", 'Issue Restructure':"#777777", 'New Minimum Requirement/Prerequisite':"#977bab", 'Change of Standards':"#cc0099", 'Scotland Specific Content':"#ff9800", 'Wales Specific Content':"#ffc107"};
+
+// add title labels 
+var labelWidth =  350;
+var diagramWidth =  600;
+var title =  d3.select(".diagram_holder").append("table").attr("width", (labelWidth*2)+diagramWidth);
+var th =  title.append("th");
+
+var td0 =  th.append("td").attr("width", labelWidth/2);
+var td1 =  th.append("td").attr("width", (labelWidth/2)+(diagramWidth/2));
+td1.text("Type of Change");
+var td2 =  th.append("td").attr("width", (diagramWidth/2)+(labelWidth/2));
+td2.text("Issue");
+var td3 =  th.append("td").attr("width", (labelWidth/2));
+
+
+
+
+//svg
+var svg = d3.select(".diagram_holder").append("svg").attr("width", '100%').attr("height", 650);
+var g = svg.append("g").attr("transform","translate(325, 0)");
+
+
+var bp=viz.bP()
+	.data(data)
+	.min(15)
+	.pad(1)
+	.height(600)
+	.width(diagramWidth)
+	.barSize(35)
+	.fill(function(d){
+			return color[d.primary]
+		});
+
+g.call(bp);
+
+g.selectAll(".mainBars")
+.on("mouseover",mouseover)
+.on("mouseout",mouseout)
+
+g.selectAll(".mainBars").append("text").attr("class","label")
+//.attr("x",d=>(d.part=="primary"? -30: 30))
+//.attr("y",d=>+6)
+.attr("x",function(d){
+	return d.part=="primary"? -30: 30
+})
+.attr("y",function(d){
+	console.log ( d.y+6+' diy+6' );
+	return 6
+})
+.text(function(d) {
+	return d.key
+})
+.attr("text-anchor",function(d){
+	return d.part=="primary" ? "end": "start"
+});
+
+
+function mouseover(d){
+bp.mouseover(d);
+g.selectAll(".mainBars")
+.select(".perc")
+.text(function(d){ return d3.format("0.0%")(d.percent)})
+}
+function mouseout(d){
+bp.mouseout(d);
+g.selectAll(".mainBars")
+	.select(".perc")
+.text(function(d){ return d3.format("0.0%")(d.percent)})
+}
+d3.select(self.frameElement).style("height", "800px");
+		</script>
+		</div>
+		</div>
+	</div>
+	</body>
+</html>
